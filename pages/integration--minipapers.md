@@ -37,7 +37,6 @@ Once integrated on your website, clicking a Minipaper will redirect the user to 
 
 It is possible to override the target of redirection when a users clicks the iPaper. To achieve this, the HTML used for integration must be slightly modified, by appending a TargetUrl query parameter to the src attribute of the iframe.
 
-{% include important.html content="Custom redirection is only avaiable when using the Page flipper" %}
 
 The Minipaper iframe HTML code has a src attribute that specifies the location of the iPaper. To specify custom redirection, ```&TargetUrl=[URL]``` must be appended at the end of the ```src``` value, where ```[URL]``` is replaced for an actual URL. The specified URL must be fully qualified, starting with ```http://``` (or ```https://```), and must also be URL-encoded. There are several online tools for encoding text to URL-format; here's one of them: [http://meyerweb.com/eric/tools/dencoder/](http://meyerweb.com/eric/tools/dencoder/)
 
