@@ -18,6 +18,13 @@ redirect_from: "/display/DOC/iframing+Catalogs"
 	This being said, if you want or need to iframe the Flipbook, please make sure to read & understand the following guide carefully.
 </div>
 
+## DISCLAIMER
+
+For best results, the flipbook you wish to embed should exist on a subdomain to the domain on which the iframe is placed.
+A working Branded Domain module is required for this!
+If you embed the flipbook using the iPaper system URL, we cannot offer support for it and weird cross-device behavior can be expected.
+
+
 ## Foreword
 
 When using iframes on mobile devices it can be tricky trying to make it respond as expected. Below we show you how to make Flipbooks behave optimally.
@@ -26,9 +33,6 @@ When using iframes on mobile devices it can be tricky trying to make it respond 
 	It's important that you follow our directions below precisely. There are many devices and what may work for you in testing will fail for users in production. If you manage to get something working that isn't described here, do tell us so we can verify the 	solution. Anything but the below is to be considered unsupported and may fail either nor or in the future.
 "%}
 
-## Requirements
-
-* A working Custom Domain module. Specifically, the actual Flipbook needs to be on a subdomain to the domain on which the iframe is placed.
 
 ## iFraming Flipbooks in 100x100% Size
 
