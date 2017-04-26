@@ -96,6 +96,8 @@ For these platforms you can specify width in any size you want, even in percenta
 Dynamically resizing the div will work. Do make sure you resize the outer and not the iframe.
 
 ### Removing the iPaper User Interface
-To remove the iPaper userinterface, look under the "Basic Settings" tab when editing the settings for an iPaper. All JavaScript events will still be fired, even without the user interface present.
+To remove the iPaper userinterface, go to <b>Settings > Design > Layout > Hide Standard UI</b>. 
+Or have a look at http://docs.ipaper.io/integration/query-string-parameters 
+All JavaScript events will still be fired, even without the user interface present.
 
 {% include note.html content="Removing the standard user interface is only supported in HTML iPapers."%}
