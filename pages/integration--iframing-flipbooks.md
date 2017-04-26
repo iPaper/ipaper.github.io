@@ -97,6 +97,6 @@ Dynamically resizing the div will work. Do make sure you resize the outer and no
 
 ### Removing the iPaper User Interface
 To remove the iPaper user interface, go to <b>Settings > Design > Layout > Hide Standard UI</b>.   
-Or have a look at http://docs.ipaper.io/integration/query-string-parameters   
+Or have a look at [Query String Parameters](/integration/query-string-parameters)   
 
 {% include note.html content="All JavaScript events will still be fired, even without the user interface present."%}
