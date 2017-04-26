@@ -5,6 +5,10 @@ redirect_from: "/display/DOC/JavaScript+API"
 summary: The JavaScript API allows you listen for events occurings in the Flipbook, prevent default actions and invoking functions in the Flipbook.
 ---
 
+## Requirements
+
+* A working Branded Domain module. Specifically, the actual Flipbook needs to be on a subdomain to the domain on which the iframe is placed.
+
 ## Embedding the Flipbook
 
 Before gaining access to the API, you'll have to embed it on your own website. Technically the embedding works by iframing the Flipbook onto your own website.
