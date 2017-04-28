@@ -4,12 +4,12 @@ permalink: /integration/ipaper-embed-script
 redirect_from: "/display/DOC/iPaper+Embed+Script"
 ---
 
-The iPaper embed script snippet is a small piece of JavaScript that you paste in to your webpages. It enables the iPaper service to inject Lead generation tools as Pop-ups and Messages into the pages where the embed script is present.
+The iPaper embed script snippet is a small piece of JavaScript that you paste in to your webpages. It enables the iPaper service to inject Pop-ups into the pages where the embed script is present.
 
 ## Find your account specific embed script
 
 1. Log in to your iPaper account.
-2. Navigate to 'Lead Generation' → 'Pop-ups' or 'Lead Generation' → 'Messages'.
+2. Navigate to → 'Pop-ups'.
 3. Click the 'Get embed script' button.
 4. Click 'Copy script' to copy the embed script to the clipboard.
 
@@ -19,26 +19,26 @@ The iPaper embed script snippet is a small piece of JavaScript that you paste in
 
 ## Insert snippet on your website
 
-The embed script should be inserted as the last element of the ```<body>``` tag on every webpage where you want Pop-ups and/or Messages to show. A typical use case would be to add the embed script to all pages on your website.
+The embed script should be inserted as the last element of the ```<body>``` tag on every webpage where you want Pop-ups to show. A typical use case would be to add the embed script to all pages on your website.
 {% include note.html content="Browser loads webpages progressively, which means that the resources are loaded in order of their occurrence in the source code. It is a good practice to place nonessential scripts as the last elements of the webpage" %}
 
 <img src="/images/embed-script-2.png" style="max-width:100%;max-height:100%"/>
 
 If you are using some sort of CMS system, the chances are that you can use commonly shared footer element to add embed script on every page. This way you can have only one place, where the script is stored in your websites source code.
 
-{% include note.html content="You don't need the embed script when adding Pop-ups or Messages to your Flipbooks" %}
+{% include note.html content="You don't need the embed script when adding Pop-ups to your Flipbooks" %}
 
 ## After you have added the embed script
 
-Once the embed script is added to your website, you will start to see Messages and/or Pop-ups that match the URL you have defined.
+Once the embed script is added to your website, you will start to see Pop-ups that match the URL you have defined.
 
 ## Final notes on embed script
 
-### Same embed script for different Pop-ups and Messages under one license
+### Same embed script for different Pop-ups under one license
 
-Embed script are unique per license (login group). This means that all Pop-ups and Messages created under the same license will share the same embed script code. Therefore, there is no need to insert embed script with given API_KEY on one webpage (URL) more than once, even when there is more than one lead generation tool that should be displayed on that page.
+Embed script are unique per license (login group). This means that all Pop-ups created under the same license will share the same embed script code. Therefore, there is no need to insert embed script with given API_KEY on one webpage (URL) more than once, even when there is more than one lead generation tool that should be displayed on that page.
 
-{% include note.html content="You don't need the embed script when adding Pop-ups or Messages to your Flipbooks" %}
+{% include note.html content="You don't need the embed script when adding Pop-ups to your Flipbooks" %}
 
 ### Multiple embed scripts on same webpage
 
