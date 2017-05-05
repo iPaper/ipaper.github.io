@@ -1,5 +1,5 @@
 ---
-title: Paper.GetPaperIDFromUrl
+title: Paper.GetPaperStructure
 permalink: /backend-api/paper/get-paper-structure
 redirect_from: "/display/DOC/GetPaperStructure"
 ---
