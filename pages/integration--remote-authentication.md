@@ -6,6 +6,8 @@ redirect_from: "/display/DOC/Remote+Authentication"
 
 Using the Remote Authentication module it's possible to completely secure a Flipbook, while maintaining full control of access validation on the clients' own systems.
 
+{% include important.html content='Please note that iPaper does not support any 3rd party protocols such as OAuth or Facebook. If you're looking to integrate a SSO solution into your flipbook, you'll need you create a custom solution using Token Based Authentication' %}
+
 ## Authentication Types
 
 There are two overall mechanisms that allows the user to be granted access to the flipbook.
