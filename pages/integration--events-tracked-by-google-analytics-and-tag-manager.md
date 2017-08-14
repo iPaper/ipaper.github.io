@@ -12,7 +12,7 @@ We track **PageElementClicked** for linktypes **internal** & **external**.
 The following features have also been enabled for GTM:
 
 ```
-['ua', 'ga', 'v', 'e', 'u', 'c', 'img', 'adm', 'awct', 'sp', 'gcs', 'ctv', 'f', 'smm', 'r']
+['ua', 'ga', 'v', 'e', 'u', 'c', 'img', 'adm', 'awct', 'sp', 'gcs', 'ctv', 'f', 'smm', 'r', 'k', 'flc', 'fls' ]
 ```
 
 You can find more information about what they entail on this page:
