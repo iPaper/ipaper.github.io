@@ -6,6 +6,10 @@ title: Events tracked by Google Analytics / Tag Manager
 ## Google Analytics
 We only track **Pageview** (both initial load and if enduser pages the flipbook) in Google Analytics.
 
+Each page in an iPaper flipbook has a unique URL, and is pushed to GA as such.
+Example:
+{ 'event': 'virtualPageview', 'virtualPageURL': flipbookurl + '?Page=' + pagenumber }
+
 ## Google Tag Manager
 We track **PageElementClicked** for linktypes **internal** & **external**.
 
