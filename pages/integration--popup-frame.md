@@ -1,7 +1,6 @@
 ---
 title: Popup frame
 permalink: /integration/popup-frame
-redirect_from: "/display/DOC/Popup+frame"
 ---
 
 ## Security headers
