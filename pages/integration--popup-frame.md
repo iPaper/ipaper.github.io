@@ -9,7 +9,7 @@ To ensure that your content is safeguarded against [clickjacking](https://www.ow
 
 ## X-Frame-Options
 
-X-Frame-Options was the first countermeasure introduced against clickjacking, and have been implemented to some extend in the major browsers. When using this you must set it to `ALLOW-FROM viewer.ipaper.io` if you don't have a branded domain, if you have a branded domain the part should of course reflect that domain.
+X-Frame-Options was the first countermeasure introduced against clickjacking, and have been implemented to some extend in the major browsers. When using this you must set it to `ALLOW-FROM https://viewer.ipaper.io/` if you don't have a branded domain, if you have a branded domain the part should of course reflect that domain.
 One of the limitations with this header is that it isn't respected by Chrome (and they have clearly stated that it won't be in the future), and at the same time it doesn't give you the option of allowing iframing on several sites. To solve that issue you will have to refer to Content-Security-Policy.
 
 ## Content-Security-Policy
