@@ -1,7 +1,7 @@
 entries:
 - title: sidebar
   folders:
-  
+
   - title: Backend API
     url: /backend-api
     folderitems:
@@ -13,17 +13,17 @@ entries:
       url: /backend-api/return-codes
 
       subfolders:
- 
+
       - title: Client
         url: /backend-api/client
-        subfolderitems:  
-      
+        subfolderitems:
+
         - title: AddModule
           url: /backend-api/client/add-module
 
         - title: CreateBasicClient
           url: /backend-api/client/create-basic-client
- 
+
         - title: CreateBusinessClient
           url: /backend-api/client/create-business-client
 
@@ -32,52 +32,52 @@ entries:
 
         - title: CreatePremiumClient
           url: /backend-api/client/create-premium-client
- 
+
         - title: GetClientPaperIDByName
           url: /backend-api/client/get-client-paper-id-by-name
- 
+
       - title: Crossdomain
-        subfolderitems: 
-      
+        subfolderitems:
+
         - title: GetCdnHttpCrossdomainUrl
           url: /backend-api/crossdomain/get-cdn-http-crossdomain-url
 
         - title: GetCdnHttpsCrossdomainUrl
           url: /backend-api/crossdomain/get-cdn-https-crossdomain-url
-        
+
       - title: Custom Field
         subfolderitems:
 
         - title: AddCustomField
           url: /backend-api/custom-field/add-custom-field
- 
+
         - title: DeleteCustomField
-          url: /backend-api/custom-field/delete-custom-field 
+          url: /backend-api/custom-field/delete-custom-field
 
         - title: GetCustomFieldDefinitions
-          url: /backend-api/custom-field/get-custom-field-definitions 
+          url: /backend-api/custom-field/get-custom-field-definitions
 
         - title: GetCustomFieldValue
-          url: /backend-api/custom-field/get-custom-field-value 
+          url: /backend-api/custom-field/get-custom-field-value
 
         - title: SetCustomFieldValue
-          url: /backend-api/custom-field/set-custom-field-value 
+          url: /backend-api/custom-field/set-custom-field-value
 
         - title: SetMultipleCustomFieldValues
-          url: /backend-api/custom-field/set-multiple-custom-field-values 
+          url: /backend-api/custom-field/set-multiple-custom-field-values
 
       - title: Image
         subfolderitems:
 
         - title: GetImageWith2PxDropShadow
-          url: /backend-api/image/get-image-with-2px-drop-shadow 
+          url: /backend-api/image/get-image-with-2px-drop-shadow
 
       - title: Link
         subfolderitems:
 
         - title: GetLinks
           url: /backend-api/link/get-links
-          
+
       - title: Media
         subfolderitems:
 
@@ -95,7 +95,7 @@ entries:
 
         - title: UploadFile
           url: /backend-api/media/upload-file
-          
+
       - title: Paper
         subfolderitems:
 
@@ -128,7 +128,7 @@ entries:
 
         - title: GetPaperUrlFromID
           url: /backend-api/paper/get-paper-url-from-id
-    
+
         - title: GetSetting
           url: /backend-api/paper/get-setting
 
@@ -152,7 +152,7 @@ entries:
 
         - title: ProcessPDF
           url: /backend-api/ripper/process-pdf
-          
+
       - title: Search
         subfolderitems:
 
@@ -167,7 +167,7 @@ entries:
 
         - title: SearchPapersWithHiearchyByName
           url: /backend-api/search/search-papers-with-hierarchy-by-name
-          
+
       - title: Statistics
         subfolderitems:
 
@@ -188,37 +188,40 @@ entries:
 
     - title: Embedding Flipbooks inside iOS and Android apps
       url: /integration/embedding-flipbooks-inside-ios-and-android-apps
-  
+
     - title: Form Integration
-      url: /integration/form-integration  
-  
+      url: /integration/form-integration
+
     - title: iFraming Flipbooks
-      url: /integration/iframing-flipbooks  
+      url: /integration/iframing-flipbooks
 
     - title: iPaper Embed Script
-      url: /integration/ipaper-embed-script  
+      url: /integration/ipaper-embed-script
 
     - title: Minipapers
-      url: /integration/minipapers  
+      url: /integration/minipapers
 
     - title: Popup Content
-      url: /integration/popup-content  
-    
+      url: /integration/popup-content
+
+    - title: Popup Frame
+      url: /integration/popup-frame
+
     - title: Query String Parameters
-      url: /integration/query-string-parameters 
-  
+      url: /integration/query-string-parameters
+
     - title: Remote Authenticaion
-      url: /integration/remote-authentication 
-  
+      url: /integration/remote-authentication
+
     - title: Shop Integration
-      url: /integration/shop-integration 
-    
+      url: /integration/shop-integration
+
     - title: Events tracked in Google Analytics / GTM
       url: /integration/events-tracked-by-google-analytics-and-tag-manager
 
   - title: JavaScript API
     folderitems:
-    
+
     - title: Overview
       url: /javascript-api/overview
 
@@ -227,7 +230,7 @@ entries:
 
     - title: Shop
       url: /javascript-api/shop
-  
+
   - title: Technical Information
     folderitems:
 
@@ -235,4 +238,4 @@ entries:
       url: /technical-information/server-ip-range
 
     - title: Upload Troubleshooting
-      url: /technical-information/upload-troubleshooting  
+      url: /technical-information/upload-troubleshooting
