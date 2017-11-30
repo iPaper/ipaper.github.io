@@ -1,55 +1,27 @@
 ---
-title: Popup content
-permalink: /integration/popup-content
-redirect_from: "/display/DOC/Popup+content"
+title: Popup frame
+permalink: /integration/popup-frame
+redirect_from: "/display/DOC/Popup+frame"
 ---
 
-## Sizing
-The content of the iframe reflows, so no scale is applied.
+## Security headers
 
-## Images
-Large images automatically shrink to iframe width.
+To ensure that your content is safeguarded against [clickjacking](https://www.owasp.org/index.php/Clickjacking) we recommend using the HTTP headers, X-Frame-Options and Content-Security-Policy. In the case you have added preventive measures we check the embedded website before trying to serve the popup-frame in the Flipbook viewer. This ensures that we don't end up showing the enduser an error in the browser, if this site doesn't allow to be iframed we give the user an option to open the site in a new tab in the browser.
 
-## Talking to the iPaper API
-You cannot communicate with the iPaper API.
+## X-Frame-Options
 
-## Rotation/resizing
-The popup content wrapper has the following constraints:
+X-Frame-Options was the first countermeasure introduced against clickjacking, and have been implemented to some extend in the major browsers. When using this you must set it to `ALLOW-FROM viewer.ipaper.io` if you don't have a branded domain, if you have a branded domain the part should of course reflect that domain.
+One of the limitations with this header is that it isn't respected by Chrome (and they have clearly stated that it won't be in the future), and at the same time it doesn't give you the option of allowing iframing on several sites. To solve that issue you will have to refer to Content-Security-Policy.
 
-```
-max-width:	600px;
-min-width: 	200px;
-min-height:	250px;
-```
+## Content-Security-Policy
 
-Content wrapper will resize itself, to fit inside the browser window, until it reaches a max/min width. Height is set based on content height, and window height. When content is taller than window, content will scroll. When the window is taller than the content, the content wrapper will set height based on content height.
+Applying Content-Security-Policy is a more complex task, as it can have implications on the content on your own site if not done correctly. If your only intent is to prevent clickjacking, the frame-ancestors directive can be applied without it having implications on your content. In the case of you not having a branded domain you should add `frame-ancestors 'viewer.ipaper.io'` and in the case of you using a branded domain then you should of course use your branded domain instead.
+As of the specification for Content-Security-Policy version 2 and 3 the value of frame-ancestors override any value set in X-Frame-Options if those specifications have been implemented by the browser.
 
-## CSS applied 
-```css
-html, body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Arial, Sans-Serif;
-}
-body {
-    padding: 10px;
-    -webkit-transform-style: preserve-3d;
-    -webkit-text-size-adjust: 100%;
-}
-p {
-    line-height: 20px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-hr {
-    border: none;
-    border-top: 1px solid #CCC;
-    margin-top: 12px;
-    display: block;
-    height: 10px;
-}
-img {
-    max-width: 100%;
-    height: auto !important;
-}
-```
+## Summary
+
+As stated in the introduction the best prevention is to include both X-Frame-Options and Content-Security-Policy since we support a wide range of browsers and not all of them have implemented Content-Security-Policy.
+
+## See also
+
+[OWASP Guide to Clickjacking defense](https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet)
