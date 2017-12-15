@@ -9,7 +9,7 @@ redirect_from: "/display/DOC/Custom+Domain"
 Before iPaper can setup the Custom Domain module, you need to setup the domain on your end first. The subdomain can be anything you want, but let's assume the following scenario:
 
 ```
-Current catalog address: ipaper.ipapercms.dk
+Current catalog address: viewer.ipaper.io
 Main website: www.client.com
 Subdomain: catalogs.client.com
 ```
@@ -17,13 +17,13 @@ Subdomain: catalogs.client.com
 In this case, catalogs.client.com needs to be setup as a CNAME record pointing to the partner address. That is, the following CNAME record should be made:
 
 ```
-catalogs.client.com => ipaper.ipapercms.dk
+catalogs.client.com => viewer.ipaper.io
 ```
 
 If your catalogs are hosted through an iPaper partner, the CNAME alias should point to that specific partners address:
 
 ```
-catalogs.client.com => ipaper.ipapercms.dk
+catalogs.client.com => {partner}.ipapercms.dk
 ```
 
 {% include important.html content="The subdomain MUST be setup as a CNAME record. An A record will not work." %}
