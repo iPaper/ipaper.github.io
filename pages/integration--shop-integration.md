@@ -12,7 +12,7 @@ Once the Shop module has been enabled, you can enable integration by checking th
 
 ## Export Format
 
-We include the name, description, price, product ID and amount, as selected in the catalog. We also include a reference to the Flipbook that sent the data - this can be useful to determine the origin Flipbook of a shop export. Sample xml:
+We include the name, description, price, product ID and amount, as selected in the catalog. We also include a reference to the Flipbook that sent the data - this can be useful to determine the origin Flipbook of a shop export. Shop variants exported this way will have the same format. Sample xml:
 
 ```xml
 <shop paper="/Products/Cocacola/">
