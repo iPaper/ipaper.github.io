@@ -104,8 +104,6 @@ Or have a look at [Query String Parameters](/integration/query-string-parameters
 ## Troubleshooting
 
 ### There is unexpected spacing around my Flipbook
-**Symptoms:** There is unexpected padding around my Flipbook (either vertically or horizontally). When I size the window down, the padding proportionally decreases.
-
-**Common causes:** The containing element of the `IFRAME` or the `IFRAME` element itself has an explicit width that is too large compared to the maximum size we render the Flipbook as.
-
-**Solution:** Set a `max-width` property on the containing element of the `IFRAME` element to a specific value (for instance `720px`). Experiment with different values that work well on exactly your website and different window sizes.
+<p>**Symptoms:** There is unexpected padding around my Flipbook (either vertically or horizontally). When I size the window down, the padding proportionally decreases.</p>
+<p>**Common causes:** The containing element of the `IFRAME` or the `IFRAME` element itself has an explicit width that is too large compared to the maximum size we render the Flipbook as.</p>
+<p>**Solution:** Set a `max-width` property on the containing element of the `IFRAME` element to a specific value (for instance `720px`). Experiment with different values that work well on exactly your website and different window sizes.</p>
