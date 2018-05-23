@@ -34,8 +34,8 @@ Here's how we'd send the **Search** event
 ga(tracker.get('name') + '.send', 'event', 'iPaper events', 'Search', 'Term: Cute puppies');
 ```
 
-If you need help setting up Google Analytics on your iPaper account, have a look at our [https://help.ipaper.io/article/127-integrate-google-analytics-with-ipaper](Integrate Google Analytics With iPaper
-Google Analytics Tracking) guide.
+If you need help setting up Google Analytics on your iPaper account, have a look at our [Integrate Google Analytics With iPaper
+Google Analytics Tracking](https://help.ipaper.io/article/127-integrate-google-analytics-with-ipaper) guide.
 
 ## Google Tag Manager
 We track **PageElementClicked** for linktypes **internal** & **external**.
