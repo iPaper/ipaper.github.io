@@ -25,7 +25,7 @@ As of the specification for Content-Security-Policy version 2 and 3 the value of
 
 It is possible for a frame page to close its popup. To do this, you simply have to execute the following JavaScript in the page that is framed.
 
-```
+```javascript
 parent.postMessage('closePopup', '*');
 ```
 
