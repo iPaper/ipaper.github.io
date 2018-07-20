@@ -18,7 +18,7 @@ redirect_from: "/display/DOC/iframing+Catalogs"
 	This being said, if you want or need to iframe the Flipbook, please make sure to read & understand the following guide carefully.
 </div>
 
-## DISCLAIMER
+## A brief note on domains
 
 For best results, the flipbook you wish to embed should exist on a subdomain to the domain on which the iframe is placed.
 A working Branded Domain module is required for this!
@@ -34,7 +34,7 @@ When using iframes on mobile devices it can be tricky trying to make it respond 
 "%}
 
 
-## iFraming Flipbooks in 100x100% Size
+## Framing Flipbooks in 100x100% Size
 
 {% include note.html content="This is supported on all platforms and is the recommended way of iframing catalogs."%}
 
@@ -46,7 +46,7 @@ In order to iframe a iPaper catalog, spanning 100% of page, we need to use a spe
 * Include the ```<meta>``` tag presented below.
 * Include the ```<script>``` tag presented below, setting the document.domain to the root domain used.
 
-{% include important.html content="The steps listed above must be ready on load. It will NOT work if you manipulate the dom client-side"%}
+{% include important.html content="The steps listed above must be ready on load. It will NOT work if you manipulate the DOM client-side."%}
 
 ```html
 <!DOCTYPE html>
@@ -100,3 +100,12 @@ To remove the iPaper user interface, go to <b>Settings > Design > Layout > Hide 
 Or have a look at [Query String Parameters](/integration/query-string-parameters#hidestandardui)   
 
 {% include note.html content="All JavaScript events will still be fired, even without the user interface present."%}
+
+## Troubleshooting
+
+### There is unexpected spacing around my Flipbook
+**Symptoms:** There is unexpected padding around my Flipbook (either vertically or horizontally). When I size the window down, the padding proportionally decreases.
+
+**Common causes:** The containing element of the `IFRAME` or the `IFRAME` element itself has an explicit width that is too large compared to the maximum size we render the Flipbook as.
+
+**Solution:** Set a `max-width` or `max-height` property on the containing element of the `IFRAME` element to a specific value (for instance `720px`). Experiment with different values that work well on exactly your website and different window sizes.

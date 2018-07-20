@@ -1,6 +1,6 @@
 ---
 permalink: /javascript-api/overview
-title: JavasScript API overview
+title: JavaScript API overview
 redirect_from: "/display/DOC/JavaScript+API"
 summary: The JavaScript API allows you listen for events occurings in the Flipbook, prevent default actions and invoking functions in the Flipbook.
 ---
