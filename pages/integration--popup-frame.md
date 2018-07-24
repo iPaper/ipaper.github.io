@@ -18,7 +18,7 @@ One of the limitations with this header is that it isn't respected by Chrome (an
 
 ### Content-Security-Policy
 
-Applying Content-Security-Policy is a more complex task, as it can have implications on the content on your own site if not done correctly. If your only intent is to prevent clickjacking, the frame-ancestors directive can be applied without it having implications on your content. In the case of you not having a branded domain you should add `frame-ancestors 'viewer.ipaper.io'` and in the case of you using a branded domain then you should of course use your branded domain instead.
+Applying Content-Security-Policy is a more complex task, as it can have implications on the content on your own site if not done correctly. If your only intent is to prevent clickjacking, the frame-ancestors directive can be applied without it having implications on your content. In the case of you not having a branded domain you should add `frame-ancestors viewer.ipaper.io` and in the case of you using a branded domain then you should of course use your branded domain instead.
 As of the specification for Content-Security-Policy version 2 and 3 the value of frame-ancestors override any value set in X-Frame-Options if those specifications have been implemented by the browser.
 
 ## Closing a popup from the frame page
