@@ -2,6 +2,8 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
+repository: iPaper/ipaper.github.io
+
 topnav_title:  iPaper Technical Documentation
 # this appears on the top navigation bar next to the home button
 
@@ -11,10 +13,10 @@ site_title: iPaper Technical Documentation
 company_name: iPaper
 # this appears in the footer
 
-github_editme_path: 
+github_editme_path:
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-disqus_shortname: 
+disqus_shortname:
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
 host: 127.0.0.1
@@ -35,7 +37,7 @@ feedback_disable: true
 highlighter: rouge
 # library used for syntax highlighting
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 collections:
@@ -77,7 +79,6 @@ sidebars:
 
 # the description is used in the feed.xml file
 description: "iPaper Technical Documentation"
-
 
 # needed for sitemap.xml file only
 url: //docs.ipaper.io
