@@ -40,12 +40,12 @@ Google Analytics Tracking](https://help.ipaper.io/article/127-integrate-google-a
 ## Google Tag Manager
 With Google Tag Manager you can track the initial Page views, any paging done in the flipbook, and actions performed in the flipbook.
 
-> **NOTE:**  When using Google Tag Manager to track to Google Analytics, it's important that you haven't also defined an [Analytics Tracking ID](https://help.ipaper.io/article/127-integrate-google-analytics-with-ipaper), since this will result in all pageviews and event beging tracking twice or more. If Google Tag Manager is not used to track to Google Analytics, it's okay to include both tags, but it's adviced to stick with one or the other.
+> **NOTE:**  When using Google Tag Manager to track to Google Analytics, it's important that you haven't also defined an [Analytics Tracking ID](https://help.ipaper.io/article/127-integrate-google-analytics-with-ipaper), since this will result in pageviews and events getting tracking twice or more. If Google Tag Manager is not used to track to Google Analytics, it's okay to include both tags, but it's adviced to stick with one or the other to keep your tracking as simple as possible.
 
 ### Events
 For all events we support, we'll push the raw event data and the Category, Action and Label that we'd push to Google Analytics for the similar event.
 
-For the events below we will push to the DataLayer in the following format
+For the events below we will push to the data layer in the following format
 
 ```javascript
 {
