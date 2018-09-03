@@ -14,6 +14,18 @@ These are events that you can listen for using the addEventListener() method on 
 Fired when a pageelement is "clicked".
 {% include note.html content="Current only shopitems will fire this event!" %}
 
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `type`  | `string` | The page element type that was clicked on |
+| `data` | `{}` | Data associated with the page element |
+| `event` | `{}` | Event data associated with the click event |
+| `event.originPage` | `number` | Page number on which the page element is located on |
+| `event.originSpreadPages` | `number[]` | Page numbers on which the spread where the page element is located on |
+| `event.coordinates.pageX` | `number` | Absolute x coordinate of the click event |
+| `event.coordinates.pageY` | `number` | Absolute y coordinate of the click event |
+| `event.bookX` | `number` | Ratio of the x coordinate relative to book width |
+| `event.bookY` | `number` | Ratio of the y coordinate relative to book height |
+
 **Sample data**:
 
 ```javascript
@@ -28,6 +40,7 @@ Fired when a pageelement is "clicked".
         packagesize: 1
     },
     event: {
+        originPage: 4,
         originSpreadPages: [4,5],
         coordinates: {
             pageX: 525,
@@ -48,13 +61,19 @@ Fired when a pageelement is "clicked".
 ```
 
 ### onSpreadChanged
-Fired when the current spread changes.
+Fired whenever a paging event is registered by the Flipbook.
+
+| Property              | Type       | Description |
+| --------------------- | ---------- | ----------- |
+| `currentSpreadPages`  | `number[]` | Page numbers that are in the current spread |
+| `currentVisiblePages` | `number[]` | Page number(s) that are currently in view. This array may contain one or two numbers, depending if the current view is page- (mobile/tablet in portrait) or spread-based (desktop, or mobile/tablet in landscape). | 
 
 **Sample data:**
 
 ```javascript
 {
-    currentSpreadPages: [4,5]
+    currentSpreadPages: [4,5],
+    currentVisiblePages: [4,5]
 }
 ```
 
