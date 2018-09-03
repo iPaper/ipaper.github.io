@@ -29,7 +29,7 @@ Using this setting you can override the "Hide Navigation Bars" setting on Flipbo
 ```
 http://catalogs.company.com/Brochure/?HideNavigationBars=true
 ```
-{% include note.html content="This does not work on Flash & mobile catalogs." %}
+{% include note.html content="This does not work on mobile catalogs." %}
 
 
 ## HideStandardUI
