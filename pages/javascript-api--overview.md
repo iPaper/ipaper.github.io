@@ -32,7 +32,7 @@ The following is a complete example of a host page running on frontend.dk, with 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>iPaper JS Integration Test</title>
-        < script type="text/javascript">
+        <script type="text/javascript">
             document.domain = 'frontend.dk';
 
             function iPaperInit(api) {
