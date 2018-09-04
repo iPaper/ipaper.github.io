@@ -49,13 +49,6 @@ http://catalogs.company.com/Brochure/?Page=15
 {% include note.html content="Linking to a non-existing page number will take the user to the first page instead." %}
 
 
-## DisableScrollZoom
-Using this setting you can disable zooming when users use their mouse wheel for scrolling:
-```
-http://catalogs.company.com/Brochure/?DisableScrollZoom=true
-```
-{% include note.html content="This will not affect Flash & mobile catalogs." %}
-
 ## Affiliate_
 
 The Affiliate_ parameter that can be used for tracking ex. referrals. All query parameters starting with Affiliate_ will be appended to any external URL the iPaper contacts.
