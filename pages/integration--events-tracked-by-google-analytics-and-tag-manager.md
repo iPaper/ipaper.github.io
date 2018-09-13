@@ -59,19 +59,19 @@ For the events below we will push to the data layer in the following format
 
 #### Event overview
 | Event name | Event data |
-| -------------------------------------------- | ---- |
-| ipaperEvent_externalLinkClick                | `{	HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_popupImageClick                  | `{	HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_popupGalleryImageClick           | `{	HoverText: string, Page: number }` |
-| ipaperEvent_popupContentClick                | `{	HoverText: string, Page: number }` |
-| ipaperEvent_popupFrameClick                  | `{	HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_productAddedToCart               | `{ ID: string; Name: string; Page: number }` |
-| ipaperEvent_newsTickerExternalLinkClick      | `{ HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_videoPlay                        | `{ Url: string, VideoType: string, Page: number }` |
-| ipaperEvent_search                           | `{ Term: string }` |
-| ipaperEvent_shopCheckout                     | `{ NumberOfProducts: number, CheckoutType: string, BasketValue: number; }` |
-| ipaperEvent_leadgenPopupOpen                 | `{ Name: string, Url: string }` |
-| ipaperEvent_leadgenPopupConversion           | `{ Name: string, Url: string }` |
+| -- | -- |
+| ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
+| ipaperEvent_popupImageClick | `{ HoverText: string, Url: string, Page: number }` |
+| ipaperEvent_popupGalleryImageClick | `{ HoverText: string, Page: number }` |
+| ipaperEvent_popupContentClick | `{ HoverText: string, Page: number }` |
+| ipaperEvent_popupFrameClick | `{ HoverText: string, Url: string, Page: number }` |
+| ipaperEvent_productAddedToCart | `{ ID: string; Name: string; Page: number }` |
+| ipaperEvent_newsTickerExternalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
+| ipaperEvent_videoPlay | `{ Url: string, VideoType: string, Page: number }` |
+| ipaperEvent_search | `{ Term: string }` |
+| ipaperEvent_shopCheckout | `{ NumberOfProducts: number, CheckoutType: string, BasketValue: number; }` |
+| ipaperEvent_leadgenPopupOpen | `{ Name: string, Url: string }` |
+| ipaperEvent_leadgenPopupConversion | `{ Name: string, Url: string }` |
 | ipaperEvent_leadgenPopupConversionByUrlClick | `{ Name: string, Url: string }` |
 
 #### Example 
