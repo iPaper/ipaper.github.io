@@ -58,6 +58,7 @@ For the events below we will push to the data layer in the following format
 ```
 
 #### Event overview
+
 | Event name | Event data |
 | -- | -- |
 | ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
