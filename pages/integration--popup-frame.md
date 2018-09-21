@@ -29,6 +29,16 @@ It is possible for a frame page to close its popup. To do this, you simply have 
 parent.postMessage('closePopup', '*');
 ```
 
+If you want, you can pass additional parameters to the close command to update the basket count of the basket icon in the flipbook, as well as displaying the product name of the product that was added.
+
+```javascript
+parent.postMessage({ 
+    command: 'closePopup',
+    productName: 'White lamp', /*optional*/
+    basketCount: 3 /* optional */
+}, '*');
+```
+
 ## See also
 
 [OWASP Guide to Clickjacking defense](https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet)
