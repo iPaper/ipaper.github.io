@@ -10,7 +10,7 @@ summary: Events happen in the iframed flipbook and are emitted to the parent win
 
 Events are dispatched from the iframed flipbook to the Javascript API via `window.postMessage()`. Once the API receives this event, it then invokes a callback present in the parent window.
 
-## Publication events
+## Publication-related events
 
 ### `onPageElementClick`
 
@@ -45,7 +45,7 @@ Fired when a paging event is registered in the flipbook.
 | `currentSpreadPages`  | `number[]` | Page numbers that are in the current spread |
 | `currentVisiblePages` | `number[]` | Page number(s) that are currently in view. This array may contain one or two numbers, depending if the current view is page- (mobile/tablet in portrait) or spread-based (desktop, or mobile/tablet in landscape). | 
 
-## Shop events
+## Shop-related events
 
 ### `onBasketClick`
 

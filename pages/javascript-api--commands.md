@@ -10,7 +10,36 @@ summary: Commands are instructions issued by the parent window to the iframed fl
 
 Commands are issued from the parent window (your website) to the JavaScript API. The API then relays the command via `window.postMessage()` to the iframed flipbook.
 
-## Publication commands
+## Flipbook-related commands
+
+### `updateEventSettings`
+
+It is possible to dictate how the iframed flipbook should handle events when they have been triggered. The method accepts a single argument that is an object containing the following keys:
+
+- `onBasketClick`
+- `onItemAdd`
+- `onPageElementClick`
+
+The keys should contain a value of the followmg format: `{ preventDefault: <boolean> }`, where `<boolean>` is `true` or `false`. When `preventDefault` is set to true, the flipbook will perform the default action associated with each event:
+
+| Event                | Default action                                                                                               |
+|======================|==============================================================================================================|
+| `onBasketClick`      | Opens the shop basket                                                                                        |
+| `onItemAdd`          | Adds the item to the shop basket, triggered by any enrichment that adds a shop item (e.g. shop variant menu) |
+| `onPageElementClick` | Adds the item to the shop basket, triggered by clicking on an enrichment with shop item action               |
+
+An example use:
+
+```js
+// Disable opening of shop basket AND page element click on shop items
+iPaperAPI.updateEventSettings({
+	onBasketClick: { preventDefault: true },
+	onPageElementClick: { preventDefault: true }
+});
+```
+
+
+## Publication-related commands
 
 ### `goToPage`
 
@@ -36,7 +65,7 @@ Go to the next spread (if flipbook has a spread-based layout), or the next page 
 iPaperAPI.goToNextPage();
 ```
 
-## Shop commands
+## Shop-related commands
 
 ### `addItem`
 

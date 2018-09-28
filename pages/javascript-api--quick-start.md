@@ -4,6 +4,8 @@ title: Quick Start
 summary: The v2 JavaScript API allows for streamlined interaction with iframed flipbooks using cross-origin communications available in modern browsers.
 ---
 
+ {% include note.html content="Still using the legacy v1 API? [Refer to the migration guide](./migration-guide) on how to move to v2." %}
+
 ## Overview
 
 The v2 JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements. For this to work, you will need to include the API script on your page:
