@@ -72,7 +72,7 @@ iPaperAPI.goToNextPage();
 Programmatically adds a custom item to the basket. This method accepts a single argument, consisting of properties of the shop item entity.
 
 | Property      | Type     | Description                                |
-|===============|==========|============================================|
+| ------------- | -------- | ------------------------------------------ |
 | `title`       | `string` | Shop item title                            |
 | `description` | `string` | Shop item description                      |
 | `productID`   | `string` | Shop item product ID                       |
