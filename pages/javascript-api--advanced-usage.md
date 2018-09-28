@@ -17,6 +17,8 @@ The zero-config design of our API means that it will attempt to look for an `<if
 
     This iframed flipbook will then be accessible via the globally defined API instance `iPaperAPI`, just like in the single flipbook use case outlined in [quick-start](./quick-start).
 
+    {% include warning.html content="If `data-ipaper` attribute is not added, then the default API instance will simply select the `<iframe>` that reports back first that it contains a flipbook. We cannot guarantee that this is the first flipbook on the page." %}
+
 
 2. **Instantiate APIs for subsequent flipbooks.** Subsequent flipbooks will need to added to manually instantiated API constructor manually. The API constructor is exposed via the `_iPaperAPI` (note the preceeding underscore character), and a new instance can be created on an `<iframe>` element by passing the element as the first argument:
 
