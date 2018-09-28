@@ -1,6 +1,6 @@
 ---
-permalink: /javascript-api/overview
-title: JavaScript API overview
+permalink: /javascript-api/v1
+title: Legacy JavaScript API (v1)
 redirect_from: "/display/DOC/JavaScript+API"
 summary: The JavaScript API allows you listen for events occurings in the Flipbook, prevent default actions and invoking functions in the Flipbook.
 ---

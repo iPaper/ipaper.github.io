@@ -222,14 +222,17 @@ entries:
   - title: JavaScript API
     folderitems:
 
-    - title: Overview
-      url: /javascript-api/overview
+    - title: Quick Start
+      url: /javascript-api/quick-start
 
-    - title: Publication
-      url: /javascript-api/publication
+    - title: Commands
+      url: /javascript-api/commands
 
-    - title: Shop
-      url: /javascript-api/shop
+    - title: Events
+      url: /javascript-api/events
+
+    - title: Legacy v1 API
+      url: /javascript-api/v1
 
   - title: Technical Information
     folderitems:
