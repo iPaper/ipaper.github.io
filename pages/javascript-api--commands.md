@@ -14,19 +14,19 @@ Commands are issued from the parent window (your website) to the JavaScript API.
 
 ### `updateEventSettings`
 
-It is possible to dictate how the iframed flipbook should handle events when they have been triggered. The method accepts a single argument that is an object containing the following keys:
+It is possible to dictate how the iframed flipbook should handle events when they have been triggered. The method accepts a single argument that is an object containing the following keys, which references events that the v2 API listens to:
 
-- `onBasketClick`
-- `onItemAdd`
-- `onPageElementClick`
+- [`onBasketClick`](./events#onbasketclick)
+- [`onItemAdd`](./events#onitemadd)
+- [`onPageElementClick`](./events#onpageelementclick)
 
 The keys should contain an object of the following format: `{ preventDefault: <boolean> }`, where `<boolean>` is `true` or `false`. When `preventDefault` is set to `true`, the flipbook will perform the default action associated with each event. If set to `false`, the default action will be skipped.
 
-| Event                | Default action                                                                                               |
-| -------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `onBasketClick`      | Opens the shop basket                                                                                        |
-| `onItemAdd`          | Adds the item to the shop basket, triggered by any enrichment that adds a shop item (e.g. shop variant menu) |
-| `onPageElementClick` | Adds the item to the shop basket, triggered by clicking on an enrichment with shop item action               |
+| Event                                               | Default action taking place in the flipbook                                                                        |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| [`onBasketClick`](./events#onbasketclick)           | Opens the shop basket                                                                                              |
+| [`onItemAdd`](./events#onitemadd)                   | Adds the item to the shop basket.<br />Triggered by any enrichment that adds a shop item (e.g. shop variant menu). |
+| [`onPageElementClick`](./events#onpageelementclick) | Adds the item to the shop basket.<br />Triggered by clicking on an enrichment with shop item action.               |
 
 An example use:
 
