@@ -86,3 +86,5 @@ document.getElementById('ipaper-flipbook').addEventListener('onSpreadChange', fu
     console.log(data);
 });
 ```
+
+Refer to [**Event listeners and command triggers**](./advanced-usage#event-listeners-and-command-triggers) on the advanced usage page for a wholesome example.

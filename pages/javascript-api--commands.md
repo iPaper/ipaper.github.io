@@ -71,3 +71,5 @@ If you are accustomed to the `.trigger()` regime (such as that implemented in JQ
 ```js
 iPaperAPI.trigger('goToPage', 4);
 ```
+
+Refer to [**Event listeners and command triggers**](./advanced-usage#event-listeners-and-command-triggers) on the advanced usage page for a wholesome example.

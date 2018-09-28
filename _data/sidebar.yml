@@ -231,6 +231,9 @@ entries:
     - title: Events
       url: /javascript-api/events
 
+    - title: Advanced Usage
+      url: /javascript-api/advanced-usage
+
     - title: Legacy v1 API
       url: /javascript-api/v1
 
