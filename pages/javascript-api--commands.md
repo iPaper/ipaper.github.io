@@ -20,10 +20,10 @@ It is possible to dictate how the iframed flipbook should handle events when the
 - `onItemAdd`
 - `onPageElementClick`
 
-The keys should contain a value of the followmg format: `{ preventDefault: <boolean> }`, where `<boolean>` is `true` or `false`. When `preventDefault` is set to true, the flipbook will perform the default action associated with each event:
+The keys should contain a value of the following format: `{ preventDefault: <boolean> }`, where `<boolean>` is `true` or `false`. When `preventDefault` is set to true, the flipbook will perform the default action associated with each event:
 
 | Event                | Default action                                                                                               |
-|======================|==============================================================================================================|
+| -------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `onBasketClick`      | Opens the shop basket                                                                                        |
 | `onItemAdd`          | Adds the item to the shop basket, triggered by any enrichment that adds a shop item (e.g. shop variant menu) |
 | `onPageElementClick` | Adds the item to the shop basket, triggered by clicking on an enrichment with shop item action               |

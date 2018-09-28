@@ -57,14 +57,14 @@ Commands and events are no longer namespaced by module. In the legacy v1 API, th
 The following table maps the old commands to new ones available in v2 API:
 
 | Namespace   | Old name                    | New name                          | Note                    |
-|=============|=============================|===================================|=========================|
+| ----------- | --------------------------- | --------------------------------- | ----------------------- |
 | Publication | [`gotoPage`](./v1#gotopage) | [`goToPage`](./commands#gotopage) | Camel-casing updated    |
 | Shop        | [`addItem`](./v1#additem)   | [`addItem`](./commands#additem)   | *Event was not renamed* |
 
 The following table maps the old events to new ones available in v2 API:
 
 | Namespace   | Old name                                            | New name                                            | Note                    |
-|=============|=====================================================|=====================================================|=========================|
+| ----------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------- |
 | Publication | [`onPageElementClicked`](./v1#onpageelementclicked) | [`onPageElementClick`](./events#onpageelementclick) | Tense changed           |
 | Publication | [`onSpreadChanged`](./v1#onspreadchanged)           | [`onSpreadChange`](./events#onspreadchange)         | Tense changed           |
 | Shop        | [`addItem`](./v1#additem-1)                         | [`onItemAdd`](./events#onitemadd)                   | Nomenclature changed    |

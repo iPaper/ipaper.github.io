@@ -19,7 +19,7 @@ Fired when an enrichment/link with a shop item action is clicked.
 {% include note.html content="Current only shop items will fire this event. Click events on any other enrichments are not emitted." %}
 
 | Property                  | Type       | Description                                                                |
-|===========================|============|============================================================================|
+| ------------------------- | ---------- | -------------------------------------------------------------------------- |
 | `type`                    | `string`   | The page element type that was clicked on                                  |
 | `data`                    | `{}`       | Data associated with the page element                                      |
 | `data.title`              | `string`   | Shop item title                                                            |
@@ -41,7 +41,7 @@ Fired when an enrichment/link with a shop item action is clicked.
 Fired when a paging event is registered in the flipbook.
 
 | Property              | Type       | Description |
-|=======================|============|=============|
+| --------------------- | ---------- | ----------- |
 | `currentSpreadPages`  | `number[]` | Page numbers that are in the current spread |
 | `currentVisiblePages` | `number[]` | Page number(s) that are currently in view. This array may contain one or two numbers, depending if the current view is page- (mobile/tablet in portrait) or spread-based (desktop, or mobile/tablet in landscape). | 
 
@@ -56,7 +56,7 @@ Fired when the basket icon is clicked to reveal the basket in the sidebar. There
 Fired when a shop item has been added to the basket.
 
 | Property      | Type     | Description                                |
-|===============|==========|============================================|
+| ------------- | -------- | ------------------------------------------ |
 | `title`       | `string` | Shop item title                            |
 | `description` | `string` | Shop item description                      |
 | `productID`   | `string` | Shop item product ID                       |
