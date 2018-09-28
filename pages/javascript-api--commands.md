@@ -20,7 +20,7 @@ It is possible to dictate how the iframed flipbook should handle events when the
 - `onItemAdd`
 - `onPageElementClick`
 
-The keys should contain a value of the following format: `{ preventDefault: <boolean> }`, where `<boolean>` is `true` or `false`. When `preventDefault` is set to true, the flipbook will perform the default action associated with each event:
+The keys should contain an object of the following format: `{ preventDefault: <boolean> }`, where `<boolean>` is `true` or `false`. When `preventDefault` is set to `true`, the flipbook will perform the default action associated with each event. If set to `false`, the default action will be skipped.
 
 | Event                | Default action                                                                                               |
 | -------------------- | ------------------------------------------------------------------------------------------------------------ |
