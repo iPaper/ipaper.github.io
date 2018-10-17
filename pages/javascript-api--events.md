@@ -24,10 +24,10 @@ Fired when an enrichment/link with a shop item action is clicked.
 | `data`                    | `{}`       | Data associated with the page element                                      |
 | `data.title`              | `string`   | Shop item title                                                            |
 | `data.description`        | `string`   | Shop item description                                                      |
-| `data.productID`          | `string`   | Shop item product ID                                                       |
+| `data.productId`          | `string`   | Shop item product ID                                                       |
 | `data.price`              | `number`   | Shop item price                                                            |
-| `data.amountselection`    | `boolean`  | If users are allowed to manually specify an amount before adding to basket |
-| `data.packagesize`        | `number`   | Number of items per package                                                |
+| `data.amountSelection`    | `boolean`  | If users are allowed to manually specify an amount before adding to basket |
+| `data.packageSize`        | `number`   | Number of items per package                                                |
 | `event`                   | `{}`       | Event data associated with the click event                                 |
 | `event.originPage`        | `number`   | Page number on which the page element is located on                        |
 | `event.originSpreadPages` | `number[]` | Page numbers on which the spread where the page element is located on      |
@@ -59,11 +59,11 @@ Fired when a shop item has been added to the basket.
 | ------------- | -------- | ------------------------------------------ |
 | `title`       | `string` | Shop item title                            |
 | `description` | `string` | Shop item description                      |
-| `productID`   | `string` | Shop item product ID                       |
+| `productId`   | `string` | Shop item product ID                       |
 | `price`       | `number` | Shop item price                            |
 | `originPage`  | `number` | Page number where the shop item is located |
 | `quantity`    | `number` | Number of items added                      |
-| `packagesize` | `number` | Number of items per package                |
+| `packageSize` | `number` | Number of items per package                |
 
 ## Advanced use
 

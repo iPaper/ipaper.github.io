@@ -102,7 +102,37 @@ function iPaperInit() {
 }
 ```
 
-## Step 4: Update event settings instead of returning from dispatchers
+## Step 4: Ensure that you are using updated camel-cased keys when parsing payloads
+
+If you have code that depends on payload(s) returned from the legacy v1 API, note that we have now standardized casing for all keys in payload objects:
+
+### Adding an item programmatically to the shop basket (command)
+
+Used by [`addItem` (v1)](./v1/#additem) and [`addItem` (v2)](./events#onitemadd).
+
+| Old property name | New property name | Note                           |
+| ----------------- | ----------------- |------------------------------- |
+| `productID`       | `productId`       | "ID" has been changed to "Id"  |
+
+### When an item has been added to the shop basket (event)
+
+Used by [`addItem` (v1)](./v1/#additem) and [`onItemAdd` (v2)](./events#onitemadd).
+
+| Old property name | New property name | Note                           |
+| ----------------- | ----------------- |------------------------------- |
+| `productID`       | `productId`       | "ID" has been changed to "Id"  |
+
+### When a page element is clicked in the iframed flipbook (event)
+
+Used by [`onPageElementClicked` (v1)](./v1/#onpageelementclicked) and [`onPageElementClick` (v2)](./events#onpageelementclick).
+
+| Old property name      | New property name      | Note                                                                |
+| ---------------------- | ---------------------- |-------------------------------------------------------------------- |
+| `data.productID`       | `data.productId`       | "ID" has been changed to "Id"                                       |
+| `data.amountselection` | `data.amountSelection` | "amountselection" has been changed to camel-cased "amountSelection" |
+| `data.packagesize`     | `data.packageSize`     | "packagesize" has been changed to camel-cased "packageSize"         |
+
+## Step 5: Update event settings instead of returning from dispatchers
 
 If you have used the legacy v1 API to modify event behaviours in the iframed flipbook, note that the protocol has now changed. In the legacy v1 API, these settings are actually concatenated if multiple event handlers are defined, resulting in potentially confusing behavior. To circumvent this issue, we have added a new command in v2 API that allows you to explicitly define default behaviors of flipbook events: [`updateEventSettings`](./commands#updateeveentsettings).
 

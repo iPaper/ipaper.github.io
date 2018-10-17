@@ -96,7 +96,9 @@ api.Shop.addItem({
     title: 'Product title',
     description: 'Product description',
     price: 29.95,
-    productID: 'Product ID'
+    productID: 'Product ID',
+    originPage: 6,
+    quantity: 3
 });
 ```
 
@@ -115,17 +117,23 @@ These are events that you can listen for using the addEventListener() method on 
 Fired when a pageelement is "clicked".
 {% include note.html content="Current only shopitems will fire this event!" %}
 
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `type`  | `string` | The page element type that was clicked on |
-| `data` | `{}` | Data associated with the page element |
-| `event` | `{}` | Event data associated with the click event |
-| `event.originPage` | `number` | Page number on which the page element is located on |
-| `event.originSpreadPages` | `number[]` | Page numbers on which the spread where the page element is located on |
-| `event.coordinates.pageX` | `number` | Absolute x coordinate of the click event |
-| `event.coordinates.pageY` | `number` | Absolute y coordinate of the click event |
-| `event.bookX` | `number` | Ratio of the x coordinate relative to book width |
-| `event.bookY` | `number` | Ratio of the y coordinate relative to book height |
+| Property                  | Type       | Description                                                                |
+| ------------------------- | ---------- | -------------------------------------------------------------------------- |
+| `type`                    | `string`   | The page element type that was clicked on                                  |
+| `data`                    | `{}`       | Data associated with the page element                                      |
+| `data.title`              | `string`   | Shop item title                                                            |
+| `data.description`        | `string`   | Shop item description                                                      |
+| `data.productID`          | `string`   | Shop item product ID                                                       |
+| `data.price`              | `number`   | Shop item price                                                            |
+| `data.amountselection`    | `boolean`  | If users are allowed to manually specify an amount before adding to basket |
+| `data.packagesize`        | `number`   | Number of items per package                                                |
+| `event`                   | `{}`       | Event data associated with the click event                                 |
+| `event.originPage`        | `number`   | Page number on which the page element is located on                        |
+| `event.originSpreadPages` | `number[]` | Page numbers on which the spread where the page element is located on      |
+| `event.coordinates.pageX` | `number`   | Absolute x coordinate of the click event                                   |
+| `event.coordinates.pageY` | `number`   | Absolute y coordinate of the click event                                   |
+| `event.bookX`             | `number`   | Ratio of the x coordinate relative to book width                           |
+| `event.bookY`             | `number`   | Ratio of the y coordinate relative to book height                          |
 
 **Sample data**:
 
@@ -202,17 +210,15 @@ These are events that you can listen for using the addEventListener() method on 
 
 Fired when a shop item is added to the basket.
 
-**Sample data**:
-
-```javascript
-{
-    title: 'My product',
-    description: 'Product description',
-    productID: 'PROD-25B',
-    price: '29.95',
-    originPage: 6
-}
-```
+| Property      | Type     | Description                                |
+| ------------- | -------- | ------------------------------------------ |
+| `title`       | `string` | Shop item title                            |
+| `description` | `string` | Shop item description                      |
+| `productID`   | `string` | Shop item product ID                       |
+| `price`       | `number` | Shop item price                            |
+| `originPage`  | `number` | Page number where the shop item is located |
+| `quantity`    | `number` | Number of items added                      |
+| `packageSize` | `number` | Number of items per package                |
 
 **Return values**:
 
