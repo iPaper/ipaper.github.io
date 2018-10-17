@@ -70,12 +70,12 @@ The zero-config design of our API means that it will attempt to look for an `<if
 
 ## Event listeners and command triggers
 
-If you are more accustomed to working with event listeners and command triggers, and do not want to use magic callbacks and commands that are avaialble via the API instance, you can simply:
+If you are more accustomed to working with event listeners and command triggers, and do not want to use magic callbacks and commands that are available via the API instance, you can simply:
 
 - add event listeners to the `<iframe>` element, and/or
 - trigger commands using `.trigger(<commandName>, <argument>)`
 
-The event name that the event listeners should check with are specified in [events](./events), while command names are specified in [commands](./commands). Mismatched event/command names will simple do nothing.
+The event name that the event listeners should check with are specified in [events](./events), while command names are specified in [commands](./commands). Mismatched event/command names will simply do nothing.
 
 ```html
 <!doctype html>
