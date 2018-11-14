@@ -8,7 +8,9 @@ summary: The v2 JavaScript API allows for streamlined interaction with iframed f
 
 ## Overview
 
-The v2 iPaper JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements. For this to work, you will need to include the API script on your page. [Please refer to this help article](#) on how to obtain the iPaper API script from the admin.
+The v2 iPaper JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements.
+
+For this to work, you will need to include the API script on your page. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper API script from the admin.
 
 The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
 
