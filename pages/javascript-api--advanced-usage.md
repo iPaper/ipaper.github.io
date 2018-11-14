@@ -7,7 +7,7 @@ title: Advanced Usage
 
 In use cases where multiple flipbooks are to be embedded on the same page, small changes to the markup is required so that each individual instances will reference the correct `<iframe>` element without conflict.
 
-The zero-config design of our API means that it will attempt to look for an `<iframe>` containing a flipbook automatically without any additional configuration from the user and create a new instance from said element. When multiple flipbooks are present on the same page, this strategy may not work due to race conditions. Therefore, two actions will be required:
+The minimal config design of our API means that it will attempt to look for an `<iframe>` containing a flipbook automatically without any additional configuration from the user and create a new instance from said element. When multiple flipbooks are present on the same page, this strategy may not work due to race conditions. Therefore, two actions will be required:
 
 1. **Identify the default flipbook.** The default flipbook (which will be accessible by the `iPaperAPI` variable) using the HTML5 data- attribute, `data-ipaper`:
 
@@ -17,7 +17,7 @@ The zero-config design of our API means that it will attempt to look for an `<if
 
     This iframed flipbook will then be accessible via the globally defined API instance `iPaperAPI`, just like in the single flipbook use case outlined in [quick-start](./quick-start).
 
-    {% include warning.html content="If `data-ipaper` attribute is not added, then the default API instance will simply select the `<iframe>` that reports back first that it contains a flipbook. We cannot guarantee that this is the first flipbook on the page." %}
+    {% include warning.html content="If `data-ipaper` attribute is not added, then the default API instance will simply select the **first** `<iframe>` containing a flipbook that reports back, presenting a race condition. **We cannot guarantee that this is always the first visible flipbook on the page.**" %}
 
 
 2. **Instantiate APIs for subsequent flipbooks.** Subsequent flipbooks will need to added to manually instantiated API constructor manually. The API constructor is exposed via the `_iPaperAPI` (note the preceeding underscore character), and a new instance can be created on an `<iframe>` element by passing the element as the first argument:
@@ -34,12 +34,17 @@ The zero-config design of our API means that it will attempt to look for an `<if
 <html>
 <head>
     <title>Multiple iframed iPapers</title>
-    <script type="text/javascript">
-        (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
-        r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
-        r.id=a;r.async=1;r.src=p+'?t='+(+new Date)})
-        (document,'script','ipaper-embeds','https://viewer.ipaper.localhost/dist/api.bundle.js');
+
+    <!-- Start of async iPaper API code -->
+    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information -->
+    <script>
+    (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
+    r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
+    r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
+    (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
+    <!-- End of async iPaper API code -->
+
     <script>
         functon iPaperInit() {
             // Listen to event from the default iframe flipbook
@@ -82,12 +87,17 @@ The event name that the event listeners should check with are specified in [even
 <html>
 <head>
     <title>Example iPaper JS API use</title>
-    <script type="text/javascript">
-        (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
-        r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
-        r.id=a;r.async=1;r.src=p+'?t='+(+new Date)})
-        (document,'script','ipaper-embeds','https://viewer.ipaper.localhost/dist/api.bundle.js');
+
+    <!-- Start of async iPaper API code -->
+    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information -->
+    <script>
+    (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
+    r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
+    r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
+    (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
+    <!-- End of async iPaper API code -->
+    
     <script>
         functon iPaperInit() {
             // Listen to the `onSpreadChange` event emitted from the <iframe> element

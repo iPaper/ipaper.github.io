@@ -8,16 +8,19 @@ summary: Migration guide from legacy v1 API to the new v2 API
 
 The legacy v1 API requires that the parent window and the iframed flipbook share the same origin: this is because strict CORS policy only allows iframed pages to access properties in the parent window if they belong to the same origin. v2 API circumvents this issue by using the modern `window.postMessage()` API.
 
-Add the following script to either the `<head>` or `<body>` element in the parent window. The precise placement does not matter, because it asynchronously loads the API:
+Add the following script to either the `<head>` or `<body>` element in the parent window. The precise placement does not matter, because it asynchronously loads the API. Please refer to this help article on how to obtain the iPaper API script.
 
-<!-- Note: this embed script is still provisional, depending on the decision in dev on where the script should be hosted and how it should be served -->
+The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
+
 ```html
-<script type="text/javascript">
-    (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
-    r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
-    r.id=a;r.async=1;r.src=p+'?t='+(+new Date)})
-    (document,'script','ipaper-embeds','https://viewer.ipaper.localhost/dist/api.bundle.js');
+<!-- Start of async iPaper API code -->
+<script>
+(function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
+r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
+r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
+(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
 </script>
+<!-- End of async iPaper API code -->
 ```
 
 ## Step 2: Update the setup of your API

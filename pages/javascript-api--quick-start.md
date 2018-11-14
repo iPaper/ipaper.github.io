@@ -8,25 +8,30 @@ summary: The v2 JavaScript API allows for streamlined interaction with iframed f
 
 ## Overview
 
-The v2 JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements. For this to work, you will need to include the API script on your page:
+The v2 iPaper JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements. For this to work, you will need to include the API script on your page. [Please refer to this help article](#) on how to obtain the iPaper API script from the admin.
 
-<!-- Note: this embed script is still provisional, depending on the decision in dev on where the script should be hosted and how it should be served -->
+The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
+
 ```html
-<script type="text/javascript">
-    (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
-    r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
-    r.id=a;r.async=1;r.src=p+'?t='+(+new Date)})
-    (document,'script','ipaper-embeds','https://viewer.ipaper.localhost/dist/api.bundle.js');
+<!-- Start of async iPaper API code -->
+<script>
+(function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
+r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
+r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
+(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
 </script>
+<!-- End of async iPaper API code -->
 ```
 
-## Zero-config setup
+## Minimal config setup
 
-Most of our customers use our API to interact with a single instance of a flipbook on their page. A frictionless zero-config setup is therefore implemented, meaning that for use-cases of single flipbooks iframed on a single page, no additional configuation is required and you can start interacting with the iframed flipbook immediately. The setup will automatically identify the first iframed flipbook on the page, which can have a minimal markup as such:
+Most of our customers use our API to interact with a single instance of a flipbook on their page. A frictionless, minimal config setup is therefore implemented&mdash;meaning that for use-cases of single flipbooks iframed on a single page, no additional configuation or markup changes are required. The setup will automatically identify the first iframed flipbook on the page, which can have a minimal markup as such:
 
 ```html
 <iframe src="https://demo.ipaper.io"></iframe>
 ```
+
+ {% include note.html content="If you are using multiple flipbooks, additional configuration is required: please refer to the [**Multiple flipbooks**](#multiple-flipbooks) section for further information." %}
 
 ## Interacting with iframed flipbook
 
@@ -37,12 +42,17 @@ The embedded script will call the `iPaperInit()` method that is defined globally
 <html>
 <head>
     <title>Example iPaper JS API use</title>
-    <script type="text/javascript">
-        (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
-        r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
-        r.id=a;r.async=1;r.src=p+'?t='+(+new Date)})
-        (document,'script','ipaper-embeds','https://viewer.ipaper.localhost/dist/api.bundle.js');
+
+    <!-- Start of async iPaper API code -->
+    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information -->
+    <script>
+    (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
+    r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
+    r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
+    (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
+    <!-- End of async iPaper API code -->
+    
     <script>
         functon iPaperInit() {
             // Define a callback for the `onSpreadChange` event
@@ -72,4 +82,4 @@ The `iPaperAPI` object exposes several methods that can be grouped into two cate
 
 ## Multiple flipbooks
 
-In the event that multiple flipbooks are to be embedded via `<iframe>` on the same page, some workarounds are required. Refer to the [**Multiple Flipbooks**](./advanced-usage#multiple-flipbooks) section for further implementation details.
+In the event that multiple flipbooks are to be embedded via `<iframe>` on the same page, some additional configurations are required. Refer to the [**Multiple Flipbooks**](./advanced-usage#multiple-flipbooks) section for further implementation details.
