@@ -25,6 +25,8 @@ port: 4005
 exclude:
   - .idea/
   - .gitignore
+  - vendor/
+  - _raw/
 
 feedback_subject_line: iPaper Documentation
 feedback_email: support@ipaper.io
