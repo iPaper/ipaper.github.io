@@ -216,6 +216,9 @@ entries:
     - title: Shop Integration
       url: /integration/shop-integration
 
+    - title: Product Details View - Getting started
+      url: /integration/product-details-view-getting-started
+
     - title: Events tracked in Google Analytics / GTM
       url: /integration/events-tracked-by-google-analytics-and-tag-manager
 
