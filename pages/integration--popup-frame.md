@@ -39,6 +39,14 @@ parent.postMessage({
 }, '*');
 ```
 
+## Workarounds for occasional incorrect rendering on iOS browsers
+
+Due to the way how iOS browsers (iOS Safari and any other third-party browsers, since they all use the WebKit rendering engine) renders `<iframe>` elements, there is a possibility that certain pages, when embedded within an `<iframe>` and viewed on iOS browsers, will appear too large and hence overflow from its original bounds.
+
+In iOS browsers, `<iframe>` elements cannot be restricted by size: declaring explicit width and height in CSS does not work. The browser will instead attempt to size the `<iframe>` so that all its content becomes visible. This has proven to be problematic for a small subset of pages, especially those containing wide content that are dynamically resized by JavaScript.
+
+We recommend adding `max-width: 100vw` to the body element of the embedded page, which will force the `<iframe>` to be aware of the size of its wrapping container. It effectively places a constraint on the maximum permissible width for the page.
+
 ## See also
 
 [OWASP Guide to Clickjacking defense](https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet)
