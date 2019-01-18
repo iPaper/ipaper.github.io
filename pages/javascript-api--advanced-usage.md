@@ -20,7 +20,7 @@ The minimal config design of our API means that it will attempt to look for an `
     {% include warning.html content="If `data-ipaper` attribute is not added, then the default API instance will simply select the **first** `<iframe>` containing a flipbook that reports back, presenting a race condition. **We cannot guarantee that this is always the first visible flipbook on the page.**" %}
 
 
-2. **Instantiate APIs for subsequent flipbooks.** Subsequent flipbooks will need to added to manually instantiated API constructor manually. The API constructor is exposed via the `_iPaperAPI` (note the preceeding underscore character), and a new instance can be created on an `<iframe>` element by passing the element as the first argument:
+2. **Instantiate APIs for subsequent flipbooks.** Subsequent flipbooks will need to have their APIs manually instantiated. The constructor is exposed via the `_iPaperAPI` (note the preceeding underscore character), and a new instance can be created on an `<iframe>` element by passing the element as the first argument:
 
     ```js
     var anotherIPaper = document.getElementById('another-flipbook')
@@ -36,7 +36,7 @@ The minimal config design of our API means that it will attempt to look for an `
     <title>Multiple iframed iPapers</title>
 
     <!-- Start of async iPaper API code -->
-    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information -->
+    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
     r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
@@ -89,7 +89,7 @@ The event name that the event listeners should check with are specified in [even
     <title>Example iPaper JS API use</title>
 
     <!-- Start of async iPaper API code -->
-    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information -->
+    <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
     r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
