@@ -13,7 +13,7 @@ Minipapers is a method for which to easily embed a miniaturized version of a fli
 * **Spread**&mdash;displays a spread on the flipbook
 * **Page slider**&mdash;displays an animated slider showing pages and spreads of a pre-defined page range
 
-Once integrated on your website, clicking a minipaper will redirect the user to the actual Fflipbook being displayed.
+Once integrated on your website, clicking on a minipaper will redirect the user to the actual flipbook being displayed.
 
 ## Redirecting to an alternative URL
 
