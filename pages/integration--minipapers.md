@@ -6,45 +6,54 @@ redirect_from: "/display/DOC/Minipapers"
 
 ## Description
 
-Minipapers is a method for which to easily integrate and display a miniaturized version of an iPaper on your website, by pasting an HTML iframe tag.
+Minipapers is a method for which to easily embed a miniaturized version of a flipbook on your website. The following view options are available:
+
+* **Perspective**&mdash;displays a three-dimensional flipbook
+* **Single page**&mdash;displays a single page on the flipbook
+* **Spread**&mdash;displays a spread on the flipbook
+* **Page slider**&mdash;displays an animated slider showing pages and spreads of a pre-defined page range
+
+Once integrated on your website, clicking on a minipaper will redirect the user to the actual flipbook being displayed.
+
+## Redirecting to an alternative URL
+
+It is possible to override the default link action and target when a user clicks on the embedded minipaper. This behavior can be configured by appending relevant query strings to the URL found in the `src` attribute of the `<iframe>` element in the embed code. For example, given the following embed snippet:
 
 ```html
-<iframe style="width:220px; height:160px" src="http://wwww.example.com/MyPaper/MiniPaperFrame.aspx?PA=2" allowtransparency="true" scrolling="no" frameborder="0"></iframe>
+<!-- iPaper snippet start -->
+<iframe
+    style="display: block;"
+    src="<MinipaperEmbedUrl>"
+    scrolling="no"
+    frameborder="0"></iframe>
+<!-- iPaper snippet end -->
 ```
 
-## Types
+The URL to be modified will be the string `<MinipaperEmbedUrl>`. The following query strings are supported:
 
-For Flipbook, there are 3 diffrent kinds of minipapers:
-* **Static cover** - Displays a static image of a given page from the iPaper
-* **Page flipper** - Displays a animation of the iPaper flipping automaticaly between pages
-* **Maxi spread** - Displays a stylized version of two conjoining pages from the iPaper.
+| Key              | Accepted values                      | Default value                  | Description |
+|==================|======================================|================================| ============|
+| `targetUrl`      | `string`                             | The public URL of the flipbook | Changes the URL that users are redirected to when an embedded minipaper is clicked on. The URL must be fully qualified, starting with `http://` or `https://`, and be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding).<br /><br />Example:<br />`<MinipaperEmbedUrl>?targetUrl=https%3A%2F%2Fipaper.io%2F` |
+| `target`         | `_self`, `_blank`, `_parent`, `_top` | `_blank`                       | Changes the behavior of the anchor element that determines where to display the linked URL. [Read more about the specification for `target` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target).<br /><br />Example:<br />`<MinipaperEmbedUrl>?target=_self` |
 
-For Flipbook folders, there are 2 kinds of minipapers:
-* **Random stack** - Displays a random stack of iPapers, with the frontpage for each iPaper within the category
-* **Cover flow** - Displays the frontpages of each iPaper wihtin the category lined up next to each other, with the ability to browser through them
+If you want multiple query string keys to be attached to the URL, you can separate them using the `&` character, i.e.: `<MinipaperEmbedUrl>?targetUrl=<Url>&target=<Target>`. The order of the queries does not matter.
 
-Once integrated on your website, clicking a Minipaper will redirect the user to the actual Flipbook being displayed.
+{% include note.html content="As per specification, **all values in query strings must be properly [URL-encoded](https://en.wikipedia.org/wiki/Percent-encoding)**. There are several online tools for encoding text for use in query strings, for example: [https://meyerweb.com/eric/tools/dencoder/](https://meyerweb.com/eric/tools/dencoder/)." %}
 
-## Minipapers in responsive design
+## Preserving aspect ratio
+
+If you want to preserve the aspect ratio of the embedded minipaper, so that it is scaled proportionately in a page with responsive design, we suggest using the [`padding-bottom` trick](https://css-tricks.com/aspect-ratio-boxes/), which will force an aspect ratio of your choice on the surrounding container. The element displaying the minipaper&mdash;the `<iframe>` element&mdash;should then be positioned absolutely relative to this container.
+
+For example, if a 2:1 ratio is desired for a container, `padding-bottom: 50%` should be used:
 
 ```html
 <div style="position: relative; width: 100%; padding-bottom: 50%;">
-    <iframe style="display: block; position: absolute; top:0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%;" scrolling="no" frameborder="0" src="................"></iframe>
+    <!-- iPaper snippet start -->
+    <iframe
+        style="display: block; width: 100%; height: 100%;"
+        src="<MinipaperEmbedUrl>"
+        scrolling="no"
+        frameborder="0"></iframe>
+    <!-- iPaper snippet end -->
 </div>
-```
-
-## Custom redirection
-
-It is possible to override the target of redirection when a users clicks the iPaper. To achieve this, the HTML used for integration must be slightly modified, by appending a TargetUrl query parameter to the src attribute of the iframe.
-
-
-The Minipaper iframe HTML code has a src attribute that specifies the location of the iPaper. To specify custom redirection, ```&TargetUrl=[URL]``` must be appended at the end of the ```src``` value, where ```[URL]``` is replaced for an actual URL. The specified URL must be fully qualified, starting with ```http://``` (or ```https://```), and must also be URL-encoded. There are several online tools for encoding text to URL-format; here's one of them: [http://meyerweb.com/eric/tools/dencoder/](http://meyerweb.com/eric/tools/dencoder/)
-
-### Example
-
-If you want your Minipaper to redirect to [http://google.com](http://google.com), the ```TargetUrl``` parameter should be: ```&TargetUrl=http%3A%2F%2Fgoogle.com```
-And in the context of the iframe code, the result would be:
-
-```html
-<iframe style="width:220px; height:160px" src="http://wwww.example.com/MyPaper/MiniPaperFrame.aspx?PA=2&TargetUrl=http%3A%2F%2Fgoogle.com" allowtransparency="true" scrolling="no" frameborder="0"></iframe>
 ```
