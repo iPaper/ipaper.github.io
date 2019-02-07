@@ -14,37 +14,6 @@ entries:
 
       subfolders:
 
-      - title: Client
-        url: /backend-api/client
-        subfolderitems:
-
-        - title: AddModule
-          url: /backend-api/client/add-module
-
-        - title: CreateBasicClient
-          url: /backend-api/client/create-basic-client
-
-        - title: CreateBusinessClient
-          url: /backend-api/client/create-business-client
-
-        - title: CreateCenturyClient
-          url: /backend-api/client/create-century-client
-
-        - title: CreatePremiumClient
-          url: /backend-api/client/create-premium-client
-
-        - title: GetClientPaperIDByName
-          url: /backend-api/client/get-client-paper-id-by-name
-
-      - title: Crossdomain
-        subfolderitems:
-
-        - title: GetCdnHttpCrossdomainUrl
-          url: /backend-api/crossdomain/get-cdn-http-crossdomain-url
-
-        - title: GetCdnHttpsCrossdomainUrl
-          url: /backend-api/crossdomain/get-cdn-https-crossdomain-url
-
       - title: Custom Field
         subfolderitems:
 
