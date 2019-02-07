@@ -49,22 +49,6 @@ http://catalogs.company.com/Brochure/?Page=15
 {% include note.html content="Linking to a non-existing page number will take the user to the first page instead." %}
 
 
-## Affiliate_
-
-The Affiliate_ parameter that can be used for tracking ex. referrals. All query parameters starting with Affiliate_ will be appended to any external URL the iPaper contacts.
-```
-http://catalogs.company.com/Brochure/?Affiliate_X=Y
-```
-
-The value of X and Y are completely up to you, as they will not affect the actual Flipbook, but it will allow you to track which Flipbooks are requesting specific URLs on your site.
-Consider the following example scenario:
-
-* You email your customers with a link for a Flipbook. Every link becomes unique for each user, with the Affiliate_ parameter, such as http://catalogs.company.com/Brochure/?Affiliate_UserID=user@email.net
-* The user opens the link to the Flipbook, and a some point clicks a link that points to http://company.com/Products/
-* The Affiliate_ parameter is appended (with the "Affiliate_" part omitted), so that the actual URL opened is http://company.com/Products/?UserID=user@email.net
-* On the given URL, you can now identify which user actually opened the link, by examining the "UserID" parameter.
-
-
 ## Polite load
 
 Polite loading delays the loading of Flipbook pages until the page has finished loading. The setup requires that a small JavaScript is loaded into the header of your site.
