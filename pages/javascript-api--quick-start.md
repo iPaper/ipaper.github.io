@@ -56,7 +56,7 @@ The embedded script will call the `iPaperInit()` method that is defined globally
     <!-- End of async iPaper API code -->
     
     <script>
-        functon iPaperInit() {
+        function iPaperInit() {
             // Define a callback for the `onSpreadChange` event
             // `iPaperAPI` is the default first instance of the API
             iPaperAPI.onSpreadChange = function(data) {
