@@ -15,8 +15,9 @@ We'll also track various **Events** across our flipbooks. Take a look at the lis
 > **NOTE:** All events are tracked to the **iPaper events** category
 
 | Action | Label | Comment |
-| ------------- | ------------- | -- |
+| ------ | ----- | ------- |
 | External Link Click | HoverText: {linkHoverText} \| Url: {externalUrl} \| Page: {pageNumber} |
+| PDF Download | n.a. | n.a. |
 | Popup Image Click | HoverText: {linkHoverText} \| Url: {imageUrl} \| Page: {pageNumber} |
 | Popup Image Gallery Click | HoverText: {linkHoverText} \| Page: {pageNumber} |
 | Popup Content Click | HoverText: {linkHoverText} \| Page: {pageNumber} |
