@@ -63,7 +63,13 @@ Depends on how a page&rsquo;s width is set in the stylesheet, there is a possibi
 
 In iOS browsers, `<iframe>` elements cannot be restricted by size: declaring explicit width and height in CSS does not work. The browser will instead attempt to size the `<iframe>` so that all its content becomes visible. This has proven to be problematic for a small subset of pages, especially those containing wide content that are dynamically resized by JavaScript.
 
-We recommend adding `max-width: 100vw` to the body element of the embedded page, which will force the `<iframe>` to be aware of the size of its wrapping container. It effectively places a constraint on the maximum permissible width for the page.
+We recommend adding `max-width: 100vw` to the body element of the embedded page, which will force the `<iframe>` to be aware of the size of its wrapping container. It effectively places a constraint on the maximum permissible width for the page:
+
+```css
+body {
+    width: 100vw;
+}
+```
 
 ## See also
 
