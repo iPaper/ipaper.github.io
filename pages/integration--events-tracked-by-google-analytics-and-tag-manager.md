@@ -99,9 +99,28 @@ window.dataLayer.push({
 ### Extras
 Aside from the DataLayers above we also push `PageElementClicked`, but it's only triggered for  the **internal** & **external** linktype.
 
-| Event name         | Data | Comment |
-| ------------------ | ---- | ------- |
-| PageElementClicked | `{ type: 'internal' | 'external', data: { url: String, pagenumber: String } }`     | Triggered on **internal** & **external** linktype |
+<table>
+	<thead>
+		<tr>
+			<th>Event name</th>
+			<th>Data</th>
+			<th>Comment</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>PageElementClicked</td>
+			<td><pre><code>{
+  type: 'internal' | 'external',
+  data: {
+    url: String,
+    pagenumber: String
+  }
+}</code></pre></td>
+			<td>Triggered on <strong>internal</strong> & <strong>external</strong> linktype</td>
+		</tr>
+	</tbody>
+</table>
 
 The following features have also been enabled for GTM:
 
