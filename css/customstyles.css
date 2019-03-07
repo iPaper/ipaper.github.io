@@ -195,6 +195,13 @@ table tr td {
     hyphens: auto;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table-wrapper table {
+    margin-bottom: 0;
+}
 
 p.external a {
     text-align:right;

@@ -60,6 +60,8 @@ For the events below we will push to the data layer in the following format
 
 #### Event overview
 
+<div class="table-wrapper" markdown="block">
+
 | Event name | Event data |
 | -- | -- |
 | ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
@@ -74,7 +76,9 @@ For the events below we will push to the data layer in the following format
 | ipaperEvent_shopCheckout | `{ NumberOfProducts: number, CheckoutType: string, BasketValue: number; }` |
 | ipaperEvent_leadgenPopupOpen | `{ Name: string, Url: string }` |
 | ipaperEvent_leadgenPopupConversion | `{ Name: string, Url: string }` |
-| ipaperEvent_leadgenPopupConversionByUrlClick | `{ Name: string, Url: string }` |
+| ipaperEvent_leadgenPopupConversionByUrlClick | `{ Name: string, Url: string }` |'
+
+</div>
 
 #### Example 
 An example of a DataLayer push for the event `ipaperEvent_externalLinkClick` could look like this:
