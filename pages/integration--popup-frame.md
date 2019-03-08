@@ -39,13 +39,37 @@ parent.postMessage({
 }, '*');
 ```
 
-## Workarounds for occasional incorrect rendering on iOS browsers
+## Workarounds for iOS browser caveats
 
-Due to the way how iOS browsers (iOS Safari and any other third-party browsers, since they all use the WebKit rendering engine) renders `<iframe>` elements, there is a possibility that certain pages, when embedded within an `<iframe>` and viewed on iOS browsers, will appear too large and hence overflow from its original bounds.
+These workarounds apply to all browsers on iOS (namely Safari and any other third-party browsers), because they all use the same WebKit rendering engine on iOS.
+
+### Iframed page jumping to top
+
+Certain pages may occasionally jump to the top when iframed within a popup frame. It is often triggered by repaint events in the browser that involve changing the height of the page, as well as on pages that are excessively large. It is probably due to the iOS browser not being able to calculate the actual height of the `<iframe>` element properly.
+
+To circumvent this issue, we recommend adding the following styles to the stylesheet of the page that is embedded in the popup frame:
+
+```css
+html, body {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+```
+
+### Page in popup frame appears too wide
+
+Depends on how a page&rsquo;s width is set in the stylesheet, there is a possibility that certain pages, when embedded within an `<iframe>` and viewed on iOS browsers, will appear too large and hence overflow from its original bounds.
 
 In iOS browsers, `<iframe>` elements cannot be restricted by size: declaring explicit width and height in CSS does not work. The browser will instead attempt to size the `<iframe>` so that all its content becomes visible. This has proven to be problematic for a small subset of pages, especially those containing wide content that are dynamically resized by JavaScript.
 
-We recommend adding `max-width: 100vw` to the body element of the embedded page, which will force the `<iframe>` to be aware of the size of its wrapping container. It effectively places a constraint on the maximum permissible width for the page.
+We recommend adding `max-width: 100vw` to the body element of the embedded page, which will force the `<iframe>` to be aware of the size of its wrapping container. It effectively places a constraint on the maximum permissible width for the page:
+
+```css
+body {
+    width: 100vw;
+}
+```
 
 ## See also
 
