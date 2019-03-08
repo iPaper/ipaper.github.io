@@ -195,6 +195,23 @@ table tr td {
     hyphens: auto;
 }
 
+table td pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: pre;
+}
+
+table td pre code {
+    white-space: inherit;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table-wrapper table {
+    margin-bottom: 0;
+}
 
 p.external a {
     text-align:right;

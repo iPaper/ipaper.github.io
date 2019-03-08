@@ -60,6 +60,8 @@ For the events below we will push to the data layer in the following format
 
 #### Event overview
 
+<div class="table-wrapper" markdown="block">
+
 | Event name | Event data |
 | -- | -- |
 | ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
@@ -74,7 +76,9 @@ For the events below we will push to the data layer in the following format
 | ipaperEvent_shopCheckout | `{ NumberOfProducts: number, CheckoutType: string, BasketValue: number; }` |
 | ipaperEvent_leadgenPopupOpen | `{ Name: string, Url: string }` |
 | ipaperEvent_leadgenPopupConversion | `{ Name: string, Url: string }` |
-| ipaperEvent_leadgenPopupConversionByUrlClick | `{ Name: string, Url: string }` |
+| ipaperEvent_leadgenPopupConversionByUrlClick | `{ Name: string, Url: string }` |'
+
+</div>
 
 #### Example 
 An example of a DataLayer push for the event `ipaperEvent_externalLinkClick` could look like this:
@@ -95,9 +99,28 @@ window.dataLayer.push({
 ### Extras
 Aside from the DataLayers above we also push `PageElementClicked`, but it's only triggered for  the **internal** & **external** linktype.
 
-| Event name         | Data | Comment |
-| ------------------ | ---- | ------- |
-| PageElementClicked | `{ type: 'internal' | 'external', data: { url: String, pagenumber: String } }`     | Triggered on **internal** & **external** linktype |
+<table>
+	<thead>
+		<tr>
+			<th>Event name</th>
+			<th>Data</th>
+			<th>Comment</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>PageElementClicked</td>
+			<td><pre><code>{
+  type: 'internal' | 'external',
+  data: {
+    url: String,
+    pagenumber: String
+  }
+}</code></pre></td>
+			<td>Triggered on <strong>internal</strong> & <strong>external</strong> linktype</td>
+		</tr>
+	</tbody>
+</table>
 
 The following features have also been enabled for GTM:
 
