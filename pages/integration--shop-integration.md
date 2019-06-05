@@ -81,9 +81,3 @@ The following is a complete sample of an aspx page that's able to receive and pa
     }
 </script>
 ```
-
-## Returning Visitors
-
-In some cases, you may want to identify a user coming back from a Flipbook, who originates from your website. By including a ```?Affiliate_Key=Value``` querystring parameter, you'll get the same parameter back when the shop is exported.
-
-For example, if the export URL is set to "[http://google.com/](http://google.com/)" and you send the user to the catalog with the following address: "[http://url-to-catalog/?Affiliate_ShopID=25](http://url-to-catalog/?Affiliate_ShopID=25)", when the user then exports the basket, (s)he will then be sent to the following URL: "[http://google.com/?ShopID=25](http://google.com/?ShopID=25)".
