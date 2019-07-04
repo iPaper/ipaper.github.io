@@ -16,11 +16,11 @@ redirect_from: "/display/DOC/Backend+API"
 The actual endpoint URL depends on which partner the solution is hosted at. For direct customers of iPaper, the endpoint is:
 
 ```
-http://ipaper.api.ipapercms.dk
+https://ipaper.api.ipapercms.dk
 ```
 
 For other partners, the endpoint is:
 
 ```
-http://<partner>.api.ipapercms.dk
+https://<partner>.api.ipapercms.dk
 ```
