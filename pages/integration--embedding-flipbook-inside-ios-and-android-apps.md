@@ -54,27 +54,49 @@ int embeddedHeight = (int)webViewSize.size.height;
 
 ## Shop Integration
 
-When embedding an iPaper inside an iOS/Android application it is not possible to use our normal JavaScript API, as this requires the page to be iframed. As an alternative it is possible to override the normal behavior of shop links and force them to open a specially formed URL, enabling you to intercept the call and thus be notified of users clicking on shop links.
+When embedding a flipbook inside an iOS/Android application it is not possible to use our normal JavaScript API, as this requires the flipbook to be iframed. As an alternative it is possible to override the normal behavior of shop links and force them to open a specially formed URL, enabling you to intercept the call and thus be notified of users clicking on shop links.
 
-To force the special shop link functionality, you'll have to add a special query string parameter to the iPaper URL. If the normal iPaper address is this:
+To force the special shop link functionality, you'll have to add a special query string parameter to the flipbook URL. If the normal flipbook URL is this:
 
 ```
-http://ipaper.ipapercms.dk/Client/MyCatalog/
+http://ipaper.ipapercms.dk/client/MyCustomFlipbook/
 ```
 
 The embedded URL should be this, to invoke the special shop link handling:
 
 ```
-http://ipaper.ipapercms.dk/Client/MyCatalog/?ExternalJsonShopLinks=True
+http://ipaper.ipapercms.dk/client/MyCustomFlipbook/?ExternalJsonShopLinks=True
 ```
 
 Once the `ExternalJsonShopLinks` parameter has been enabled, clicking on a shop link will then navigate the user to the following URL, containing a JSON object with all of the product details:
 
-```json
-ipapershop: { name: "Milk", description: "Half gallon", price: 25.95, productID: "M-926" }
+```
+ipapershop://<payload>
 ```
 
-If a link property has not been defined in the backend, it will not be included in the JSON object. Thus, if only the name and price has been entered for a product, the description and productID properties won't be included in the JSON object.
+| Property      | Type     | Description                                |
+| ------------- | -------- | ------------------------------------------ |
+| `title`       | `string` | Shop item title                            |
+| `description` | `string` | Shop item description                      |
+| `productId`   | `string` | Shop item product ID                       |
+| `price`       | `number` | Shop item price                            |
+| `originPage`  | `number` | Page number where the shop item is located |
+| `quantity`    | `number` | Number of items added                      |
+| `packageSize` | `number` | Number of items per package                |
 
-{% include note.html content="This functionality is only applicable to the mobile versions, and setting the `ExternalJsonShopLinks` parameter thus has no impact on the normal desktop (Flash) version of the iPaper catalog."%}
+An example of the emitted JSON is as follow:
+
+```json
+ipapershop: {
+	title: "Milk",
+	description: "Half gallon",
+	productId: "M-926",
+	price: 25.95,
+	originPage: 4,
+	quantity: 2,
+	packageSize: 1
+}
+```
+
+{% include note.html content="This functionality is only applicable to the mobile versions, and setting the `ExternalJsonShopLinks` parameter thus has no impact on the normal desktop version of the flipbook."%}
 
