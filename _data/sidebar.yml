@@ -155,7 +155,7 @@ entries:
     - title: Custom Domain
       url: /integration/custom-domain
 
-    - title: Embedding Flipbooks inside iOS and Android apps
+    - title: Embedding flipbooks inside iOS and Android apps
       url: /integration/embedding-flipbooks-inside-ios-and-android-apps
 
     - title: Form Integration
