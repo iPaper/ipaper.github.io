@@ -67,7 +67,7 @@ We recommend adding `max-width: 100vw` to the body element of the embedded page,
 
 ```css
 body {
-    width: 100vw;
+    max-width: 100vw;
 }
 ```
 
