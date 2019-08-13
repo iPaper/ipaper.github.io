@@ -35,7 +35,7 @@ The minimal config design of our API means that it will attempt to look for an `
 <head>
     <title>Multiple iframed flipbooks</title>
 
-    <!-- Start of async iPaper Flipbook API code -->
+    <!-- Start of async iPaper Flipbook API script -->
     <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
@@ -43,7 +43,7 @@ The minimal config design of our API means that it will attempt to look for an `
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
     (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
-    <!-- End of async iPaper Flipbook API code -->
+    <!-- End of async iPaper Flipbook API script -->
 
     <script>
         functon iPaperInit() {
@@ -88,7 +88,7 @@ The event name that the event listeners should check with are specified in [even
 <head>
     <title>Example iPaper JS API use</title>
 
-    <!-- Start of async iPaper Flipbook API code -->
+    <!-- Start of async iPaper Flipbook API script -->
     <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
@@ -96,7 +96,7 @@ The event name that the event listeners should check with are specified in [even
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
     (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
-    <!-- End of async iPaper Flipbook API code -->
+    <!-- End of async iPaper Flipbook API script -->
     
     <script>
         functon iPaperInit() {

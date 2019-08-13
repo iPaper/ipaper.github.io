@@ -13,14 +13,14 @@ Add the following script to either the `<head>` or `<body>` element in the paren
 The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
 
 ```html
-<!-- Start of async iPaper Flipbook API code -->
+<!-- Start of async iPaper Flipbook API script -->
 <script>
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
 (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
 </script>
-<!-- End of async iPaper Flipbook API code -->
+<!-- End of async iPaper Flipbook API script -->
 ```
 
 ## Step 2: Update the setup of your Flipbook API

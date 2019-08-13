@@ -15,14 +15,14 @@ For this to work, you will need to include the API script on your page. [Please 
 The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
 
 ```html
-<!-- Start of async iPaper Flipbook API code -->
+<!-- Start of async iPaper Flipbook API script -->
 <script>
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
 (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
 </script>
-<!-- End of async iPaper Flipbook API code -->
+<!-- End of async iPaper Flipbook API script -->
 ```
 
 ## Minimal config setup
@@ -45,7 +45,7 @@ The embedded script will call the `iPaperInit()` method that is defined globally
 <head>
     <title>Example Flipbook JS API use</title>
 
-    <!-- Start of async iPaper Flipbook API code -->
+    <!-- Start of async iPaper Flipbook API script -->
     <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
@@ -53,7 +53,7 @@ The embedded script will call the `iPaperInit()` method that is defined globally
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
     (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
-    <!-- End of async iPaper Flipbook API code -->
+    <!-- End of async iPaper Flipbook API script -->
     
     <script>
         function iPaperInit() {
