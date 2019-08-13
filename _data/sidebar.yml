@@ -191,26 +191,26 @@ entries:
     - title: Events tracked in Google Analytics / GTM
       url: /integration/events-tracked-by-google-analytics-and-tag-manager
 
-  - title: JavaScript API
+  - title: Flipbook JavaScript API
     folderitems:
 
     - title: Quick Start
-      url: /javascript-api/quick-start
+      url: /flipbook-javascript-api/quick-start
 
     - title: Commands
-      url: /javascript-api/commands
+      url: /flipbook-javascript-api/commands
 
     - title: Events
-      url: /javascript-api/events
+      url: /flipbook-javascript-api/events
 
     - title: Advanced Usage
-      url: /javascript-api/advanced-usage
+      url: /flipbook-javascript-api/advanced-usage
 
     - title: Migration guide
-      url: /javascript-api/migration-guide
+      url: /flipbook-javascript-api/migration-guide
 
     - title: Legacy v1 API
-      url: /javascript-api/v1
+      url: /flipbook-javascript-api/v1
 
   - title: Technical Information
     folderitems:

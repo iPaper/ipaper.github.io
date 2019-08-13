@@ -1,12 +1,12 @@
 ---
-permalink: /javascript-api/events
+permalink: /flipbook-javascript-api/events
 title: Events
 summary: Events happen in the iframed flipbook and are emitted to the parent window. Our API catches these emitted events and invoke magic callbacks, which can be used to execute business-specific logic in the parent window, in response to specific events that have occurred in the iframed flipbook.
 ---
 
 ## Overview
 
-<img src="/images/javascript-api/events.svg" style="max-width: 100%; max-height: 100%" />
+<img src="/images/flipbook-javascript-api/events.svg" style="max-width: 100%; max-height: 100%" />
 
 Events are dispatched from the iframed flipbook to the Javascript API via `window.postMessage()`. Once the API receives this event, it then invokes a callback present in the parent window.
 

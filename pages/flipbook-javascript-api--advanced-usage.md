@@ -1,5 +1,5 @@
 ---
-permalink: /javascript-api/advanced-usage
+permalink: /flipbook-javascript-api/advanced-usage
 title: Advanced Usage
 ---
 
@@ -33,9 +33,9 @@ The minimal config design of our API means that it will attempt to look for an `
 <!doctype html>
 <html>
 <head>
-    <title>Multiple iframed iPapers</title>
+    <title>Multiple iframed flipbooks</title>
 
-    <!-- Start of async iPaper API code -->
+    <!-- Start of async iPaper Flipbook API code -->
     <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
@@ -43,7 +43,7 @@ The minimal config design of our API means that it will attempt to look for an `
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
     (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
-    <!-- End of async iPaper API code -->
+    <!-- End of async iPaper Flipbook API code -->
 
     <script>
         functon iPaperInit() {
@@ -88,7 +88,7 @@ The event name that the event listeners should check with are specified in [even
 <head>
     <title>Example iPaper JS API use</title>
 
-    <!-- Start of async iPaper API code -->
+    <!-- Start of async iPaper Flipbook API code -->
     <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
@@ -96,7 +96,7 @@ The event name that the event listeners should check with are specified in [even
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
     (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
-    <!-- End of async iPaper API code -->
+    <!-- End of async iPaper Flipbook API code -->
     
     <script>
         functon iPaperInit() {
