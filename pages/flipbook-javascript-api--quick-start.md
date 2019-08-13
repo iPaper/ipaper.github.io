@@ -12,7 +12,7 @@ The v2 Flipbook JavaScript API uses the [`window.postMessage` API](https://devel
 
 For this to work, you will need to include the API script on your page. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper Flipbook API script from the admin.
 
-The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
+The API script will look like something below, with `<FlipbookApiBaseUrl>` and `<YourFlipbookApiKey>` being substituted with partner and license-dependent configurations.
 
 ```html
 <!-- Start of async iPaper Flipbook API script -->
@@ -20,7 +20,7 @@ The API script will look like something below, with `<ApiBaseUrl>` and `<YourApi
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+(document,'script','ipaper-api','<FlipbookApiBaseUrl>','<YourFlipbookApiKey>');
 </script>
 <!-- End of async iPaper Flipbook API script -->
 ```
