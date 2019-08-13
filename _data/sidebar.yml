@@ -212,6 +212,18 @@ entries:
     - title: Legacy v1 API
       url: /flipbook-javascript-api/v1
 
+  - title: Display Javascript API
+    folderitems:
+
+    - title: Quick Start
+      url: /display-javascript-api/quick-start
+
+    - title: Commands
+      url: /display-javascript-api/commands
+
+    - title: Events
+      url: /display-javascript-api/events
+
   - title: Technical Information
     folderitems:
 
