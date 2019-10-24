@@ -1,12 +1,12 @@
 ---
-permalink: /javascript-api/commands
+permalink: /flipbook-javascript-api/commands
 title: Commands
 summary: Commands are instructions issued by the parent window to the iframed flipbook. Commands can be invoked by calling magic methods, which can be accessed directly from the API instance.
 ---
 
 ## Overview
 
-<img src="/images/javascript-api/commands.svg" style="max-width: 100%; max-height: 100%" />
+<img src="/images/flipbook-javascript-api/commands.svg" style="max-width: 100%; max-height: 100%" />
 
 Commands are issued from the parent window (your website) to the JavaScript API. The API then relays the command via `window.postMessage()` to the iframed flipbook.
 
@@ -14,7 +14,7 @@ Commands are issued from the parent window (your website) to the JavaScript API.
 
 ### `updateEventSettings`
 
-It is possible to dictate how the iframed flipbook should handle events when they have been triggered. The method accepts a single argument that is an object containing the following keys, which references events that the v2 API listens to:
+It is possible to dictate how the iframed flipbook should handle events when they have been triggered. The method accepts a single argument that is an object containing the following keys, which references events that the v2 Flipbook API listens to:
 
 - [`onBasketClick`](./events#onbasketclick)
 - [`onItemAdd`](./events#onitemadd)

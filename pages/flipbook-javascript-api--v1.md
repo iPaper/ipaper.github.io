@@ -1,5 +1,5 @@
 ---
-permalink: /javascript-api/v1
+permalink: /flipbook-javascript-api/v1
 title: Legacy JavaScript API (v1)
 redirect_from: "/display/DOC/JavaScript+API"
 summary: The JavaScript API allows you listen for events occurings in the Flipbook, prevent default actions and invoking functions in the Flipbook. This is the legacy version of the API&colon; please consider migrating to v2.
@@ -7,9 +7,9 @@ summary: The JavaScript API allows you listen for events occurings in the Flipbo
 
 ## Migration guide
 
-{% include note.html content="The legacy API is now superseded by v2 API." %}
+{% include note.html content="The legacy API is now superseded by v2 Flipbook API." %}
 
-Even though the legacy API will still be supported, we strongly encourage customers to use v2 API from the get-go, on top of migrating pre-existing uses of the legacy API. New features made available via v2 API will not be implemented in v1.
+Even though the legacy API will still be supported, we strongly encourage customers to use v2 Flipbook API from the get-go, on top of migrating pre-existing uses of the legacy API. New features made available via v2 Flipbook API will not be implemented in v1.
 
 [**Refer to the migration guide**](./migration-guide) on how you can easily migrate from v1 to v2.
 

@@ -1,31 +1,31 @@
 ---
-permalink: /javascript-api/migration-guide
+permalink: /flipbook-javascript-api/migration-guide
 title: Migration Guide
-summary: Migration guide from legacy v1 API to the new v2 API
+summary: Migration guide from legacy v1 API to the new v2 Flipbook API
 ---
 
-## Step 1: Load the JavaScript API on the parent window
+## Step 1: Load the Flipbook JavaScript API on the parent window
 
-The legacy v1 API requires that the parent window and the iframed flipbook share the same origin: this is because strict CORS policy only allows iframed pages to access properties in the parent window if they belong to the same origin. v2 API circumvents this issue by using the modern `window.postMessage()` API.
+The legacy v1 API requires that the parent window and the iframed flipbook share the same origin: this is because strict CORS policy only allows iframed pages to access properties in the parent window if they belong to the same origin. v2 Flipbook API circumvents this issue by using the modern `window.postMessage()` API.
 
 Add the following script to either the `<head>` or `<body>` element in the parent window. The precise placement does not matter, because it asynchronously loads the API. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper API script from the admin.
 
 The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
 
 ```html
-<!-- Start of async iPaper API code -->
+<!-- Start of async iPaper Flipbook API script -->
 <script>
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
 (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
 </script>
-<!-- End of async iPaper API code -->
+<!-- End of async iPaper Flipbook API script -->
 ```
 
-## Step 2: Update the setup of your API
+## Step 2: Update the setup of your Flipbook API
 
-The v2 API exposes a global object in the `window` called `iPaperAPI`. This is known as the default instance of the API, and targets the first available iframe on the page that loads an iPaper flipbook.
+The v2 Flipbook API exposes a global object in the `window` called `iPaperAPI`. This is known as the default instance of the API, and targets the first available iframe on the page that loads an iPaper flipbook.
 
 In the legacy v1 API, this is how it was done:
 
@@ -39,7 +39,7 @@ In the legacy v1 API, this is how it was done:
 </script>
 ```
 
-In the new v2 API, we recommend doing this instead:
+In the new v2 Flipbook API, we recommend doing this instead:
 
 ```html
 <script type="text/javascript">
@@ -55,16 +55,16 @@ Note that you no longer:
 
 ## Step 3: Ensure that your commands and events are modified
 
-Commands and events are no longer namespaced by module. In the legacy v1 API, the `Publication` and `Shop` namespaces are available. The new v2 API collapses these namespaces since there is no risk of naming clashes&mdash;this also greatly simplifies how your page can interact with an iframed flipbook.
+Commands and events are no longer namespaced by module. In the legacy v1 API, the `Publication` and `Shop` namespaces are available. The new v2 Flipbook API collapses these namespaces since there is no risk of naming clashes&mdash;this also greatly simplifies how your page can interact with an iframed flipbook.
 
-The following table maps the old commands to new ones available in v2 API:
+The following table maps the old commands to new ones available in v2 Flipbook API:
 
 | Namespace   | Old name                    | New name                          | Note                    |
 | ----------- | --------------------------- | --------------------------------- | ----------------------- |
 | Publication | [`gotoPage`](./v1#gotopage) | [`goToPage`](./commands#gotopage) | Camel-casing updated    |
 | Shop        | [`addItem`](./v1#additem)   | [`addItem`](./commands#additem)   | *Event was not renamed* |
 
-The following table maps the old events to new ones available in v2 API:
+The following table maps the old events to new ones available in v2 Flipbook API:
 
 | Namespace   | Old name                                            | New name                                            | Note                    |
 | ----------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------- |
@@ -89,7 +89,7 @@ function iPaperInit(api) {
 }
 ```
 
-In the new v2 API, we recommend doing this instead:
+In the new v2 Flipbook API, we recommend doing this instead:
 
 ```js
 function iPaperInit() {
@@ -137,7 +137,7 @@ Used by [`onPageElementClicked` (v1)](./v1/#onpageelementclicked) and [`onPageEl
 
 ## Step 5: Update event settings instead of returning from dispatchers
 
-If you have used the legacy v1 API to modify event behaviours in the iframed flipbook, note that the protocol has now changed. In the legacy v1 API, these settings are actually concatenated if multiple event handlers are defined, resulting in potentially confusing behavior. To circumvent this issue, we have added a new command in v2 API that allows you to explicitly define default behaviors of flipbook events: [`updateEventSettings`](./commands#updateeveentsettings).
+If you have used the legacy v1 API to modify event behaviours in the iframed flipbook, note that the protocol has now changed. In the legacy v1 API, these settings are actually concatenated if multiple event handlers are defined, resulting in potentially confusing behavior. To circumvent this issue, we have added a new command in v2 Flipbook API that allows you to explicitly define default behaviors of flipbook events: [`updateEventSettings`](./commands#updateeveentsettings).
 
 In the legacy v1 API, if you want to stop the basket from opening when the icon is clicked, this is what was recommended:
 
@@ -153,7 +153,7 @@ function iPaperInit(api) {
 }
 ```
 
-In v2 API, this is a **global** setting on the flipbook but can be modified at any time. It is to be set outside the event handler, because if done within the event handler, the event's default action would have already been invoked and can no longer be intercepted.
+In v2 Flipbook API, this is a **global** setting on the flipbook but can be modified at any time. It is to be set outside the event handler, because if done within the event handler, the event's default action would have already been invoked and can no longer be intercepted.
 
 ```js
 function iPaperInit() {

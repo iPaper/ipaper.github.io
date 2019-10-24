@@ -1,28 +1,28 @@
 ---
-permalink: /javascript-api/quick-start
+permalink: /flipbook-javascript-api/quick-start
 title: Quick Start
-summary: The v2 JavaScript API allows for streamlined interaction with iframed flipbooks using cross-origin communications available in modern browsers.
+summary: The v2 Flipbook JavaScript API allows for streamlined interaction with iframed flipbooks using cross-origin communications available in modern browsers.
 ---
 
  {% include note.html content="Still using the legacy v1 API? [Refer to the migration guide](./migration-guide) on how to move to v2." %}
 
 ## Overview
 
-The v2 iPaper JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements.
+The v2 Flipbook JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements.
 
-For this to work, you will need to include the API script on your page. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper API script from the admin.
+For this to work, you will need to include the API script on your page. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper Flipbook API script from the admin.
 
-The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
+The API script will look like something below, with `<FlipbookApiBaseUrl>` and `<YourFlipbookApiKey>` being substituted with partner and license-dependent configurations.
 
 ```html
-<!-- Start of async iPaper API code -->
+<!-- Start of async iPaper Flipbook API script -->
 <script>
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+(document,'script','ipaper-api','<FlipbookApiBaseUrl>','<YourFlipbookApiKey>');
 </script>
-<!-- End of async iPaper API code -->
+<!-- End of async iPaper Flipbook API script -->
 ```
 
 ## Minimal config setup
@@ -43,9 +43,9 @@ The embedded script will call the `iPaperInit()` method that is defined globally
 <!doctype html>
 <html>
 <head>
-    <title>Example iPaper JS API use</title>
+    <title>Example Flipbook JS API use</title>
 
-    <!-- Start of async iPaper API code -->
+    <!-- Start of async iPaper Flipbook API script -->
     <!-- NOTE: The entire code snippet below can be obtained directly from the Admin. Refer to our help article for further information. -->
     <script>
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
@@ -53,7 +53,7 @@ The embedded script will call the `iPaperInit()` method that is defined globally
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
     (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
     </script>
-    <!-- End of async iPaper API code -->
+    <!-- End of async iPaper Flipbook API script -->
     
     <script>
         function iPaperInit() {
