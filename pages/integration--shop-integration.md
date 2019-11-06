@@ -8,11 +8,11 @@ Using shop configuration it is possible to let the user add a number of items to
 
 ## Setup
 
-Once the shop configuration has been enabled, you can enable integration by selecting &ldquo;Integration&rdquo; as the primary checkout option. Once enabled, you will have to provide an export URL. This is the url to which the shop contents are sent, when the user invokes the shop export function. Finally, you can choose whether to send the data in the current window, or open it in a new window.
+Once the shop configuration has been enabled, you can enable integration by selecting &ldquo;Integration&rdquo; as the primary checkout option. Once enabled, you will have to provide an export URL. This is the URL to which the shop contents are sent, when the user invokes the shop export function. Finally, you can choose whether to send the data in the current window, or open it in a new window.
 
 ## Export format
 
-We include the name, description, price, product ID, and amount, as selected in the catalog. We also include the public-facing URL of the flipbook that sent the data in the payload&mdash;this can be useful to determine the origin flipbook of a shop export. Shop variants exported this way will have the same format. Sample XML:
+We include the name, description, price, product ID, and amount, as selected in the catalog. We also include the public-facing URL of the flipbook that sent the data in the payload&mdash;this can be useful to determine the origin flipbook of a shop export. Shop variants exported this way will have the same format. An example of a shop XML is as follow:
 
 ```xml
 <shop flipbookcompleteurl="https://public/url/of/your/flipbook">
