@@ -4,15 +4,15 @@ permalink: /integration/shop-integration
 redirect_from: "/display/DOC/Shop+Integration"
 ---
 
-Using the Shop module it's possible to let the user add a number of items to the shopping basket in the catalog, after which the contents can be sent to a remote site. At this point, the remote site can handle registration, payment, etc.
+Using shop configuration it is possible to let the user add a number of items to the shopping basket in the catalog, after which the contents can be sent to a remote site for further processing. At this point, the remote site can handle registration, payment, etc.
 
 ## Setup
 
-Once the Shop module has been enabled, you can enable integration by checking the "Enable Integration" checkbox under the Shop module settings. Once enabled, you will have to provide an export url. This is the url to which the shop contents are sent, when the user invokes the shop export function. Finally you can choose whether to send the data in the current window, or open it in a new window.
+Once the shop configuration has been enabled, you can enable integration by selecting &ldquo;Integration&rdquo; as the primary checkout option. Once enabled, you will have to provide an export URL. This is the url to which the shop contents are sent, when the user invokes the shop export function. Finally, you can choose whether to send the data in the current window, or open it in a new window.
 
-## Export Format
+## Export format
 
-We include the name, description, price, product ID and amount, as selected in the catalog. We also include a reference to the Flipbook that sent the data - this can be useful to determine the origin Flipbook of a shop export. Shop variants exported this way will have the same format. Sample xml:
+We include the name, description, price, product ID, and amount, as selected in the catalog. We also include the public-facing URL of the flipbook that sent the data in the payload&mdash;this can be useful to determine the origin flipbook of a shop export. Shop variants exported this way will have the same format. Sample XML:
 
 ```xml
 <shop flipbookcompleteurl="https://public/url/of/your/flipbook">
@@ -27,9 +27,11 @@ We include the name, description, price, product ID and amount, as selected in t
 </shop>
 ```
 
-## Loading the Exported Shop XML
+{% include note.html content="Even though the shop XML also exposes the `paper` attribute alongside with `flipbookcompleteurl`, we strongly encourage you to use the latter because the former does not include the full public URL of the flipbook." %}
 
-The following is a complete sample of an aspx page that's able to receive and parse the shop xml. What's done with it afterwards is up to you. This sample simply prints the contents of the basket to the page.
+## Loading the exported shop XML
+
+The following is a complete sample of an aspx page that is able to receive and parse the shop XML. What is done with it afterwards is up to you. This sample simply prints the contents of the basket to the page.
 
 ```cshtml
 <%@ Page Language="C#" AutoEventWireup="true" ValidateRequest="false" %>
