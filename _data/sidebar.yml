@@ -155,6 +155,9 @@ entries:
     - title: Custom Domain
       url: /integration/custom-domain
 
+    - title: Custom Mail
+      url: /integration/custom-mail
+
     - title: Embedding flipbooks inside iOS and Android apps
       url: /integration/embedding-flipbooks-inside-ios-and-android-apps
 
