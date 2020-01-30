@@ -223,12 +223,3 @@ entries:
 
     - title: Events
       url: /display-javascript-api/events
-
-  - title: Technical Information
-    folderitems:
-
-    - title: Server IP Range
-      url: /technical-information/server-ip-range
-
-    - title: Upload Troubleshooting
-      url: /technical-information/upload-troubleshooting
