@@ -13,14 +13,16 @@ If you do not have a SPF record yet, you can add the following as a TXT record o
 v=spf1 include:spf.ipaper.io ~all
 ```
 
-In the case you already have a SPF record in your DNS you should only add `include:spf.ipaper.io`, else you are in high risk of loosing emails that was previously configured via your SPF record.
+In the case you already have a SPF record in your DNS configuration you should only add `include:spf.ipaper.io`, else you risk loosing emails that was previously configured via your SPF record.
 
 {% include important.html content="Be aware if you already have a SPF record setup in your DNS, please do ensure you are only adding the partial record" %}
 
 ## Verification
 
-To verify if the spf record have been setup correctly you can use the following tool:
+To verify if the SPF record have been setup correctly you can use the following tool:
 
 [https://mxtoolbox.com/SuperTool.aspx?action=spf%3aipaper.io&run=toolpage](https://mxtoolbox.com/SuperTool.aspx?action=spf%3aipaper.io&run=toolpage)
 
-Replace "ipaper.io" with the desired domain. If `spf.ipaper.io` appears in the list of results with a pass in `PrefixDesc` you should be all good.
+Replace "ipaper.io" with the desired domain.
+
+If `spf.ipaper.io` appears in the list of results with a pass in `PrefixDesc` you should be all good.
