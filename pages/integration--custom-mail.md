@@ -7,15 +7,15 @@ title: Custom Mail
 
 Before custom mail can be setup in iPaper, you need to setup the SPF record on your domain first.
 
-If you do not have a SPF record yet, you can add the following as a TXT record on the domain you wish for us to send of behalf of.
+If you do not have an SPF record yet, you can add the following as a TXT record on the domain you wish for us to send of behalf of.
 
 ```
 v=spf1 include:spf.ipaper.io ~all
 ```
 
-In the case you already have a SPF record in your DNS configuration you should only add `include:spf.ipaper.io`, else you risk loosing emails that was previously configured via your SPF record.
+In the case you already have an SPF record in your DNS configuration you should only add `include:spf.ipaper.io`, else you risk loosing emails that was previously configured via your SPF record.
 
-{% include important.html content="Be aware if you already have a SPF record setup in your DNS, please do ensure you are only adding the partial record" %}
+{% include important.html content="Be aware if you already have an SPF record setup in your DNS, please do ensure you are only adding the partial record" %}
 
 ## Verification
 
