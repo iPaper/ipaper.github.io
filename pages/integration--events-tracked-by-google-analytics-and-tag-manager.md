@@ -17,6 +17,7 @@ We'll also track various **Events** across our flipbooks. Take a look at the lis
 | Action | Label | Comment |
 | ------ | ----- | ------- |
 | External Link Click | HoverText: {linkHoverText} \| Url: {externalUrl} \| Page: {pageNumber} |
+| Load | Url: {flipbookUrl} | Flipbook URL does not contain domain information, but just the URL path, i.e. [`window.location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHyperlinkElementUtils/pathname) |
 | PDF Download | n.a. | n.a. |
 | Popup Image Click | HoverText: {linkHoverText} \| Url: {imageUrl} \| Page: {pageNumber} |
 | Popup Image Gallery Click | HoverText: {linkHoverText} \| Page: {pageNumber} |
@@ -65,6 +66,7 @@ For the events below we will push to the data layer in the following format
 | Event name | Event data |
 | -- | -- |
 | ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
+| ipaperEvent_load | `{ Url: string }` |
 | ipaperEvent_popupImageClick | `{ HoverText: string, Url: string, Page: number }` |
 | ipaperEvent_popupGalleryImageClick | `{ HoverText: string, Page: number }` |
 | ipaperEvent_popupContentClick | `{ HoverText: string, Page: number }` |
