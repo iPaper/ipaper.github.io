@@ -6,7 +6,7 @@ summary: Display JavaScript API emits custom events that can be listened to on t
 
 ## Overview
 
-The Display JavaScript API emits custom events to the document root so that you can keep track of changes to the Display API instance. Due to the nature of the UI/UX of Display, these events are only relevant if your user is originating from a desktop or tablet device. Mobile devices are redirected to the actual URL of the Display, where interaction with the API is not possible.
+The Display JavaScript API emits custom events to the document root so that you can keep track of changes to the Display API instance.
 
 ### `iPaperDisplayApiReady`
 
@@ -28,3 +28,5 @@ document.addEventListener('iPaperDisplayInstanceReady', function () {
     // At this point in time, the Display Instance is ready to be interacted with
 });
 ```
+
+{% include note.html content="Due to the nature of the UI/UX of Display, the <code>iPaperDisplayInstanceReady</code> event is only fired if your user is originating from a desktop or tablet device. Mobile devices are redirected to the actual URL of the Display, where interaction with the API is not possible." %}
