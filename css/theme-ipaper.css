@@ -116,6 +116,11 @@ thead {
     color: #fff;
 }
 
+thead a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 tbody {
     border: 1px solid #e8e8e8;
 }
