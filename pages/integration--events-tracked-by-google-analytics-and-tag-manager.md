@@ -21,23 +21,120 @@ window.ga(tracker.get('name') + '.send', {
 
 #### Overview
 
-| Action | Label | Comment |
-| ------ | ----- | ------- |
-| External Link Click | HoverText: {linkHoverText} \| Url: {externalUrl} \| Page: {pageNumber} | n.a. |
-| Load | Url: {flipbookUrl} | Flipbook URL is simply read from `window.location.href` |
-| Page Element Click | [See more info below](#page-element-click-tracking-on-ga-and-gtm) | n.a. |
-| PDF Download | n.a. | n.a. |
-| Popup Image Click | HoverText: {linkHoverText} \| Url: {imageUrl} \| Page: {pageNumber} | n.a. |
-| Popup Image Gallery Click | HoverText: {linkHoverText} \| Page: {pageNumber} | n.a. |
-| Popup Content Click | HoverText: {linkHoverText} \| Page: {pageNumber} | n.a. |
-| Popup Frame Click | HoverText: {linkHoverText} \| Url: {frameUrl} \| Page: {pageNumber} | n.a. |
-| Product Added to Basket | Id: {productId} \| Name: {productName} \| Page: {pageNumber} | n.a. |
-| Newsticker External Link Click | Url: {externalUrl} | n.a. |
-| Video Play | Url: {videoUrl} \| VideoType: {'Video' / 'YouTube' / 'Vimeo'} \| Page: {pageNumber} | Only first **Play** on each page is tracked |
-| Search | Term: {searchTerm} | n.a. |
-| Shop Checkout | NumberOfProducts: {numberOfProductsInCart} \| CheckoutType: {'Email' / 'ShareEmail' / 'Checkout' / 'Print'} \| BasketValue: {totalBasketValue} | n.a. |
+<table>
+	<thead>
+		<tr>
+			<th>Event name</th>
+			<th>Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
+			<th>Comment</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>External Link Click</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [EXTERNAL_URL],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Load</td>
+			<td><pre><code>{
+  Url: [FLIPBOOK_URL]
+}</code></pre></td>
+			<td>Flipbook URL is simply read from `window.location.href`</td>
+		</tr>
+		<tr>
+			<td>Page Element Click</td>
+			<td><a href="#page-element-click-tracking-on-ga-and-gtm">See more info below</a></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>PDF Download</td>
+			<td>n.a.</td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Popup Image Click</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [IMAGE_URL],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Popup Image Gallery Click</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Popup Content Click</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Popup Frame Click</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [FRAME_URL],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Product Added to Basket</td>
+			<td><pre><code>{
+  Id: [PRODUCT_ID],
+  Name: [PRODUCT_NAME],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Newsticker External Link Click</td>
+			<td><pre><code>{
+  Url: [EXTERNAL_URL]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Search</td>
+			<td><pre><code>{
+  Term: [SEARCH_TERM]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>Shop Checkout</td>
+			<td><pre><code>{
+  NumberOfProducts: [NO_OF_PRODUCT_IN_CART],
+  CheckoutType: [CHECKOUT_TYPE],
+  BasketValue: [TOTAL_BASKET_VALUE]
+}</code></pre></td>
+			<td>Possible <code>CheckoutType</code> values are <code>Email</code>, <code>ShareEmail</code>, <code>Checkout</code>, or <code>Print</code>.</td>
+		</tr>
+		<tr>
+			<td>Video Play</td>
+			<td><pre><code>{
+  Url: [VIDEO_URL],
+  VideoType: [VIDEO_TYPE],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td><strong>Only the first play is registered.</strong> Possible <code>VideoType</code> values are <code>Video</code>, <code>YouTube</code>, or <code>Vimeo</code>.</td>
+		</tr>
+	</tbody>
+</table>
 
-{% include note.html content="The values in `{}` will be replaced with context specific value before sending the event." %}
+{% include note.html content="The values in `[]` will be replaced with context specific value before sending the event." %}
 
 #### Example
 
@@ -89,23 +186,142 @@ window.dataLayer.push({
 
 <div class="table-wrapper" markdown="block">
 
-| Event name | Event data |
-| -- | -- |
-| ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_load | `{ Url: string }` |
-| ipaperEvent_pageElementClick | [See more info below](#page-element-click-tracking-on-ga-and-gtm) |
-| ipaperEvent_popupImageClick | `{ HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_popupGalleryImageClick | `{ HoverText: string, Page: number }` |
-| ipaperEvent_popupContentClick | `{ HoverText: string, Page: number }` |
-| ipaperEvent_popupFrameClick | `{ HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_productAddedToCart | `{ ID: string; Name: string; Page: number }` |
-| ipaperEvent_newsTickerExternalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
-| ipaperEvent_videoPlay | `{ Url: string, VideoType: string, Page: number }` |
-| ipaperEvent_search | `{ Term: string }` |
-| ipaperEvent_shopCheckout | `{ NumberOfProducts: number, CheckoutType: string, BasketValue: number; }` |
-| ipaperEvent_leadgenPopupOpen | `{ Name: string, Url: string }` |
-| ipaperEvent_leadgenPopupConversion | `{ Name: string, Url: string }` |
-| ipaperEvent_leadgenPopupConversionByUrlClick | `{ Name: string, Url: string }` |'
+<table>
+	<thead>
+		<tr>
+			<th>Event name</th>
+			<th>Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
+			<th>Comment</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>ipaperEvent_externalLinkClick</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [EXTERNAL_URL],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_load</td>
+			<td><pre><code>{
+  Url: [FLIPBOOK_URL]
+}</code></pre></td>
+			<td>Flipbook URL is simply read from `window.location.href`</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_pageElementClick</td>
+			<td><a href="#page-element-click-tracking-on-ga-and-gtm">See more info below</a></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>PDF Download</td>
+			<td>n.a.</td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_leadgenPopupOpen</td>
+			<td><pre><code>{
+  Name: [POPUP_NAME],
+  Url: [CURRENT_URL]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_leadgenPopupConversion</td>
+			<td><pre><code>{
+  Name: [POPUP_NAME],
+  Url: [CURRENT_URL]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_leadgenPopupConversionByUrlClick</td>
+			<td><pre><code>{
+  Name: [POPUP_NAME],
+  Url: [CURRENT_URL]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_popupImageClick</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [IMAGE_URL],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_popupGalleryImageClick</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_popupContentClick</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_popupFrameClick</td>
+			<td><pre><code>{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [FRAME_URL],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_productAddedToCart</td>
+			<td><pre><code>{
+  Id: [PRODUCT_ID],
+  Name: [PRODUCT_NAME],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_newsTickerExternalLinkClick</td>
+			<td><pre><code>{
+  Url: [EXTERNAL_URL]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_search</td>
+			<td><pre><code>{
+  Term: [SEARCH_TERM]
+}</code></pre></td>
+			<td>n.a.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_shopCheckout</td>
+			<td><pre><code>{
+  NumberOfProducts: [NO_OF_PRODUCT_IN_CART],
+  CheckoutType: [CHECKOUT_TYPE],
+  BasketValue: [TOTAL_BASKET_VALUE]
+}</code></pre></td>
+			<td>Possible <code>CheckoutType</code> values are <code>Email</code>, <code>ShareEmail</code>, <code>Checkout</code>, or <code>Print</code>.</td>
+		</tr>
+		<tr>
+			<td>ipaperEvent_videoPlay</td>
+			<td><pre><code>{
+  Url: [VIDEO_URL],
+  VideoType: [VIDEO_TYPE],
+  Page: [PAGE_NUMBER]
+}</code></pre></td>
+			<td><strong>Only the first play is registered.</strong> Possible <code>VideoType</code> values are <code>Video</code>, <code>YouTube</code>, or <code>Vimeo</code>.</td>
+		</tr>
+	</tbody>
+</table>
 
 </div>
 
@@ -132,6 +348,9 @@ The following features have also been enabled for GTM:
 ```
 ['ua', 'ga', 'v', 'e', 'u', 'c', 'img', 'adm', 'awct', 'sp', 'gcs', 'ctv', 'f', 'smm', 'r', 'k', 'flc', 'fls' ]
 ```
+
+You can find more information about what they entail on this page:
+[https://developers.google.com/tag-manager/devguide](https://developers.google.com/tag-manager/devguide)
 
 ## Page element click tracking on GA and GTM
 
@@ -160,5 +379,23 @@ Aside from the events listed above for GA and GTM, we also track the `PageElemen
 	</tbody>
 </table>
 
-You can find more information about what they entail on this page:
-[https://developers.google.com/tag-manager/devguide](https://developers.google.com/tag-manager/devguide)
+## Event labels in GA and GTM
+
+The data format below is represented in JSON. It is converted to a string for the `eventLabel` object using the following convention:
+
+* Key names are PascalCased
+* Key-value pairs are separated by the pipe character `|`
+
+Example:
+
+```javascript
+{
+  HoverText: [LINK_HOVER_TEXT],
+  Url: [EXTERNAL_URL],
+  Page: [PAGE_NUMBER]
+}
+```
+
+&hellip;is converted into:
+
+`HoverText: [LINK_HOVER_TEXT] | Url: [EXTERNAL_URL] | Page: [PAGE_NUMBER]`
