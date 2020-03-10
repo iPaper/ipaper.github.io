@@ -8,14 +8,24 @@ We track **Pageviews** (both initial load and if end user pages the flipbook) in
 
 ### Events
 
-#### Overview
+All events are tracked to the **iPaper events** category in the following format:
 
-{% include note.html content="All events are tracked to the **iPaper events** category" %}
+```javascript
+window.ga(tracker.get('name') + '.send', {
+	hitType: 'event',
+	eventCategory: 'iPaper events',
+	eventAction: [ACTION],
+	eventLabel: [LABEL]
+});
+```
+
+#### Overview
 
 | Action | Label | Comment |
 | ------ | ----- | ------- |
 | External Link Click | HoverText: {linkHoverText} \| Url: {externalUrl} \| Page: {pageNumber} | n.a. |
 | Load | Url: {flipbookUrl} | Flipbook URL is simply read from `window.location.href` |
+| Page Element Click | [See more info below](#page-element-click-tracking-on-ga-and-gtm) | n.a. |
 | PDF Download | n.a. | n.a. |
 | Popup Image Click | HoverText: {linkHoverText} \| Url: {imageUrl} \| Page: {pageNumber} | n.a. |
 | Popup Image Gallery Click | HoverText: {linkHoverText} \| Page: {pageNumber} | n.a. |
@@ -83,6 +93,7 @@ window.dataLayer.push({
 | -- | -- |
 | ipaperEvent_externalLinkClick | `{ HoverText: string, Url: string, Page: number }` |
 | ipaperEvent_load | `{ Url: string }` |
+| ipaperEvent_pageElementClick | [See more info below](#page-element-click-tracking-on-ga-and-gtm) |
 | ipaperEvent_popupImageClick | `{ HoverText: string, Url: string, Page: number }` |
 | ipaperEvent_popupGalleryImageClick | `{ HoverText: string, Page: number }` |
 | ipaperEvent_popupContentClick | `{ HoverText: string, Page: number }` |
