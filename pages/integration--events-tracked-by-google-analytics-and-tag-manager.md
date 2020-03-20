@@ -341,17 +341,6 @@ window.dataLayer.push({
 })
 ```
 
-### Extras
-
-The following features have also been enabled for GTM:
-
-```
-['ua', 'ga', 'v', 'e', 'u', 'c', 'img', 'adm', 'awct', 'sp', 'gcs', 'ctv', 'f', 'smm', 'r', 'k', 'flc', 'fls' ]
-```
-
-You can find more information about what they entail on this page:
-[https://developers.google.com/tag-manager/devguide](https://developers.google.com/tag-manager/devguide)
-
 ## Page element click tracking on GA and GTM
 
 Aside from the events listed above for GA and GTM, we also track the `PageElementClicked` event, but it's only triggered for the **internal** & **external** linktype.
