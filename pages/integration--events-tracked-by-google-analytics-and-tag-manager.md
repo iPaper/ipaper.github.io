@@ -47,11 +47,6 @@ window.ga(tracker.get('name') + '.send', {
 			<td>Flipbook URL is simply read from `window.location.href`</td>
 		</tr>
 		<tr>
-			<td>Page Element Click</td>
-			<td><a href="#page-element-click-tracking-on-ga-and-gtm">See more info below</a></td>
-			<td>n.a.</td>
-		</tr>
-		<tr>
 			<td>PDF Download</td>
 			<td>n.a.</td>
 			<td>n.a.</td>
@@ -212,12 +207,7 @@ window.dataLayer.push({
 			<td>Flipbook URL is simply read from `window.location.href`</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_pageElementClick</td>
-			<td><a href="#page-element-click-tracking-on-ga-and-gtm">See more info below</a></td>
-			<td>n.a.</td>
-		</tr>
-		<tr>
-			<td>PDF Download</td>
+			<td>iPaperEvent_PDFDownload</td>
 			<td>n.a.</td>
 			<td>n.a.</td>
 		</tr>
@@ -341,9 +331,9 @@ window.dataLayer.push({
 })
 ```
 
-## Page element click tracking on GA and GTM
+## Page element click tracking on GTM
 
-Aside from the events listed above for GA and GTM, we also track the `PageElementClicked` event, but it's only triggered for the **internal** & **external** linktype.
+Aside from the events listed above, we also track the `PageElementClicked` event, but it's only triggered for the **internal** & **external** linktype.
 
 <table>
 	<thead>
