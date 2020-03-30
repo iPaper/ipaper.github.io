@@ -15,13 +15,25 @@ http://catalogs.company.com/Brochure/?ForceLanguage=fr
 {% include note.html content="Please refer to iPaper Support if you need a specific language code. If you link to a non-existing language code, the catalog default will be used instead." %}
 
 
-## GotoFirstSearchResult
+## GoToFirstSearchResult
 
-If you don't want to link to a specific page number, but rather to the first page that contains a certain search term, the GotoFirstSearchResult parameter can be used. The following sample link would take the user to the first page containing the term "Century":
+If you do not want to link to a specific page number, but rather to the first page that contains a certain search term, the GoToFirstSearchResult parameter can be used. The following sample link would take the user to the first page containing the term "Century":
 ```
-http://catalogs.company.com/Brochure/?GotoFirstSearchResult=Century
+http://catalogs.company.com/Brochure/?GoToFirstSearchResult=Century
 ```
 {% include note.html content="If the search term is not found, the user will be sent to the first page." %}
+
+{% include warning.html content="If both `GoToFirstSearchResult` and [`GoToAndHighlightFirstSearchResult`](#gotoandhighlightfirstsearchresult) are specified in the URL, this query string value will be ignored." %}
+
+## GoToAndHighlightFirstSearchResult
+
+This query performs the same operation as [`GoToFirstSearchResult`](#gotofirstsearchresult) above, but has the additional ability to highlight the term on the page itself.
+
+```
+http://catalogs.company.com/Brochure/?GoToAndHighlightFirstSearchResult=Century
+```
+
+{% include note.html content="If both [`GoToFirstSearchResult`](#gotofirstsearchresult) and `GoToAndHighlightFirstSearchResult` are specified in the URL, this query string value will take precedence." %}
 
 ## HideNavigationBars
 

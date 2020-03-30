@@ -4336,6 +4336,9 @@ a.thumbnail:focus {
 .alert .alert-link {
   font-weight: bold;
 }
+.alert a {
+  color: inherit;
+}
 .alert > p,
 .alert > ul {
   margin-bottom: 0;
