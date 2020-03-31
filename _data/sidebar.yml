@@ -226,3 +226,9 @@ entries:
 
     - title: Events
       url: /display-javascript-api/events
+
+  - title: Technical Information
+    folderitems:
+
+    - title: Cookie Information
+      url: /technical-information/cookie-information
