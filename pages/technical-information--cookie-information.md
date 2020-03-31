@@ -3,7 +3,7 @@ title: Cookie Information
 permalink: /technical-information/cookie-information
 ---
 
-The following cookies are set when visiting a flipbook in the iPaper platform, we put high effort into ensuring that we follow best practises. 
+The following cookies are set when visiting a flipbook in the iPaper platform, we put high effort into ensuring that we follow best practises and actions that could be categorised diffently unless the user gives consent.
 
 <table>
     <thead>
