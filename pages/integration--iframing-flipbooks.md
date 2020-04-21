@@ -61,7 +61,15 @@ In order to iframe a iPaper catalog, spanning 100% of page, we need to use a spe
   </head>
     <body style="height: 100%">
         <div style="height: 100%; width: 100%; overflow: hidden">
-            <iframe src="http://test.ipapercms.dk/Releases/Mobile/" scrolling="no" frameborder="0" style="width: 100%; height: 100%"></iframe>
+            <iframe
+                src="http://test.ipapercms.dk/Releases/Mobile/"
+                scrolling="no"
+                frameborder="0"
+                style="width: 100%; height: 100%"
+                allow="fullscreen"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen></iframe>
         </div>
     </body>
 </html>
@@ -86,11 +94,28 @@ For these platforms you can specify width in any size you want, even in percenta
   </head>
     <body style="height: 100%">
         <div style="height: 300px; width: 600px; overflow: hidden">
-            <iframe src="http://test.ipapercms.dk/Releases/Mobile/" scrolling="no" frameborder="0" style="width: 100%; height: 100%"></iframe>
+            <iframe
+                src="http://test.ipapercms.dk/Releases/Mobile/"
+                scrolling="no"
+                frameborder="0"
+                style="width: 100%; height: 100%"
+                allow="fullscreen"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen></iframe>
         </div>
     </body>
 </html>
 ```
+
+## Allow fullscreen API access
+
+In order to allow elements in the flipbook to have access to the fullscreen API (e.g. embedded videos from Vimeo/YouTube or native MP4 videos) when the flipbook itself is iframed, the `<iframe>` element needs to allow it explicitly. This is done by adding the following attributes to the element:
+
+* `allow="fullscreen"`
+* `allowfullscreen` (for backwards compatbility)
+* `webkitallowfullscreen` (for backwards compatbility)
+* `mozallowfullscreen` (for backwards compatbility)
 
 ### Dynamically Resizing
 Dynamically resizing the div will work. Do make sure you resize the outer and not the iframe.
