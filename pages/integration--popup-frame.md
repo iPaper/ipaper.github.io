@@ -73,4 +73,4 @@ body {
 
 ## See also
 
-[OWASP Guide to Clickjacking defense](https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet)
+[OWASP Guide to Clickjacking defense](https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html)
