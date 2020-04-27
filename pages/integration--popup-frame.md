@@ -9,7 +9,7 @@ The best precautions security-wise is to include both X-Frame-Options and Conten
 
 ### Security headers
 
-To ensure that your content is safeguarded against [clickjacking](https://www.owasp.org/index.php/Clickjacking) we recommend using the HTTP headers, X-Frame-Options and Content-Security-Policy. In the case you have added preventive measures we check the embedded website before trying to serve the popup-frame in the Flipbook viewer. This ensures that we don't end up showing the enduser an error in the browser, if this site doesn't allow to be iframed we give the user an option to open the site in a new tab in the browser.
+To ensure that your content is safeguarded against [clickjacking](https://owasp.org/www-community/attacks/Clickjacking) we recommend using the HTTP headers, X-Frame-Options and Content-Security-Policy. In the case you have added preventive measures we check the embedded website before trying to serve the popup-frame in the Flipbook viewer. This ensures that we don't end up showing the enduser an error in the browser, if this site doesn't allow to be iframed we give the user an option to open the site in a new tab in the browser.
 
 ### X-Frame-Options
 
