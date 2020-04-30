@@ -26,7 +26,7 @@ If your catalogs are hosted through an iPaper partner, the CNAME alias should po
 catalogs.client.com => {partner}.ipapercms.dk
 ```
 
-{% include important.html content="The subdomain MUST be setup as a CNAME record. An A record will not work." %}
+{% include important.html content="The subdomain MUST be setup as a CNAME record, an A record will not work. If you have both External and Internal DNS, the CNAME record should be set up on both." %}
 
 ## Verification
 
