@@ -2,7 +2,7 @@ entries:
 - title: sidebar
   folders:
 
-  - title: Backend API
+  - title: Flipbook Backend API
     url: /backend-api
     folderitems:
 
@@ -149,7 +149,7 @@ entries:
         - title: GetNumberOfVisitorsPerDay
           url: /backend-api/statistics/get-number-of-visitors-per-day
 
-  - title: Integration
+  - title: Flipbook Integration
     folderitems:
 
     - title: Custom Domain
@@ -214,6 +214,12 @@ entries:
 
     - title: Legacy v1 API
       url: /flipbook-javascript-api/v1
+  
+  - title: Display Integration
+    folderitems:
+
+      - title: Google Analytics
+        url: /display-integration/google-analytics
 
   - title: Display Javascript API
     folderitems:
