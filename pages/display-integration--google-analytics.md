@@ -10,7 +10,7 @@ Google Analytics tracking is configurable on a license-level: the same Google An
 
 ## Events
 
-All events are tracked to the **iPaper Display events** category in the following format:
+All events are tracked to the **iPaper Display** category in the following format:
 
 <table>
 	<thead>
