@@ -1,6 +1,7 @@
 ---
 permalink: /integration/events-tracked-by-google-analytics-and-tag-manager
-title: Events tracked by Google Analytics / Tag Manager
+title: Event tracking using Google Analytics or Google Tag Manager
+summary: How event tracking works on your flipbook when you add Google Analytics or Google Tag Manager integration.
 ---
 
 ## Google Analytics
@@ -44,7 +45,7 @@ window.ga(tracker.get('name') + '.send', {
 			<td><pre><code>{
   Url: [FLIPBOOK_URL]
 }</code></pre></td>
-			<td>Flipbook URL is simply read from `window.location.href`</td>
+			<td>Flipbook URL is simply read from <code>window.location.href</code></td>
 		</tr>
 		<tr>
 			<td>PDF Download</td>
@@ -204,7 +205,7 @@ window.dataLayer.push({
 			<td><pre><code>{
   Url: [FLIPBOOK_URL]
 }</code></pre></td>
-			<td>Flipbook URL is simply read from `window.location.href`</td>
+			<td>Flipbook URL is simply read from <code>window.location.href</code></td>
 		</tr>
 		<tr>
 			<td>iPaperEvent_PDFDownload</td>
