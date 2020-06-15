@@ -4,6 +4,10 @@ title: Event tracking using Adobe Analytics
 summary: How event tracking works on your flipbook when you add Adobe Analytics integration.
 ---
 
+## Adding Adobe Analytics integration
+
+Adobe Analytics Integration can be enabled by copying the [launch embed code](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html) and pasting in into your flipbook integration settings.
+
 ## Events
 
 All events are trackked according to the [launch object reference published by Adobe Analytics](https://docs.adobe.com/content/help/en/launch/using/reference/client-side-info/launch-object-reference.html).
