@@ -2,6 +2,7 @@
 permalink: /display-javascript-api/events
 title: Events
 summary: Display JavaScript API emits custom events that can be listened to on the document root
+tags: Display JS API
 ---
 
 ## Overview

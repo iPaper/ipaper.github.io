@@ -2,6 +2,7 @@
 title: Media.GetTree
 permalink: /backend-api/media/get-tree
 redirect_from: "/display/DOC/GetTree"
+tags: Flipbook Backend API
 ---
 
 ## Description

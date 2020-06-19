@@ -2,6 +2,7 @@
 title: Paper.GetPaperStructure
 permalink: /backend-api/paper/get-paper-structure
 redirect_from: "/display/DOC/GetPaperStructure"
+tags: Flipbook Backend API
 ---
 
 ## Description

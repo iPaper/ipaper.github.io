@@ -2,6 +2,7 @@
 title: Statistics.GetNumberOfPageviewsPerDay
 permalink: /backend-api/statistics/get-number-of-page-views-per-day
 redirect_from: "/display/DOC/GetNumberOfPageviewsPerDay"
+tags: Flipbook Backend API
 ---
 
 ## Description

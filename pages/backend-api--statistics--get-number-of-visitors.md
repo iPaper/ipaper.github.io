@@ -2,6 +2,7 @@
 title: Statistics.GetNumberOfVisitors
 permalink: /backend-api/statistics/get-number-of-visitors
 redirect_from: "/display/DOC/GetNumberOfVisitors"
+tags: Flipbook Backend API
 ---
 
 ## Description

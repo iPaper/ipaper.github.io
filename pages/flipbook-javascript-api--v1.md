@@ -3,6 +3,7 @@ permalink: /flipbook-javascript-api/v1
 title: Legacy JavaScript API (v1)
 redirect_from: "/display/DOC/JavaScript+API"
 summary: The JavaScript API allows you listen for events occurings in the Flipbook, prevent default actions and invoking functions in the Flipbook. This is the legacy version of the API&colon; please consider migrating to v2.
+tags: Flipbook JS API
 ---
 
 ## Migration guide

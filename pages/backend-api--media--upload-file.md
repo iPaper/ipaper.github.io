@@ -2,6 +2,7 @@
 title: Media.UploadFile
 permalink: /backend-api/media/upload-file
 redirect_from: "/display/DOC/UploadFile"
+tags: Flipbook Backend API
 ---
 
 ## Description

@@ -2,6 +2,7 @@
 title: Popup content
 permalink: /integration/popup-content
 redirect_from: "/display/DOC/Popup+content"
+tags: Flipbook integration
 ---
 
 ## Sizing

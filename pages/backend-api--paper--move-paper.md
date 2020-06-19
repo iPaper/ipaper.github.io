@@ -2,6 +2,7 @@
 title: Paper.MovePaper
 permalink: /backend-api/paper/move-paper
 redirect_from: "/display/DOC/MovePaper"
+tags: Flipbook Backend API
 ---
 
 ## Description

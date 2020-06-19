@@ -2,6 +2,7 @@
 title: Paper.CreatePaper
 permalink: /backend-api/paper/create-paper
 redirect_from: "/display/DOC/CreatePaper"
+tags: Flipbook Backend API
 ---
 
 ## Description

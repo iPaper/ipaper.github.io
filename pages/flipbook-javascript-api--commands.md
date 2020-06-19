@@ -2,6 +2,7 @@
 permalink: /flipbook-javascript-api/commands
 title: Commands
 summary: Commands are instructions issued by the parent window to the iframed flipbook. Commands can be invoked by calling magic methods, which can be accessed directly from the API instance.
+tags: Flipbook JS API
 ---
 
 ## Overview

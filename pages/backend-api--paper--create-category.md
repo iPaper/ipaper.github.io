@@ -2,6 +2,7 @@
 title: Paper.CreateCategory
 permalink: /backend-api/paper/create-category
 redirect_from: "/display/DOC/CreateCategory"
+tags: Flipbook Backend API
 ---
 
 ## Description

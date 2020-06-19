@@ -1,6 +1,7 @@
 ---
 permalink: /integration/events-tracked-by-google-analytics-and-tag-manager
 title: Events tracked by Google Analytics / Tag Manager
+tags: Flipbook integration
 ---
 
 ## Google Analytics

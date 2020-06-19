@@ -1,6 +1,7 @@
 ---
 permalink: /flipbook-javascript-api/advanced-usage
 title: Advanced Usage
+tags: Flipbook JS API
 ---
 
 ## Multiple Flipbooks
