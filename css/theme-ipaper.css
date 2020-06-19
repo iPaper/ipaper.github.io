@@ -221,6 +221,14 @@ span.projectTitle {
     text-align: center;
 }
 
+#results-container li {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#results-container li:last-child {
+    border: 0;
+}
+
 .navbar-collapse.in {
     overflow: visible;
 }
@@ -299,10 +307,29 @@ ul#mysidebar {
     color: inherit;
 }
 
-.nav li > a > span {
+.nav li > a > span.arrow {
     transform: rotateZ(-90deg);
     transform-origin: 57% 50%;
     font-size: 1.4em;
+}
+
+.nav li > a > span.title {
+    margin-right: 4px;
+}
+
+.nav li > a > span.tag {
+    margin-right: 4px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #315361;
+    color: #fafafa;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav li > a > span.tag:empty {
+    display: none;
 }
 
 .nav li.active > a > span {
