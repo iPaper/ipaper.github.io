@@ -2,6 +2,7 @@
 title: Paper.ChangePaperUrl
 permalink: /backend-api/paper/change-paper-url
 redirect_from: "/display/DOC/ChangePaperUrl"
+tags: Flipbook Backend API
 ---
 
 ## Description

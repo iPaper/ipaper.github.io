@@ -2,6 +2,7 @@
 title: Link.GetLinks
 permalink: /backend-api/link/get-links
 redirect_from: "/display/DOC/GetLinks"
+tags: Flipbook Backend API
 ---
 
 ## Description

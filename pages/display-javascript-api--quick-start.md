@@ -2,6 +2,7 @@
 permalink: /display-javascript-api/quick-start
 title: Quick Start
 summary: The v1 Display JavaScript API allows for streamlined interaction a Display instance
+tags: Display JS API
 ---
 
 ## Overview

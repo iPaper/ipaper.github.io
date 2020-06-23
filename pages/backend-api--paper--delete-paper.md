@@ -2,6 +2,7 @@
 title: Paper.DeletePaper
 permalink: /backend-api/paper/delete-paper
 redirect_from: "/display/DOC/DeletePaper"
+tags: Flipbook Backend API
 ---
 
 ## Description

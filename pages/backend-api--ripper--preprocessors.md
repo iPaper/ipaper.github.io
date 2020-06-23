@@ -2,6 +2,7 @@
 title: Ripper Preprocessors
 permalink: /backend-api/ripper/preprocessors
 redirect_from: "/display/DOC/Watermark"
+tags: Flipbook Backend API
 ---
 
 ## Watermark

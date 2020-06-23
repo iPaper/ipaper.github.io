@@ -2,6 +2,7 @@
 title: Ripper.GetProcessingPapers
 permalink: /backend-api/ripper/get-processing-papers
 redirect_from: "/display/DOC/GetProcessingPapers"
+tags: Flipbook Backend API
 ---
 
 ## Description

@@ -2,6 +2,7 @@
 title: Product Details View - Getting started
 permalink: /integration/product-details-view-getting-started
 redirect_from: "/display/DOC/product+details+view+getting+started"
+tags: Flipbook integration
 ---
 iPaper provides various options for adding shopping capabilities to your Flipbooks. In this document, we'll go into details on what the **Product Details View** enrichment is and what is required to get it working with your product data.
 

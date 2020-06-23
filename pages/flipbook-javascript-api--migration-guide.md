@@ -2,6 +2,7 @@
 permalink: /flipbook-javascript-api/migration-guide
 title: Migration Guide
 summary: Migration guide from legacy v1 API to the new v2 Flipbook API
+tags: Flipbook JS API
 ---
 
 ## Step 1: Load the Flipbook JavaScript API on the parent window

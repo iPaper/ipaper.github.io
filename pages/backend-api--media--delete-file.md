@@ -2,6 +2,7 @@
 title: Media.DeleteFile
 permalink: /backend-api/media/delete-file
 redirect_from: "/display/DOC/DeleteFile"
+tags: Flipbook Backend API
 ---
 
 ## Description

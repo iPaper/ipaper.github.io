@@ -7,9 +7,10 @@ layout: null
 {% if page.search != "exclude" and page.title != nil %}
 {% if previous_result_rendered %},{% endif %}
 {% assign previous_result_rendered = true %}
+{% assign tags = page.tags | split: "," %}
 {
     "title": "{{ page.title | escape }}",
-    "tags": "{{ page.tags }}",
+    "tags": "<span class=\"tag\">{{ tags | join: '</span><span class=\"tag\">' }}</span>",
     "keywords": "{{ page.keywords }}",
     "url": "{{ page.url }}",
     "summary": "{{page.summary | strip }}"

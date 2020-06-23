@@ -2,6 +2,7 @@
 title: Media.DeleteDirectory
 permalink: /backend-api/media/delete-directory
 redirect_from: "/display/DOC/DeleteDirectory"
+tags: Flipbook Backend API
 ---
 
 ## Description

@@ -2,6 +2,7 @@
 title: Backend API Overview
 permalink: /backend-api/overview
 redirect_from: "/display/DOC/Backend+API"
+tags: Flipbook Backend API
 ---
 
 ## General Guidelines

@@ -2,6 +2,7 @@
 title: CustomField.GetCustomFieldDefinitions
 permalink: /backend-api/custom-field/get-custom-field-definitions
 redirect_from: "/display/DOC/GetCustomFieldDefinitions"
+tags: Flipbook Backend API
 ---
 
 ## Description

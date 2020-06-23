@@ -2,6 +2,7 @@
 title: Query String Parameters
 permalink: /integration/query-string-parameters
 redirect_from: "/display/DOC/Query+String+Parameters"
+tags: Flipbook integration
 ---
 
 Certain functions in Flipbooks can be invoked by including query string parameters in the Flipbook address. The following parameters are documented and supported. Any parameter not documented here is not supported and shold not be used and depended upon.

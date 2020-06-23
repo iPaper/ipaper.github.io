@@ -2,6 +2,7 @@
 title: CustomField.AddCustomField
 permalink: /backend-api/custom-field/add-custom-field
 redirect_from: "/display/DOC/AddCustomField"
+tags: Flipbook Backend API
 ---
 
 ## Description

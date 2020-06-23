@@ -2,6 +2,7 @@
 title: Paper.SetPublicationPeriod
 permalink: /backend-api/paper/set-publication-period
 redirect_from: "/display/DOC/SetPublicationPeriod"
+tags: Flipbook Backend API
 ---
 
 ## Description

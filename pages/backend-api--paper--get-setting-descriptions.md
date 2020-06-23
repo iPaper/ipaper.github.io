@@ -2,6 +2,7 @@
 title: Paper.GetSettingDescriptions
 permalink: /backend-api/paper/get-setting-descriptions
 redirect_from: "/display/DOC/GetSettingDescriptions"
+tags: Flipbook Backend API
 ---
 
 ## Description

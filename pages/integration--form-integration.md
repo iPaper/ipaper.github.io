@@ -2,6 +2,7 @@
 title: Form Integration
 permalink: /integration/form-integration
 redirect_from: "/display/DOC/Form+Integration"
+tags: Flipbook
 ---
 
 ## Configuration

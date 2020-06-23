@@ -2,6 +2,7 @@
 title: Return Codes
 permalink: /backend-api/return-codes
 redirect_from: "/display/DOC/Return+Codes"
+tags: Flipbook Backend API
 ---
 
 ## CLIENT_ALREADY_HAD_MODULE

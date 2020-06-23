@@ -2,6 +2,7 @@
 permalink: /display-javascript-api/commands
 title: Commands
 summary: Commands are instructions issued by the page to the Display JavaScript API. Commands can be invoked by calling magic methods, which can be accessed directly from the API instance.
+tags: Display JS API
 ---
 
 ## Overview

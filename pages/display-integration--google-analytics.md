@@ -2,6 +2,7 @@
 permalink: /display-integration/google-analytics
 title: Google Analytics
 summary: Learn how to implement Google Analytics tracking in your Display
+tags: Display JS API
 ---
 
 ## Overview

@@ -2,6 +2,7 @@
 title: Image.GetImageWith2PxDropShadow
 permalink: /backend-api/image/get-image-with-2px-drop-shadow
 redirect_from: "/display/DOC/GetImageWith2PxDropShadow"
+tags: Flipbook Backend API
 ---
 
 ## Description

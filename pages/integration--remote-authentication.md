@@ -2,6 +2,7 @@
 title: Remote Authentication
 permalink: /integration/remote-authentication
 redirect_from: "/display/DOC/Remote+Authentication"
+tags: Flipbook integration
 ---
 
 Using the Remote Authentication module it's possible to completely secure a Flipbook, while maintaining full control of access validation on the clients' own systems.

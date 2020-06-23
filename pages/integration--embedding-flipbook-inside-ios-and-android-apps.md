@@ -2,6 +2,7 @@
 title: Embedding flipbooks inside iOS and Android App
 permalink: /integration/embedding-flipbooks-inside-ios-and-android-apps
 redirect_from: "/display/DOC/Embedding+iPapers+Inside+iOS+and+Android+Applications"
+tags: Flipbook integration
 ---
 
 {% include important.html content="

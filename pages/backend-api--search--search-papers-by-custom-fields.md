@@ -2,6 +2,7 @@
 title: Search.SearchPapersByCustomField
 permalink: /backend-api/search/search-papers-by-custom-fields
 redirect_from: "/display/DOC/SearchPapersByCustomFields"
+tags: Flipbook Backend API
 ---
 
 ## Description
