@@ -2,6 +2,7 @@
 title: CustomField.GetCustomFieldValue
 permalink: /backend-api/custom-field/get-custom-field-value
 redirect_from: "/display/DOC/GetCustomFieldValue"
+tags: Flipbook Backend API
 ---
 
 ## Description

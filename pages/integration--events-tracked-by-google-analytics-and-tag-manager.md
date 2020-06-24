@@ -1,6 +1,7 @@
 ---
 permalink: /integration/events-tracked-by-google-analytics-and-tag-manager
-title: Event tracking using Google Analytics or Google Tag Manager
+title: Events tracked by Google Analytics / Tag Manager
+tags: Flipbook integration
 summary: How event tracking works on your flipbook when you add Google Analytics or Google Tag Manager integration.
 ---
 

@@ -2,6 +2,7 @@
 title: Paper.CreatePreviewToken
 permalink: /backend-api/paper/create-preview-token
 redirect_from: "/display/DOC/CreatePreviewToken"
+tags: Flipbook Backend API
 ---
 
 ## Description

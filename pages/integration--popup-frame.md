@@ -1,6 +1,7 @@
 ---
 title: Popup frame
 permalink: /integration/popup-frame
+tags: Flipbook integration
 ---
 
 ## Security

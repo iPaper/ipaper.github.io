@@ -2,6 +2,7 @@
 title: Paper.GetAllPapers
 permalink: /backend-api/paper/get-all-papers
 redirect_from: "/display/DOC/GetAllPapers"
+tags: Flipbook Backend API
 ---
 
 ## Description

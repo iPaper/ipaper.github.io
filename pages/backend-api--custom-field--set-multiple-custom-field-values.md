@@ -2,6 +2,7 @@
 title: CustomField.SetMultipleCustomFieldValues
 permalink: /backend-api/custom-field/set-multiple-custom-field-values
 redirect_from: "/display/DOC/SetMultipleCustomFieldValues"
+tags: Flipbook Backend API
 ---
 
 ## Description

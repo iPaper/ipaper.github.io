@@ -2,6 +2,7 @@
 title: Statistics.GetNumberOfVisitorsPerDay
 permalink: /backend-api/statistics/get-number-of-visitors-per-day
 redirect_from: "/display/DOC/GetNumberOfVisitorsPerDay"
+tags: Flipbook Backend API
 ---
 
 ## Description

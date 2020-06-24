@@ -1,6 +1,7 @@
 ---
 permalink: /integration/custom-mail
 title: Custom Mail
+tags: Flipbook integration
 ---
 
 ## Configuration

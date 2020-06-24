@@ -2,6 +2,7 @@
 title: Search.SearchPapersWithHiearchyByName
 permalink: /backend-api/search/search-papers-with-hierarchy-by-name
 redirect_from: "/display/DOC/SearchPapersWithHiearchyByName"
+tags: Flipbook Backend API
 ---
 
 ## Description

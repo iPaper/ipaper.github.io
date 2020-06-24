@@ -246,10 +246,6 @@ ul#results-container a {
     background-color: transparent;
 }
 
-ul#results-container a: hover {
-    color: black;
-}
-
 
 #search-demo-container a:hover {
     color: black;
@@ -378,17 +374,17 @@ a.accordion-toggle, a.accordion-collapsed {
     text-decoration: none;
 }
 
-.nav li > a > span {
+.nav li > a > span.arrow {
     float: right;
     font-size: 19px;
     font-weight: bolder;
 }
 
 
-.nav li > a > span:after {
+.nav li > a > span.arrow:after {
     content: '\25be';
 }
-.nav li.open > a > span:after {
+.nav li.open > a > span.arrow:after {
     content: '\25b4';
 }
 

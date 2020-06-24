@@ -2,6 +2,7 @@
 title: Custom Domain
 permalink: /integration/custom-domain
 redirect_from: "/display/DOC/Custom+Domain"
+tags: Flipbook integration
 ---
 
 ## Configuration

@@ -2,6 +2,7 @@
 title: Minipapers
 permalink: /integration/minipapers
 redirect_from: "/display/DOC/Minipapers"
+tags: Flipbook integration
 ---
 
 ## Description

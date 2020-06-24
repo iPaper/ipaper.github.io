@@ -2,6 +2,7 @@
 title: Search.SearchPapersByContent
 permalink: /backend-api/search/search-papers-by-content
 redirect_from: "/display/DOC/SearchPapersByContent"
+tags: Flipbook Backend API
 ---
 
 ## Description

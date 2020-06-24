@@ -2,6 +2,7 @@
 title: Ripper.ProcessPDF
 permalink: /backend-api/ripper/process-pdf
 redirect_from: "/display/DOC/ProcessPdf"
+tags: Flipbook Backend API
 ---
 
 ## Description

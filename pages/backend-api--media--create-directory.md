@@ -2,6 +2,7 @@
 title: Media.CreateDirectory
 permalink: /backend-api/media/create-directory
 redirect_from: "/display/DOC/CreateDirectory"
+tags: Flipbook Backend API
 ---
 
 ## Description

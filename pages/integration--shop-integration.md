@@ -2,6 +2,7 @@
 title: Shop Integration
 permalink: /integration/shop-integration
 redirect_from: "/display/DOC/Shop+Integration"
+tags: Flipbook integration
 ---
 
 Using shop configuration it is possible to let the user add a number of items to the shopping basket in the catalog, after which the contents can be sent to a remote site for further processing. At this point, the remote site can handle registration, payment, etc.

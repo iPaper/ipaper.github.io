@@ -2,6 +2,7 @@
 permalink: /flipbook-javascript-api/quick-start
 title: Quick Start
 summary: The v2 Flipbook JavaScript API allows for streamlined interaction with iframed flipbooks using cross-origin communications available in modern browsers.
+tags: Flipbook JS API
 ---
 
  {% include note.html content="Still using the legacy v1 API? [Refer to the migration guide](./migration-guide) on how to move to v2." %}

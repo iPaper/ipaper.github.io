@@ -2,6 +2,7 @@
 title: iFraming Flipbooks
 permalink: /integration/iframing-flipbooks
 redirect_from: "/display/DOC/iframing+Catalogs"
+tags: Flipbook
 ---
 
 <div class="alert alert-warning">

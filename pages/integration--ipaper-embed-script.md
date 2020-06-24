@@ -2,6 +2,7 @@
 title: iPaper Embed Script
 permalink: /integration/ipaper-embed-script
 redirect_from: "/display/DOC/iPaper+Embed+Script"
+tags: Flipbook integration
 ---
 
 The iPaper embed script snippet is a small piece of JavaScript that you paste in to your webpages. It enables the iPaper service to inject Pop-ups into the pages where the embed script is present.

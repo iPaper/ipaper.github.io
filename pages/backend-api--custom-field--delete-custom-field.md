@@ -2,6 +2,7 @@
 title: CustomField.DeleteCustomField
 permalink: /backend-api/custom-field/delete-custom-field
 redirect_from: "/display/DOC/DeleteCustomField"
+tags: Flipbook Backend API
 ---
 
 ## Description

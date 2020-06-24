@@ -2,6 +2,7 @@
 title: Paper.SetSetting
 permalink: /backend-api/paper/set-setting
 redirect_from: "/display/DOC/SetSetting"
+tags: Flipbook Backend API
 ---
 
 ## Description

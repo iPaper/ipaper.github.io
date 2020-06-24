@@ -2,6 +2,7 @@
 title: Paper.GetPaperUrlFromID
 permalink: /backend-api/paper/get-paper-url-from-id
 redirect_from: "/display/DOC/GetPaperUrlFromID"
+tags: Flipbook Backend API
 ---
 
 ## Description

@@ -2,6 +2,7 @@
 title: CustomField.SetCustomFieldValue
 permalink: /backend-api/custom-field/set-custom-field-value
 redirect_from: "/display/DOC/SetCustomFieldValue"
+tags: Flipbook Backend API
 ---
 
 ## Description

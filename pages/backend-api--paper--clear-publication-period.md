@@ -2,6 +2,7 @@
 title: Paper.ClearPublicationPeriod
 permalink: /backend-api/paper/clear-publication-period
 redirect_from: "/display/DOC/ClearPublicationPeriod"
+tags: Flipbook Backend API
 ---
 
 ## Description
