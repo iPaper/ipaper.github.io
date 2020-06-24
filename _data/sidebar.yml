@@ -191,7 +191,10 @@ entries:
     - title: Product Details View - Getting started
       url: /integration/product-details-view-getting-started
 
-    - title: Events tracked in Google Analytics / GTM
+    - title: Event tracking using Adobe Analytics
+      url: /integration/event-tracking-by-adobe-analytics
+
+    - title: Event tracking using Google Analytics / GTM
       url: /integration/events-tracked-by-google-analytics-and-tag-manager
 
   - title: Flipbook JavaScript API
