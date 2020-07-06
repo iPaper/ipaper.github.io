@@ -17,6 +17,7 @@ Even though the legacy API will still be supported, we strongly encourage custom
 ## Requirements
 
 * A working Branded Domain module. Specifically, the actual Flipbook needs to be on a subdomain to the domain on which the iframe is placed.
+* The page embedding the flipbook and the domain serving the flipbook must use the same protocol. The v1 API will fail if one page uses http and another uses https, for example.
 
 ## Embedding the Flipbook
 
