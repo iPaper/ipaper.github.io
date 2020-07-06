@@ -1,6 +1,7 @@
 ---
 title: CustomField.GetLicenseOrdersByType
 permalink: /backend-api/ecommerce/get-orders-for-license
+tags: Flipbook Backend API
 ---
 
 ## Description
