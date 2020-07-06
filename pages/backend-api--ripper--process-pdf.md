@@ -31,6 +31,7 @@ Begins a processing of a Flipbook.
 | password 							| No 						 | string 	| 					 | Password to unlock protected PDF. Will fail if PDF is protected and correct password is not provided
 | preprocessors						| No 						 | XML 		| 					 | Preprocessors that needs to be run before the PDF is processed
 | custom-link-import-configuration	| No 						 | string 	| 					 | The configuration XML for the custom link import to be executed. This should only be used if instructed to do so by iPaper
+| enrichment-automation-name  | No  | string  |   | The name of the enrichment automation configuration that should be used when processing the PDF.
 
 ## Sample Response
 ```xml
