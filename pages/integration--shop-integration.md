@@ -13,10 +13,20 @@ Once the shop configuration has been enabled, you can enable integration by sele
 
 ## Export format
 
-We include the name, description, price, product ID, and amount, as selected in the catalog. We also include the public-facing URL of the flipbook that sent the data in the payload&mdash;this can be useful to determine the origin flipbook of a shop export. Shop variants exported this way will have the same format. An example of a shop XML is as follow:
+To assist in keeping track of orders sent through our Shop Integration we supply a few more details than just the items that was ordered.
+
+| Property Name | Description |
+|---|---|
+|paper|Short hand URL from where the flipbook was served|
+|flipbookcompleteurl|Full URL of the flipbook|
+|exportorigin|Full URL of the flipbook, including the querystring that was set at the point in time the export was done|
+|orderId|Order Id in the iPaper platform that can be used for reference|
+|orderDate|Date when the order was exported from the iPaper platform|
+
+For each item in the basket that was exported we include the name, description, price, product ID, and amount, as selected in the catalog. An example of a shop XML is as follow:
 
 ```xml
-<shop flipbookcompleteurl="https://public/url/of/your/flipbook">
+<shop paper="/url/of/your/flipbook/" flipbookcompleteurl="https://public/url/of/your/flipbook/" exportorigin="https://public/url/of/your/flipbook/?page=3" orderId="R2xV0s" orderDate="2020-07-13T06:42:40Z">
     <item>
         <amount>2</amount>
         <productid><![CDATA[AB123]]></productid>
