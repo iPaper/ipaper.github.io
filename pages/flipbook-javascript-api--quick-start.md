@@ -11,9 +11,7 @@ tags: Flipbook JS API
 
 The v2 Flipbook JavaScript API uses the [`window.postMessage` API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) for two-way communications between the parent window and one or more flipbooks embedded in the parent window inside `<iframe>` elements.
 
-For this to work, you will need to include the API script on your page. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper Flipbook API script from the admin.
-
-The API script will look like something below, with `<FlipbookApiBaseUrl>` and `<YourFlipbookApiKey>` being substituted with partner and license-dependent configurations.
+For this to work, you will need to include the API script on your page. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper Flipbook JavaScript API script from the admin. The generated code will look something as follow:
 
 ```html
 <!-- Start of async iPaper Flipbook API script -->
@@ -21,10 +19,12 @@ The API script will look like something below, with `<FlipbookApiBaseUrl>` and `
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-(document,'script','ipaper-api','<FlipbookApiBaseUrl>','<YourFlipbookApiKey>');
+(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
 </script>
 <!-- End of async iPaper Flipbook API script -->
 ```
+
+{% include note.html content="Both `<ApiBaseUrl>` and `<YourApiKey>` in the snippet above will be substituted with partner and license-dependent configurations and be automatically populated, when you retrieve the API script from the admin." %}
 
 ## Minimal config setup
 
