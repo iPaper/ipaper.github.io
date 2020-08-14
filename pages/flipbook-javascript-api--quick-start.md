@@ -19,12 +19,12 @@ For this to work, you will need to include the API script on your page. [Please 
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+(document,'script','ipaper-api','<ApiBaseUrl>','<ApiSecret>');
 </script>
 <!-- End of async iPaper Flipbook API script -->
 ```
 
-{% include note.html content="Both `<ApiBaseUrl>` and `<YourApiKey>` in the snippet above will be substituted with partner and license-dependent configurations and be automatically populated, when you retrieve the API script from the admin." %}
+{% include note.html content="Both `<ApiBaseUrl>` and `<ApiSecret>` in the snippet above will be substituted with partner and license-dependent configurations and be automatically populated, when you retrieve the API script from the admin." %}
 
 ## Minimal config setup
 
@@ -52,7 +52,7 @@ The embedded script will call the `iPaperInit()` method that is defined globally
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
     r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-    (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+    (document,'script','ipaper-api','<ApiBaseUrl>','<ApiSecret>');
     </script>
     <!-- End of async iPaper Flipbook API script -->
     

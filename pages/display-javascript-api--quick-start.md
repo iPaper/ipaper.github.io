@@ -23,7 +23,7 @@ The Display Javascript API [exposes magic commands](/display-javascript-api/comm
 
 ## Setup
 
-A Display instance and its CTA button can only be shown on pages that has the Display JavaScript API embedded. The Display API embed script will look something like this, with `<YourApiKey>` being substitued with partner and license-dependent configurations:
+A Display instance and its CTA button can only be shown on pages that has the Display JavaScript API embedded. The Display API embed script will look something like this, with `<ApiSecret>` being substitued with partner and license-dependent configurations:
 
 ```html
 <!-- Start of Async iPaper Display API script -->
@@ -31,9 +31,9 @@ A Display instance and its CTA button can only be shown on pages that has the Di
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-(document,'script','ipaper-display-api','//display.ipaper.io/api/v1','<YourApiKey>');
+(document,'script','ipaper-display-api','//display.ipaper.io/api/v1','<ApiSecret>');
 </script>
 <!-- End of Async iPaper Display API script -->
 ```
 
-{% include note.html content="`<YourApiKey>` in the snippet above will be substituted with partner and license-dependent configurations and be automatically populated, when you retrieve the API script from the admin." %}
+{% include note.html content="`<ApiSecret>` in the snippet above will be substituted with partner and license-dependent configurations and be automatically populated, when you retrieve the API script from the admin." %}
