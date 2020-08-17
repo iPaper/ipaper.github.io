@@ -42,7 +42,7 @@ The minimal config design of our API means that it will attempt to look for an `
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
     r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-    (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+    (document,'script','ipaper-api','<ApiBaseUrl>','<ApiSecret>');
     </script>
     <!-- End of async iPaper Flipbook API script -->
 
@@ -95,7 +95,7 @@ The event name that the event listeners should check with are specified in [even
     (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
     r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
     r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-    (document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+    (document,'script','ipaper-api','<ApiBaseUrl>','<ApiSecret>');
     </script>
     <!-- End of async iPaper Flipbook API script -->
     

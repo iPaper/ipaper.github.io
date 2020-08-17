@@ -9,9 +9,7 @@ tags: Flipbook JS API
 
 The legacy v1 API requires that the parent window and the iframed flipbook share the same origin: this is because strict CORS policy only allows iframed pages to access properties in the parent window if they belong to the same origin. v2 Flipbook API circumvents this issue by using the modern `window.postMessage()` API.
 
-Add the following script to either the `<head>` or `<body>` element in the parent window. The precise placement does not matter, because it asynchronously loads the API. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper API script from the admin.
-
-The API script will look like something below, with `<ApiBaseUrl>` and `<YourApiKey>` being substituted with partner and license-dependent configurations.
+Add the following script to either the `<head>` or `<body>` element in the parent window. The precise placement does not matter, because it asynchronously loads the API. [Please refer to this help article](https://intercom.help/ipaper/do-more-with-ipaper/the-ipaper-api-javascript) on how to obtain the iPaper Flipbook API script from the admin. The generated code will look something as follow:
 
 ```html
 <!-- Start of async iPaper Flipbook API script -->
@@ -19,10 +17,12 @@ The API script will look like something below, with `<ApiBaseUrl>` and `<YourApi
 (function(i,P,a,p,e,r){if(i.getElementById(a=a+'-'+e))return;
 r=i.querySelector(P).parentNode.appendChild(i.createElement(P));
 r.id=a;r.async=1;r.src=p+'/'+e+'.js'})
-(document,'script','ipaper-api','<ApiBaseUrl>','<YourApiKey>');
+(document,'script','ipaper-api','<ApiBaseUrl>','<ApiSecret>');
 </script>
 <!-- End of async iPaper Flipbook API script -->
 ```
+
+{% include note.html content="Both `<ApiBaseUrl>` and `<ApiSecret>` in the snippet above will be substituted with partner and license-dependent configurations and be automatically populated, when you retrieve the API script from the admin." %}
 
 ## Step 2: Update the setup of your Flipbook API
 
