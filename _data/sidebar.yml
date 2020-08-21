@@ -35,6 +35,15 @@ entries:
         - title: SetMultipleCustomFieldValues
           url: /backend-api/custom-field/set-multiple-custom-field-values
 
+      - title: eCommerce
+        subfolderitems:
+
+        - title: GetFlipbookOrdersByType
+          url: /backend-api/ecommerce/get-orders-for-flipbook
+
+        - title: GetLicenseOrdersByType
+          url: /backend-api/ecommerce/get-orders-for-license
+
       - title: Image
         subfolderitems:
 

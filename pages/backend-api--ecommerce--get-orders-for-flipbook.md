@@ -1,6 +1,7 @@
 ---
-title: CustomField.GetFlipbookOrdersByType
+title: eCommerce.GetFlipbookOrdersByType
 permalink: /backend-api/ecommerce/get-orders-for-flipbook
+tags: Flipbook Backend API
 ---
 
 ## Description
