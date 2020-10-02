@@ -67,7 +67,7 @@ In order to iframe a iPaper catalog, spanning 100% of page, we need to use a spe
                 scrolling="no"
                 frameborder="0"
                 style="width: 100%; height: 100%"
-                allow="fullscreen"
+                allow="autoplay; fullscreen;"
                 allowfullscreen
                 webkitallowfullscreen
                 mozallowfullscreen></iframe>
@@ -100,7 +100,7 @@ For these platforms you can specify width in any size you want, even in percenta
                 scrolling="no"
                 frameborder="0"
                 style="width: 100%; height: 100%"
-                allow="fullscreen"
+                allow="autoplay; fullscreen;"
                 allowfullscreen
                 webkitallowfullscreen
                 mozallowfullscreen></iframe>
@@ -109,14 +109,30 @@ For these platforms you can specify width in any size you want, even in percenta
 </html>
 ```
 
-## Allow fullscreen API access
+## The `allow` attributes on the iframe element for autoplaying and fullscreen API access
 
-In order to allow elements in the flipbook to have access to the fullscreen API (e.g. embedded videos from Vimeo/YouTube or native MP4 videos) when the flipbook itself is iframed, the `<iframe>` element needs to allow it explicitly. This is done by adding the following attributes to the element:
+In order to allow elements in the flipbook to do the following when it is iframed:
 
-* `allow="fullscreen"`
+1. Autoplay videos without hindrance, and
+2. Have access to the fullscreen API (e.g. embedded videos from Vimeo/YouTube or native MP4 videos) 
+
+&hellip;the `<iframe>` element needs to allow these explicitly by means of specifying a [feature policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy). This is done by adding the following attributes to the element:
+
+* `allow="autoplay; fullscreen;"`
 * `allowfullscreen` (for backwards compatbility)
 * `webkitallowfullscreen` (for backwards compatbility)
 * `mozallowfullscreen` (for backwards compatbility)
+
+Therefore, your `<iframe>` source will look a little like this, with `YOUR_FLIPBOOK_URL` replaced with the absolute URL of the flipbook you want to embed on your page:
+
+```
+<iframe
+  src="YOUR_FLIPBOOK_URL"
+  allow="autoplay; fullscreen;"
+  allowfullscreen
+  webkitallowfullscreen
+  mozallowfullscreen></iframe>
+```
 
 ### Dynamically Resizing
 Dynamically resizing the div will work. Do make sure you resize the outer and not the iframe.
