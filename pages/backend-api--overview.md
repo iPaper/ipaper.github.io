@@ -22,20 +22,21 @@ You can use the API to access the most common actions also available from our CM
 
 ## Best practice
 
-* **Keep your credentials save**  
+* **Keep your credentials safe**  
 While our endpoint allows for you to use GET requests, we strongly suggest you use POST.
-Using GET requests will send any credentials as clear text over the internet ever if sent via HTTPS.
+Using GET requests will send any credentials as clear text over the internet even if sent via HTTPS.
 
 * **Rate limit your requests**  
-We recommend that you keep requests to our API below **150 per minute**. Some requests like for instance `Paper.GetAllPapers` will return the same result every time unless someone/something has made changes since the last request, so consider adding a short lived cache on your end, or only make calls when you know there there are changes.
+You should keep requests to our API below **50 per minute**.  
+Some requests like for instance `Paper.GetAllPapers` will return the same result every time unless someone/something has made changes since the last request, so consider adding a short lived cache on your end, or only make calls when you know there there are changes.
 
 * **Use caching where possible**  
-Depending on the endpoint you call in the API, we recommend that you cache responses when possible.  
+Depending on the endpoint you call in the API, you should cache responses when possible.  
 Caching results that aren't prone to changes will make your software faster since you save a roundtrip to our API for data you already have.
 
 * **Use the proper abstractions**
 If you have a website or app that uses data from iPaper, we recommend that you create an endpoint in your backend that returns the data from iPaper.
-Having your own endpoint has allows you to manage caching, hide credentials, transform API results and much more.
+Having your own endpoint allows you to manage caching, hide credentials, transform API results and much more.
 
 
 ## API Endoint URL
