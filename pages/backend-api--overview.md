@@ -34,10 +34,10 @@ Some requests like for instance `Paper.GetAllPapers` will return the same result
 Depending on the endpoint you call in the API, you should cache responses when possible.  
 Caching results that aren't prone to changes will make your software faster since you save a roundtrip to our API for data you already have.
 
-* **Use the proper abstractions**
-If you have a website or app that uses data from iPaper, we recommend that you create an endpoint in your backend that returns the data from iPaper.
-Having your own endpoint allows you to manage caching, hide credentials, transform API results and much more.
-
+* **Use the proper abstractions**  
+If you have a website or app that uses data from iPaper, you should create an endpoint in your backend that your services talk to.
+Having your own endpoint allows you to manage caching, hide credentials, transform API results and much more.  
+Don't call our API directly from any code that runs on user devices, e.g. apps, websites, etc. as this introduces the risk of end-users grabbing the credentials and misusing them.
 
 ## API Endoint URL
 
