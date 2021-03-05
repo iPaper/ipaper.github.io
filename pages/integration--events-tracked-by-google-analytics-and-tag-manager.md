@@ -26,9 +26,9 @@ window.ga(tracker.get('name') + '.send', {
 <table class="table-fixed table-condensed">
 	<thead>
 		<tr>
-			<th>Event name</th>
-			<th>Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
-			<th>Comment</th>
+			<th scope="col" scope="col">Event name</th>
+			<th scope="col">Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
+			<th scope="col">Comment</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -336,9 +336,9 @@ Aside from the events listed above, we also track the `PageElementClicked` event
 <table class="table-fixed table-condensed">
 	<thead>
 		<tr>
-			<th>Event name</th>
-			<th>Data</th>
-			<th>Comment</th>
+			<th scope="col">Event name</th>
+			<th scope="col">Data</th>
+			<th scope="col">Comment</th>
 		</tr>
 	</thead>
 	<tbody>
