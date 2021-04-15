@@ -23,12 +23,12 @@ window.ga(tracker.get('name') + '.send', {
 
 #### Overview
 
-<table>
+<table class="table-fixed table-condensed">
 	<thead>
 		<tr>
-			<th>Event name</th>
-			<th>Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
-			<th>Comment</th>
+			<th scope="col" scope="col">Event name</th>
+			<th scope="col">Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
+			<th scope="col">Comment</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -181,19 +181,17 @@ window.dataLayer.push({
 
 #### Overview
 
-<div class="table-wrapper" markdown="block">
-
-<table>
+<table class="table-fixed table-condensed">
 	<thead>
 		<tr>
-			<th>Event name</th>
-			<th>Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
-			<th>Comment</th>
+			<th scope="col">Event name</th>
+			<th scope="col">Data <a href="#event-labels-in-ga-and-gtm">(conversion to eventLabel)</a></th>
+			<th scope="col">Comment</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>ipaperEvent_externalLinkClick</td>
+			<td>ipaperEvent_<wbr />externalLinkClick</td>
 			<td><pre><code>{
   HoverText: [LINK_HOVER_TEXT],
   Url: [EXTERNAL_URL],
@@ -202,19 +200,19 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_load</td>
+			<td>ipaperEvent_<wbr />load</td>
 			<td><pre><code>{
   Url: [FLIPBOOK_URL]
 }</code></pre></td>
 			<td>Flipbook URL is simply read from <code>window.location.href</code></td>
 		</tr>
 		<tr>
-			<td>iPaperEvent_PDFDownload</td>
+			<td>ipaperEvent_<wbr />PDFDownload</td>
 			<td>n.a.</td>
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_leadgenPopupOpen</td>
+			<td>ipaperEvent_<wbr />leadgenPopupOpen</td>
 			<td><pre><code>{
   Name: [POPUP_NAME],
   Url: [CURRENT_URL]
@@ -222,7 +220,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_leadgenPopupConversion</td>
+			<td>ipaperEvent_<wbr />leadgenPopupConversion</td>
 			<td><pre><code>{
   Name: [POPUP_NAME],
   Url: [CURRENT_URL]
@@ -230,7 +228,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_leadgenPopupConversionByUrlClick</td>
+			<td>ipaperEvent_<wbr />leadgenPopupConversionByUrlClick</td>
 			<td><pre><code>{
   Name: [POPUP_NAME],
   Url: [CURRENT_URL]
@@ -238,7 +236,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_popupImageClick</td>
+			<td>ipaperEvent_<wbr />popupImageClick</td>
 			<td><pre><code>{
   HoverText: [LINK_HOVER_TEXT],
   Url: [IMAGE_URL],
@@ -247,7 +245,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_popupGalleryImageClick</td>
+			<td>ipaperEvent_<wbr />popupGalleryImageClick</td>
 			<td><pre><code>{
   HoverText: [LINK_HOVER_TEXT],
   Page: [PAGE_NUMBER]
@@ -255,7 +253,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_popupContentClick</td>
+			<td>ipaperEvent_<wbr />popupContentClick</td>
 			<td><pre><code>{
   HoverText: [LINK_HOVER_TEXT],
   Page: [PAGE_NUMBER]
@@ -263,7 +261,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_popupFrameClick</td>
+			<td>ipaperEvent_<wbr />popupFrameClick</td>
 			<td><pre><code>{
   HoverText: [LINK_HOVER_TEXT],
   Url: [FRAME_URL],
@@ -272,7 +270,7 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_productAddedToCart</td>
+			<td>ipaperEvent_<wbr />productAddedToCart</td>
 			<td><pre><code>{
   Id: [PRODUCT_ID],
   Name: [PRODUCT_NAME],
@@ -281,21 +279,21 @@ window.dataLayer.push({
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_newsTickerExternalLinkClick</td>
+			<td>ipaperEvent_<wbr />newsTickerExternalLinkClick</td>
 			<td><pre><code>{
   Url: [EXTERNAL_URL]
 }</code></pre></td>
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_search</td>
+			<td>ipaperEvent_<wbr />search</td>
 			<td><pre><code>{
   Term: [SEARCH_TERM]
 }</code></pre></td>
 			<td>n.a.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_shopCheckout</td>
+			<td>ipaperEvent_<wbr />shopCheckout</td>
 			<td><pre><code>{
   NumberOfProducts: [NO_OF_PRODUCT_IN_CART],
   CheckoutType: [CHECKOUT_TYPE],
@@ -304,7 +302,7 @@ window.dataLayer.push({
 			<td>Possible <code>CheckoutType</code> values are <code>Email</code>, <code>ShareEmail</code>, <code>Checkout</code>, or <code>Print</code>.</td>
 		</tr>
 		<tr>
-			<td>ipaperEvent_videoPlay</td>
+			<td>ipaperEvent_<wbr />videoPlay</td>
 			<td><pre><code>{
   Url: [VIDEO_URL],
   VideoType: [VIDEO_TYPE],
@@ -315,13 +313,11 @@ window.dataLayer.push({
 	</tbody>
 </table>
 
-</div>
-
 #### Example 
-An example of a DataLayer push for the event `ipaperEvent_externalLinkClick` could look like this:
+An example of a DataLayer push for the event `ipaperEvent_<wbr />externalLinkClick` could look like this:
 ```javascript
 window.dataLayer.push({
-	'event': 'ipaperEvent_externalLinkClick',
+	'event': 'ipaperEvent_<wbr />externalLinkClick',
 	'ipaperEventParams': {
 		HoverText: 'The clicked links hover text', 
 		Url: 'http://ipaper.io/', 
@@ -337,12 +333,12 @@ window.dataLayer.push({
 
 Aside from the events listed above, we also track the `PageElementClicked` event, but it's only triggered for the **internal** & **external** linktype.
 
-<table>
+<table class="table-fixed table-condensed">
 	<thead>
 		<tr>
-			<th>Event name</th>
-			<th>Data</th>
-			<th>Comment</th>
+			<th scope="col">Event name</th>
+			<th scope="col">Data</th>
+			<th scope="col">Comment</th>
 		</tr>
 	</thead>
 	<tbody>

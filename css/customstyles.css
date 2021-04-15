@@ -135,6 +135,14 @@ table {
     border: 1px solid #dedede;
 }
 
+.table-fixed {
+    table-layout: fixed;
+}
+
+.table-condensed tr td {
+    font-size: 14px;
+}
+
 table > thead > tr > th,
 table > tbody > tr > th,
 table > tfoot > tr > th,
@@ -193,12 +201,14 @@ table.boldFirstColumn td:first-child {
 
 table tr td {
     hyphens: auto;
+    word-wrap: break-word;
 }
 
 table td pre {
     margin-top: 0;
     margin-bottom: 0;
     white-space: pre;
+    overflow-x: auto;
 }
 
 table td pre code {
@@ -216,7 +226,7 @@ table td pre code {
 p.external a {
     text-align:right;
     font-size:12px;
-    font-color: #0088cc;
+    color: #0088cc;
     display:inline;
 }
 
