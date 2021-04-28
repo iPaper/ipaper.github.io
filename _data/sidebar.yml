@@ -188,9 +188,6 @@ entries:
     - title: Shop Integration
       url: /integration/shop-integration
 
-    - title: Product Details View - Getting started
-      url: /integration/product-details-view-getting-started
-
     - title: Event tracking using Adobe Analytics
       url: /integration/event-tracking-by-adobe-analytics
 
