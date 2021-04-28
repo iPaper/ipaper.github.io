@@ -180,13 +180,13 @@ entries:
     folderitems:
 
     - title: Popup Content
-      url: /enrichment/popup-content
+      url: /flipbook-enrichment/popup-content
 
     - title: Popup Frame
-      url: /enrichment/popup-frame
+      url: /flipbook-enrichment/popup-frame
 
     - title: iPaper Links
-      url: /enrichment/ipaper-links
+      url: /flipbook-enrichment/ipaper-links
 
   - title: Flipbook Integration
     folderitems:

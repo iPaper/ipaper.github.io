@@ -1,6 +1,6 @@
 ---
 title: Popup content
-permalink: /enrichment/popup-content
+permalink: /flipbook-enrichment/popup-content
 redirect_from: 
     - /integration/popup-content
     - /display/DOC/Popup+content
