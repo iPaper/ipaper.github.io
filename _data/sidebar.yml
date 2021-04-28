@@ -184,6 +184,9 @@ entries:
     - title: Popup Frame
       url: /flipbook/enrichment/popup-frame
 
+    - title: iPaper Links
+      url: /flipbook/enrichment/ipaper-links
+
   - title: Flipbook Integration
     folderitems:
 
