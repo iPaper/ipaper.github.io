@@ -382,14 +382,14 @@ ul#mysidebar {
     font-weight: 600;
 }
 
-.nav > li li:first-child a {
+.nav > li li:first-child > a {
     box-shadow: inset 0 3px 1px -2px rgba(0,0,0,0.065);
 }
-.nav > li li:last-child a {
+.nav > li li:last-child > a {
     box-shadow: inset 0 -3px 3px -2px rgba(0,0,0,0.065);
 }
 
-.nav > li li:first-child:last-child a {
+.nav > li li:first-child:last-child > a {
     box-shadow: inset 0 3px 1px -2px rgba(0,0,0,0.065), inset 0 -3px 3px -2px rgba(0,0,0,0.065);
 }
 
