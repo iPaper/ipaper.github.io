@@ -1,6 +1,6 @@
 ---
-title: iPaper Links
-permalink: /flipbook/enrichment/ipaper-links
+title: Popup Content
+permalink: /flipbook/enrichment/popup-content
 tags: Flipbook enrichment
 ---
 
