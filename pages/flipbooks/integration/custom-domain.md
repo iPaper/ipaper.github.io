@@ -1,7 +1,9 @@
 ---
 title: Custom Domain
-permalink: /integration/custom-domain
-redirect_from: "/display/DOC/Custom+Domain"
+#permalink: /flipbooks/analytics/custom-domain
+redirect_from: 
+    - /integration/custom-domain
+    - /display/DOC/Custom+Domain
 tags: Flipbook integration
 ---
 

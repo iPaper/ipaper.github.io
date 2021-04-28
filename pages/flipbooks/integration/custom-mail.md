@@ -1,6 +1,7 @@
 ---
-permalink: /integration/custom-mail
 title: Custom Mail
+permalink: /flipbooks/analytics/custom-mail
+redirect_from: /integration/custom-mail
 tags: Flipbook integration
 ---
 
