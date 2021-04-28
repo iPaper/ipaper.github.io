@@ -1,6 +1,7 @@
 ---
-permalink: /display-integration/google-analytics
 title: Google Analytics
+permalink: /display-analytics/google-analytics
+redirect_from: /display-integration/google-analytics
 summary: Learn how to implement Google Analytics tracking in your Display
 tags: Display JS API
 ---

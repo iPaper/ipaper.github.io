@@ -1,6 +1,7 @@
 ---
-permalink: /integration/event-tracking-by-adobe-analytics
 title: Event tracking using Adobe Analytics
+permalink: /flipbook-analytics/event-tracking-by-adobe-analytics
+redirect_from: /integration/event-tracking-by-adobe-analytics
 summary: How event tracking works on your flipbook when you add Adobe Analytics integration.
 ---
 

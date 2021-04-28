@@ -2,6 +2,33 @@ entries:
 - title: sidebar
   folders:
 
+  - title: Display Analytics
+    folderitems:
+
+      - title: Google Analytics events
+        url: /display-analytics/google-analytics
+
+  - title: Display Javascript API
+    folderitems:
+
+    - title: Quick Start
+      url: /display-javascript-api/quick-start
+
+    - title: Commands
+      url: /display-javascript-api/commands
+
+    - title: Events
+      url: /display-javascript-api/events
+
+  - title: Flipbook Analytics
+    folderitems:
+
+    - title: Adobe Analytics events
+      url: /flipbook-analytics/event-tracking-by-adobe-analytics
+
+    - title: Google Analytics / GTM events
+      url: /flipbook-analytics/events-tracked-by-google-analytics-and-tag-manager
+
   - title: Flipbook Backend API
     url: /backend-api
     folderitems:
@@ -149,6 +176,18 @@ entries:
         - title: GetNumberOfVisitorsPerDay
           url: /backend-api/statistics/get-number-of-visitors-per-day
 
+  - title: Flipbook Enrichment
+    folderitems:
+
+    - title: Popup Content
+      url: /enrichment/popup-content
+
+    - title: Popup Frame
+      url: /enrichment/popup-frame
+
+    - title: iPaper Links
+      url: /enrichment/ipaper-links
+
   - title: Flipbook Integration
     folderitems:
 
@@ -173,12 +212,6 @@ entries:
     - title: Minipapers
       url: /integration/minipapers
 
-    - title: Popup Content
-      url: /integration/popup-content
-
-    - title: Popup Frame
-      url: /integration/popup-frame
-
     - title: Query String Parameters
       url: /integration/query-string-parameters
 
@@ -187,12 +220,6 @@ entries:
 
     - title: Shop Integration
       url: /integration/shop-integration
-
-    - title: Event tracking using Adobe Analytics
-      url: /integration/event-tracking-by-adobe-analytics
-
-    - title: Event tracking using Google Analytics / GTM
-      url: /integration/events-tracked-by-google-analytics-and-tag-manager
 
   - title: Flipbook JavaScript API
     folderitems:
@@ -215,24 +242,6 @@ entries:
     - title: Legacy v1 API
       url: /flipbook-javascript-api/v1
   
-  - title: Display Integration
-    folderitems:
-
-      - title: Google Analytics
-        url: /display-integration/google-analytics
-
-  - title: Display Javascript API
-    folderitems:
-
-    - title: Quick Start
-      url: /display-javascript-api/quick-start
-
-    - title: Commands
-      url: /display-javascript-api/commands
-
-    - title: Events
-      url: /display-javascript-api/events
-
   - title: Technical Information
     folderitems:
 

@@ -1,6 +1,8 @@
 ---
 title: Popup frame
-permalink: /integration/popup-frame
+permalink: /enrichment/popup-frame
+redirect_from: 
+    - /integration/popup-frame
 tags: Flipbook integration
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Popup content
-permalink: /integration/popup-content
-redirect_from: "/display/DOC/Popup+content"
+permalink: /enrichment/popup-content
+redirect_from: 
+    - /integration/popup-content
+    - /display/DOC/Popup+content
 tags: Flipbook integration
 ---
 

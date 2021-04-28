@@ -1,6 +1,7 @@
 ---
-permalink: /integration/events-tracked-by-google-analytics-and-tag-manager
 title: Events tracked by Google Analytics / Tag Manager
+permalink: /flipbook-analytics/events-tracked-by-google-analytics-and-tag-manager
+redirect_from: /integration/events-tracked-by-google-analytics-and-tag-manager
 tags: Flipbook integration
 summary: How event tracking works on your flipbook when you add Google Analytics or Google Tag Manager integration.
 ---
