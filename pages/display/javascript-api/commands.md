@@ -42,23 +42,27 @@ A Display instance will be shown in a full viewport height `<iframe>` element th
 This command can be used to show:
 
 1. A Display instance that is already associated with a URL, by means of URL pattern matching against the CTA button URL pattern configured for a particular instance, or
-2. An arbitrary Display instance for a URL with no Display instance associated with it
+2. An arbitrary Display instance
 
 #### 1. Showing a Display instance associated with a URL
-For the first scenario, the `show()` magic command does *not* accept any arguments&mdash;attempts to supply it with a custom guid will result in a warning in the console. It is not possible to replace a Display instance that is already associated with a particular URL, with another arbitrary instance belonging to your license.
 
-```js
-// Showing the Display instance that is associated with a particular URL
-window.iPaperDisplayApi.show();
-```
-
-#### 2. Showing an arbitrary Display instance on a URL not associated with a Display instance
-
-For the second scenario is useful when you have the Display JS API embedded on your page, but has no Display instance associated with it because it does not match the CTA button URL pattern. In this case, you are allowed to show any arbitrary Display instance associated with your license on that page, by means of invoking the magic command with a single argument which contains the guid of your Display instance of choice:
+If the current page matches the CTA button URL pattern, you can simply use the `show()` magic command without any arguments to show a Display instance associated with the URL:
 
 ```js
 /*
- * Showing an arbitrary Display instance for a URL not associated with any Display instances
+ * Showing the Display instance that is associated with a particular URL
+ * NOTE: This only works if the current page already has a Display instance assocaited with it.
+ */
+window.iPaperDisplayApi.show();
+```
+
+#### 2. Showing an arbitrary Display instance
+
+For the second scenario is useful when you have the Display JS API embedded on your page, but has no Display instance associated with it because it does not match the CTA button URL pattern. By invoking `show(<guid>)`, where `guid` refers to the GUID of your Display instance of choice, you can show any arbitrary Display instance associated with your license on that page. Your GUID will be in the format of `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
+
+```js
+/*
+ * Showing an arbitrary Display instance
  * The GUID of your Display instance can be inferred from its canonical URL in the following format:
  * - https://display.ipaper.io/<license>/<guid>
  */
@@ -80,20 +84,23 @@ window.iPaperDisplayApi.hide();
 Similar to the `show()` magic command, this command can be used to show:
 
 1. A Display call-to-action button that is already associated with a URL, by means of URL pattern matching against the CTA button URL pattern configured for a particular instance, or
-2. An arbitrary Display call-to-action button for a URL with no Display instance associated with it
+2. An arbitrary Display call-to-action button
 
 #### 1. Showing a Display call-to-action button associated with a URL
 
 ```js
-// Showing the Display call-to-action button that is associated with a particular URL
+/*
+ * Showing the Display call-to-action button that is associated with a particular URL
+ * NOTE: This only works if the current page already has a Display instance assocaited with it.
+ */ 
 window.iPaperDisplayApi.showButton();
 ```
 
-#### 2. Showing an arbitrary Display call-to-action button on a URL not associated with a Display instance
+#### 2. Showing an arbitrary Display call-to-action button
 
 ```js
 /*
- * Showing an arbitrary Display call-to-action button for a URL not associated with any Display instances
+ * Showing an arbitrary Display call-to-action button
  * The GUID of your Display instance can be inferred from its canonical URL in the following format:
  * - https://display.ipaper.io/<license>/<guid>
  */
