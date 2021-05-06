@@ -50,8 +50,8 @@ If the current page matches the CTA button URL pattern, you can simply use the `
 
 ```js
 /*
- * Showing the Display instance that is associated with a particular URL
- * NOTE: This only works if the current page already has a Display instance assocaited with it.
+ * Show the Display instance that is associated with a particular URL
+ * NOTE: This only works if the current page already has a Display instance associated with it.
  */
 window.iPaperDisplayApi.show();
 ```
@@ -62,8 +62,8 @@ For the second scenario is useful when you have the Display JS API embedded on y
 
 ```js
 /*
- * Showing an arbitrary Display instance
- * The GUID of your Display instance can be inferred from its canonical URL in the following format:
+ * Show an arbitrary Display instance
+ * NOTE: The GUID of your Display instance can be inferred from its canonical URL in the following format:
  * - https://display.ipaper.io/<license>/<guid>
  */
 window.iPaperDisplayApi.show(<guid>);
@@ -90,8 +90,8 @@ Similar to the `show()` magic command, this command can be used to show:
 
 ```js
 /*
- * Showing the Display call-to-action button that is associated with a particular URL
- * NOTE: This only works if the current page already has a Display instance assocaited with it.
+ * Show the Display call-to-action button that is associated with a particular URL
+ * NOTE: This only works if the current page already has a Display instance associated with it.
  */ 
 window.iPaperDisplayApi.showButton();
 ```
@@ -100,8 +100,8 @@ window.iPaperDisplayApi.showButton();
 
 ```js
 /*
- * Showing an arbitrary Display call-to-action button
- * The GUID of your Display instance can be inferred from its canonical URL in the following format:
+ * Show an arbitrary Display call-to-action button
+ * NOTE: The GUID of your Display instance can be inferred from its canonical URL in the following format:
  * - https://display.ipaper.io/<license>/<guid>
  */
 window.iPaperDisplayApi.showButton(<guid>);
