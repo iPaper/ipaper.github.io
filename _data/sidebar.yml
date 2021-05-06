@@ -2,15 +2,41 @@ entries:
 - title: sidebar
   folders:
 
+  - title: Display Analytics
+    folderitems:
+
+      - title: Google Analytics events
+        url: /display/analytics/google-analytics
+
+  - title: Display Javascript API
+    folderitems:
+
+    - title: Quick Start
+      url: /display/javascript-api/quick-start
+
+    - title: Commands
+      url: /display/javascript-api/commands
+
+    - title: Events
+      url: /display/javascript-api/events
+
+  - title: Flipbook Analytics
+    folderitems:
+
+    - title: Adobe Analytics events
+      url: /flipbook/analytics/event-tracking-by-adobe-analytics
+
+    - title: Google Analytics / GTM events
+      url: /flipbook/analytics/events-tracked-by-google-analytics-and-tag-manager
+
   - title: Flipbook Backend API
-    url: /backend-api
     folderitems:
 
     - title: Overview
-      url: /backend-api/overview
+      url: /flipbook/backend-api/overview
 
     - title: Return Codes
-      url: /backend-api/return-codes
+      url: /flipbook/backend-api/return-codes
 
       subfolders:
 
@@ -18,221 +44,205 @@ entries:
         subfolderitems:
 
         - title: AddCustomField
-          url: /backend-api/custom-field/add-custom-field
+          url: /flipbook/backend-api/custom-field/add-custom-field
 
         - title: DeleteCustomField
-          url: /backend-api/custom-field/delete-custom-field
+          url: /flipbook/backend-api/custom-field/delete-custom-field
 
         - title: GetCustomFieldDefinitions
-          url: /backend-api/custom-field/get-custom-field-definitions
+          url: /flipbook/backend-api/custom-field/get-custom-field-definitions
 
         - title: GetCustomFieldValue
-          url: /backend-api/custom-field/get-custom-field-value
+          url: /flipbook/backend-api/custom-field/get-custom-field-value
 
         - title: SetCustomFieldValue
-          url: /backend-api/custom-field/set-custom-field-value
+          url: /flipbook/backend-api/custom-field/set-custom-field-value
 
         - title: SetMultipleCustomFieldValues
-          url: /backend-api/custom-field/set-multiple-custom-field-values
+          url: /flipbook/backend-api/custom-field/set-multiple-custom-field-values
 
       - title: Image
         subfolderitems:
 
         - title: GetImageWith2PxDropShadow
-          url: /backend-api/image/get-image-with-2px-drop-shadow
+          url: /flipbook/backend-api/image/get-image-with-2px-drop-shadow
 
       - title: Link
         subfolderitems:
 
         - title: GetLinks
-          url: /backend-api/link/get-links
+          url: /flipbook/backend-api/link/get-links
 
       - title: Media
         subfolderitems:
 
         - title: CreateDirectory
-          url: /backend-api/media/create-directory
+          url: /flipbook/backend-api/media/create-directory
 
         - title: DeleteDirectory
-          url: /backend-api/media/delete-directory
+          url: /flipbook/backend-api/media/delete-directory
 
         - title: DeleteFile
-          url: /backend-api/media/delete-file
+          url: /flipbook/backend-api/media/delete-file
 
         - title: GetTree
-          url: /backend-api/media/get-tree
+          url: /flipbook/backend-api/media/get-tree
 
         - title: UploadFile
-          url: /backend-api/media/upload-file
+          url: /flipbook/backend-api/media/upload-file
 
       - title: Paper
         subfolderitems:
 
         - title: ChangePaperUrl
-          url: /backend-api/paper/change-paper-url
+          url: /flipbook/backend-api/paper/change-paper-url
 
         - title: ClearPublicationPeriod
-          url: /backend-api/paper/clear-publication-period
+          url: /flipbook/backend-api/paper/clear-publication-period
 
         - title: CreateCategory
-          url: /backend-api/paper/create-category
+          url: /flipbook/backend-api/paper/create-category
 
         - title: CreatePaper
-          url: /backend-api/paper/create-paper
+          url: /flipbook/backend-api/paper/create-paper
 
         - title: CreatePreviewToken
-          url: /backend-api/paper/create-preview-token
+          url: /flipbook/backend-api/paper/create-preview-token
 
         - title: DeletePaper
-          url: /backend-api/paper/delete-paper
+          url: /flipbook/backend-api/paper/delete-paper
 
         - title: GetAllPapers
-          url: /backend-api/paper/get-all-papers
+          url: /flipbook/backend-api/paper/get-all-papers
 
         - title: GetPaperIDFromURL
-          url: /backend-api/paper/get-paper-id-from-url
+          url: /flipbook/backend-api/paper/get-paper-id-from-url
 
         - title: GetPaperStructure
-          url: /backend-api/paper/get-paper-structure
+          url: /flipbook/backend-api/paper/get-paper-structure
 
         - title: GetPaperUrlFromID
-          url: /backend-api/paper/get-paper-url-from-id
+          url: /flipbook/backend-api/paper/get-paper-url-from-id
 
         - title: GetSetting
-          url: /backend-api/paper/get-setting
+          url: /flipbook/backend-api/paper/get-setting
 
         - title: GetSettingDescriptions
-          url: /backend-api/paper/get-setting-descriptions
+          url: /flipbook/backend-api/paper/get-setting-descriptions
 
         - title: MovePaper
-          url: /backend-api/paper/move-paper
+          url: /flipbook/backend-api/paper/move-paper
 
         - title: SetPublicationPeriod
-          url: /backend-api/paper/set-publication-period
+          url: /flipbook/backend-api/paper/set-publication-period
 
         - title: SetSetting
-          url: /backend-api/paper/set-setting
+          url: /flipbook/backend-api/paper/set-setting
 
       - title: Ripper
         subfolderitems:
 
         - title: GetProcessingPapers
-          url: /backend-api/ripper/get-processing-papers
+          url: /flipbook/backend-api/ripper/get-processing-papers
 
         - title: ProcessPDF
-          url: /backend-api/ripper/process-pdf
+          url: /flipbook/backend-api/ripper/process-pdf
 
       - title: Search
         subfolderitems:
 
         - title: SearchPapersByContent
-          url: /backend-api/search/search-papers-by-content
+          url: /flipbook/backend-api/search/search-papers-by-content
 
         - title: SearchPapersByCustomFields
-          url: /backend-api/search/search-papers-by-custom-fields
+          url: /flipbook/backend-api/search/search-papers-by-custom-fields
 
         - title: SearchPapersWithHiearchyByContent
-          url: /backend-api/search/search-papers-with-hierarchy-by-content
+          url: /flipbook/backend-api/search/search-papers-with-hierarchy-by-content
 
         - title: SearchPapersWithHiearchyByName
-          url: /backend-api/search/search-papers-with-hierarchy-by-name
+          url: /flipbook/backend-api/search/search-papers-with-hierarchy-by-name
 
       - title: Statistics
         subfolderitems:
 
         - title: GetNumberOfPageviewsPerDay
-          url: /backend-api/statistics/get-number-of-page-views-per-day
+          url: /flipbook/backend-api/statistics/get-number-of-page-views-per-day
 
         - title: GetNumberOfVisitors
-          url: /backend-api/statistics/get-number-of-visitors
+          url: /flipbook/backend-api/statistics/get-number-of-visitors
 
         - title: GetNumberOfVisitorsPerDay
-          url: /backend-api/statistics/get-number-of-visitors-per-day
+          url: /flipbook/backend-api/statistics/get-number-of-visitors-per-day
+
+  - title: Flipbook Enrichment
+    folderitems:
+
+    - title: Popup Content
+      url: /flipbook/enrichment/popup-content
+
+    - title: Popup Frame
+      url: /flipbook/enrichment/popup-frame
 
   - title: Flipbook Integration
     folderitems:
 
     - title: Custom Domain
-      url: /integration/custom-domain
+      url: /flipbook/integration/custom-domain
 
     - title: Custom Mail
-      url: /integration/custom-mail
+      url: /flipbook/integration/custom-mail
 
     - title: Embedding flipbooks inside iOS and Android apps
-      url: /integration/embedding-flipbooks-inside-ios-and-android-apps
+      url: /flipbook/integration/embedding-flipbooks-inside-ios-and-android-apps
 
     - title: Form Integration
-      url: /integration/form-integration
+      url: /flipbook/integration/form-integration
 
     - title: Iframing Flipbooks
-      url: /integration/iframing-flipbooks
+      url: /flipbook/integration/iframing-flipbooks
 
     - title: iPaper Embed Script
-      url: /integration/ipaper-embed-script
+      url: /flipbook/integration/ipaper-embed-script
 
     - title: Minipapers
-      url: /integration/minipapers
-
-    - title: Popup Content
-      url: /integration/popup-content
-
-    - title: Popup Frame
-      url: /integration/popup-frame
+      url: /flipbook/integration/minipapers
 
     - title: Query String Parameters
-      url: /integration/query-string-parameters
+      url: /flipbook/integration/query-string-parameters
 
     - title: Remote Authenticaion
-      url: /integration/remote-authentication
+      url: /flipbook/integration/remote-authentication
 
     - title: Shop Integration
-      url: /integration/shop-integration
-
-    - title: Event tracking using Adobe Analytics
-      url: /integration/event-tracking-by-adobe-analytics
-
-    - title: Event tracking using Google Analytics / GTM
-      url: /integration/events-tracked-by-google-analytics-and-tag-manager
+      url: /flipbook/integration/shop-integration
 
   - title: Flipbook JavaScript API
     folderitems:
 
     - title: Quick Start
-      url: /flipbook-javascript-api/quick-start
+      url: /flipbook/javascript-api/quick-start
 
     - title: Commands
-      url: /flipbook-javascript-api/commands
+      url: /flipbook/javascript-api/commands
 
     - title: Events
-      url: /flipbook-javascript-api/events
+      url: /flipbook/javascript-api/events
 
     - title: Advanced Usage
-      url: /flipbook-javascript-api/advanced-usage
+      url: /flipbook/javascript-api/advanced-usage
 
-    - title: Migration guide
-      url: /flipbook-javascript-api/migration-guide
+      subfolders:
 
-    - title: Legacy v1 API
-      url: /flipbook-javascript-api/v1
+      - title: Legacy
+        subfolderitems:
+
+        - title: Legacy JavaScript API (v1)
+          url: /flipbook/javascript-api/legacy/v1
+ 
+        - title: Migration guide
+          url: /flipbook/javascript-api/legacy/migration-guide
   
-  - title: Display Integration
-    folderitems:
-
-      - title: Google Analytics
-        url: /display-integration/google-analytics
-
-  - title: Display Javascript API
-    folderitems:
-
-    - title: Quick Start
-      url: /display-javascript-api/quick-start
-
-    - title: Commands
-      url: /display-javascript-api/commands
-
-    - title: Events
-      url: /display-javascript-api/events
-
   - title: Technical Information
     folderitems:
 
