@@ -1,5 +1,5 @@
 ---
-title: Popup frame
+title: Popup Frame
 permalink: /flipbook/enrichment/popup-frame
 redirect_from: 
     - /integration/popup-frame
