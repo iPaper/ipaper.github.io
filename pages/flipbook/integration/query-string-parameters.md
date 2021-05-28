@@ -95,8 +95,8 @@ As an example, the below URL:
 ```html
 http://catalogs.company.com/Brochure/?ipforward_YourParameter=x
 ```
-Would result in external links decorated with your parameter: `YourParameter=x`
+Would result in external links getting decorated with your parameter: `YourParameter=x`
 
-You can use the `ipforward_` prefix with any parameter you want. If someone follows a link within your Flipbook, the ipforward is stripped, so only your parameter is retained in the link. And you can of course add multiple parameters:  
+You can use the `ipforward_` prefix with any parameter you want. If someone follows a link within your Flipbook, the `ipforward_` is stripped, so only your parameter is retained in the link. And you can of course add multiple parameters:  
 `?ipforward_YourParameter=x&ipforward_YourOtherParameter=y`
 
