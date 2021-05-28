@@ -85,3 +85,18 @@ The preload parameter can be used to ensure that a Flipbook only loads the visib
 ```html
 <iframe src="http://catalogs.company.com/Brochure/?preload=minimal"></iframe>
 ```
+
+## Query string forwarding
+
+To forward query strings to links, you can prefix query strings with `ipforward_`. We will strip the prefix and add your query strings to any outgoing links in the Flipbook. 
+
+As an example, the below URL:
+
+```html
+http://catalogs.company.com/Brochure/?ipforward_YourParameter=x
+```
+Would result in external links getting decorated with your parameter: `YourParameter=x`
+
+You can use the `ipforward_` prefix with any parameter you want. If someone follows a link within your Flipbook, the `ipforward_` is stripped, so only your parameter is retained in the link. And you can of course add multiple parameters:  
+`?ipforward_YourParameter=x&ipforward_YourOtherParameter=y`
+
