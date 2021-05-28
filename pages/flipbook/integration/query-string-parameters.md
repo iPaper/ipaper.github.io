@@ -85,3 +85,24 @@ The preload parameter can be used to ensure that a Flipbook only loads the visib
 ```html
 <iframe src="http://catalogs.company.com/Brochure/?preload=minimal"></iframe>
 ```
+
+## Decoration of external and flipbook links
+
+To decorate links, you can use the query, which are also retained on any links within the Flipbook. So not only the viewer, but also any links to external pages. To add ipForward parameters the query is simply: 
+
+```html
+http://catalogs.company.com/Brochure/?ipForward_YourParamter=x
+```
+
+You can use the ?ipForward_ with any parameter you want. If someone follows a link within your Flipbook, the ipFoward is stripped, so only your parameter is retained in the link. So, the example above would come to:
+
+```html
+http://www.yourwebsite.com?YourParamater=x
+```
+
+You can of course add multiple parameters with ampersand:
+
+```html
+?ipForward_YourParamter=x&YourOtherParamater=y
+```
+
