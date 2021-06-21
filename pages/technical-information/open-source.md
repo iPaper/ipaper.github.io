@@ -86,7 +86,6 @@ The list below includes all of the libraries we are currently using and a notati
 |player|MIT|<https://github.com/vimeo/player.js>|Frontend|
 |Portable.BouncyCastle|MIT|<https://www.bouncycastle.org/csharp/>|Backend|
 |portal-vue|MIT|<https://github.com/LinusBorg/portal-vue>|Frontend|
-|portal-vue|MIT|<https://github.com/LinusBorg/portal-vue>|Frontend|
 |postcss-loader|MIT|<https://github.com/postcss/postcss-loader>|Frontend|
 |PreMailer.Net|MIT|<https://github.com/milkshakesoftware/PreMailer.Net>|Backend|
 |promise-polyfill|MIT|<https://github.com/taylorhakes/promise-polyfill>|Frontend|
@@ -119,19 +118,15 @@ The list below includes all of the libraries we are currently using and a notati
 |unQuery|MIT|<https://github.com/improvedk/unQuery>|Backend Services|
 |uuid|MIT|<https://github.com/uuidjs/uuid>|Frontend|
 |vue|MIT|<https://github.com/vuejs/vue>|Frontend|
-|vue|MIT|<https://github.com/vuejs/vue>|Frontend|
-|vue-class-component|MIT|<https://github.com/vuejs/vue-class-component>|Frontend|
 |vue-class-component|MIT|<https://github.com/vuejs/vue-class-component>|Frontend|
 |vue-implicit-css-modules|MIT|<https://github.com/AjiTae/vue-implicit-css-modules>|Frontend|
 |vue-loader|MIT|<https://github.com/vuejs/vue-loader>|Frontend|
-|vue-property-decorator|MIT|<https://github.com/kaorun343/vue-property-decorator>|Frontend|
 |vue-property-decorator|MIT|<https://github.com/kaorun343/vue-property-decorator>|Frontend|
 |vue-router|MIT|<https://github.com/vuejs/vue-router>|Frontend|
 |vue-style-loader|MIT|<https://github.com/vuejs/vue-style-loader>|Frontend|
 |vue-svg-loader|MIT|<https://github.com/visualfanatic/vue-svg-loader>|Frontend|
 |vue-template-compiler|MIT|<https://github.com/vuejs/vue>>|Frontend|
 |vuedraggable|MIT|<https://github.com/SortableJS/Vue.Draggable>>|Frontend|
-|vuex|MIT|<https://github.com/vuejs/vuex>>|Frontend|
 |vuex|MIT|<https://github.com/vuejs/vuex>>|Frontend|
 |vuex-class|MIT|<https://github.com/ktsn/vuex-class>>|Frontend|
 |weakmap-polyfill|MIT|<https://github.com/polygonplanet/weakmap-polyfill>>|Frontend|
