@@ -12,6 +12,8 @@ Google Analytics tracking is configurable on a license-level: the same Google An
 
 ## Events
 
+{% include note.html content="Google Analytics 4 (GA4) does not by default collect event catagories, so event names in GA4 have 'IPD - event name' prepended for Display events%}
+
 All events are tracked to the **iPaper Display** category in the following format:
 
 <table>
