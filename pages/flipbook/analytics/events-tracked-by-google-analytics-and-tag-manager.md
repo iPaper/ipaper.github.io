@@ -22,6 +22,8 @@ window.ga(tracker.get('name') + '.send', {
 });
 ```
 
+{% include note.html content="Google Analytics 4 (GA4) does not by default collect event catagories, so event names in GA4 have 'IPF - event name' prepended %}
+
 #### Overview
 
 <table class="table-fixed table-condensed">
