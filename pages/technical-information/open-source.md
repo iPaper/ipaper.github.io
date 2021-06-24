@@ -21,7 +21,7 @@ The list below includes all of the libraries we are currently using and a notati
 
 | Name | License | Repository | Usage |
 |---|---|---|---|
-|AjaxMin|Apache 2.0|<http://ajaxmin.codeplex.com/>>|Backend|
+|AjaxMin|Apache 2.0|<http://ajaxmin.codeplex.com/>|Backend|
 |Akka|Apache 2.0|<https://github.com/akkadotnet/akka.net>|Services|
 |Akka.Quartz.Actor|Apache 2.0|<https://github.com/akkadotnet/Akka.Quartz.Actor>|Services|
 |Akka.Serialization.Hyperion|Apache 2.0|<https://github.com/akkadotnet/akka.net>|Services|
@@ -125,12 +125,12 @@ The list below includes all of the libraries we are currently using and a notati
 |vue-router|MIT|<https://github.com/vuejs/vue-router>|Frontend|
 |vue-style-loader|MIT|<https://github.com/vuejs/vue-style-loader>|Frontend|
 |vue-svg-loader|MIT|<https://github.com/visualfanatic/vue-svg-loader>|Frontend|
-|vue-template-compiler|MIT|<https://github.com/vuejs/vue>>|Frontend|
-|vuedraggable|MIT|<https://github.com/SortableJS/Vue.Draggable>>|Frontend|
-|vuex|MIT|<https://github.com/vuejs/vuex>>|Frontend|
-|vuex-class|MIT|<https://github.com/ktsn/vuex-class>>|Frontend|
-|weakmap-polyfill|MIT|<https://github.com/polygonplanet/weakmap-polyfill>>|Frontend|
-|webfontloader|Apache 2.0|<https://github.com/typekit/webfontloader>>|Frontend|
-|webpack|MIT|<https://github.com/webpack/webpack>>|Frontend|
-|whatwg-fetch|MIT|<https://github.com/github/fetch>>|Frontend|
-|zlib.net|BSD-Style|<http://www.componentace.com/zlib_.NET.htm>>|Backend|
+|vue-template-compiler|MIT|<https://github.com/vuejs/vue>|Frontend|
+|vuedraggable|MIT|<https://github.com/SortableJS/Vue.Draggable>|Frontend|
+|vuex|MIT|<https://github.com/vuejs/vuex>|Frontend|
+|vuex-class|MIT|<https://github.com/ktsn/vuex-class>|Frontend|
+|weakmap-polyfill|MIT|<https://github.com/polygonplanet/weakmap-polyfill>|Frontend|
+|webfontloader|Apache 2.0|<https://github.com/typekit/webfontloader>|Frontend|
+|webpack|MIT|<https://github.com/webpack/webpack>|Frontend|
+|whatwg-fetch|MIT|<https://github.com/github/fetch>|Frontend|
+|zlib.net|BSD-Style|<http://www.componentace.com/zlib_.NET.htm>|Backend|
